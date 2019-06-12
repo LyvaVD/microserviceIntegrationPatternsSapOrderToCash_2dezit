@@ -1,0 +1,71 @@
+%%=============================================================================
+%% Conclusie
+%%=============================================================================
+
+\chapter{Conclusie}
+\label{ch:conclusie}
+
+% TODO: Trek een duidelijke conclusie, in de vorm van een antwoord op de
+% onderzoeksvra(a)g(en). Wat was jouw bijdrage aan het onderzoeksdomein en
+% hoe biedt dit meerwaarde aan het vakgebied/doelgroep? 
+% Reflecteer kritisch over het resultaat. In Engelse teksten wordt deze sectie
+% ``Discussion'' genoemd. Had je deze uitkomst verwacht? Zijn er zaken die nog
+% niet duidelijk zijn?
+% Heeft het onderzoek geleid tot nieuwe vragen die uitnodigen tot verder 
+%onderzoek?
+
+De conclusie van deze theoretische studie zal in dit deel duidelijk worden.
+
+Als eerste werd de vraag 'Wat zijn microservices?' gesteld. 
+Microservices zijn kleine delen die elk een requirement omvatten. Elke microservice functioneert apart en heeft weinig tot geen communicatie met de andere microservices. Om microservices te gaan ontwikkelen, moet er veel onderzocht worden. Wat te merken is aan de literatuurstudie. De literatuurstudie is niet heel diepgaand maar probeert wel zo veel mogelijk aspecten van microservices aan te halen. Microservice kan in meerdere contexten voor komen. Binnen elke context zal er meer verkaring nodig zijn. 
+
+De volgende vraag was 'Hoe kan er overgeschakeld worden naar een microservice architectuur?'.
+Er kan op verschillende manieren overgeschakeld worden naar microservices. Maar de meest aangeraden manier is: systematisch requirements vaststellen en omzetten naar een microservices. In een stappenplan werken, zodat er geen chaos ontstaat bij de overschakeling. Eerst de kern opbouwen en dan alle andere zaken erbij brengen. Eens de kern van de architectuur is getekend, kan men authenticatie, authorisatie, bescherming, logging en de API gateway er in steken. Er moet eerst goed worden nagedacht over hoe de implementatie van authenticatie, authorisatie, bescherming en logging zal gebeuren. Voor de overschakeling kan er gekeken worden naar de manier waarop men nu de authenticatie, authorisatie, bescherming en logging toepast en die manier dan verwerken bij de microservices.  
+
+Daarna kwam 'Welke aanpassingen kunnen of moeten er gebeuren aan de architectuur om microservices te laten werken? De veranderingen worden hieronder opgesomd:
+\begin{itemize}
+	\item Heeft deze applicatie nood aan een microservice architectuur?
+	\item De databank structuur moet herbekeken worden.
+	\item Het volledige proces herbekijken.
+	\item De manier van communiceren tussen de verschillende onderdelen moet worden onderzocht.
+	\item Welke manier van authenticatie en authorisatie gaat men gebruiken?
+	\item Welke manier van bescherming kan er toegepast worden?
+	\item Moeten we de teams herstructureren?
+\end{itemize}
+
+Een andere vraag die in het begin gesteld werd: Hoe zal de communicatie tussen de verschillende microservices werken?
+Voor de communicatie zijn er veel verschillende opties. Er moet gekeken worden naar welke manier het beste bij het bedrijf past. Is er een manier die al gekend is in het bedrijf? Heeft een andere manier enkele voordelen ten opzichte van de huidige techniek. In deze studie is er gekozen voor volgend communicatie methode: Via message queues. De data die microservice B nodig heeft, zal door microservice A naar microservice B zijn queue worden gestuurd. Bij deze manier heeft elke microservice een queue. Heeft microservice A data doorgekregen en haar taak ermee gedaan, dan plaatst ze een link naar de data op de queue van de microservice die de data nodig heeft. Dit zorgt ervoor dat als microservice B uitvalt, de nodige data niet verloren gaat. De queue slaat de gegevens op en verwijdert ze pas als ze zijn opgehaald. Als deze methode niet past binnen de verwachtingen van de architectuur dan kan men onderzoeken welke methode beter is. 
+
+Als volgt werd deze vraag gesteld: Hoe ziet een order-to-cash proces eruit? 
+Het order-to-cash proces is een proces dat voorkomt bij het plaatsen van een order tot het betalen van de factuur. In volgende opsomming zijn de stappen terug te vinden:
+\begin{enumerate}
+	\item Order management
+	\item Credit management
+	\item Order fulfilment
+	\item Order shipping
+	\item Facturatie
+	\item Accounts receivables
+\end{enumerate}
+
+De voorlaatste vraag, klinkt als volgt: Welke business requirements heeft een order-to-cash proces?
+De belangrijkste requirement is dat de klant zijn bestelling krijgt. Een andere requirement is de wanbetalers minimaal te houden door ze vroeg in het proces er uit te halen. De requirements liggen in lijn met de noden van de klant. De business requirements werden opgesteld door het order-to-cash proces grondig te bestuderen. In de literatuurstudie is meer uitleg te vinden over het OTC proces.
+
+Als laatste vraag werd 'Welke invloed heeft de microservice architectuur op de performance van een order-to-cash proces?' gesteld.
+Het verschil op performance vlak kan pas getest worden bij een studie met een proof of concept. Wat wel geconcludeerd kan worden, is volgende: De performance zal stabieler zijn bij pieken van orders. Omdat de microservices onafhankelijk zijn van elkaar. De onderdelen van het OTC proces kunnen onafhankelijker functioneren. Valt er een onderdeel uit of tijdelijk niet beschikbaar dan heeft dat geen grote gevolgen voor het proces in het algemeen. Het onderdeel ervoor kan nog altijd data op de queue plaatsen. Maar de onderdelen na het onbeschikbare deel, zal wel wat hinder ondervinden. Maar niet zodat het gehele proces plat zal liggen.
+
+
+Microservice is een architectuur en ideologie waarin logica en de requirements, die te vinden zijn bij een monolithic, terugkomen. Dit heeft invloed op de overschakeling naar microservices. Deze manier van implementatie moet aangepast worden bij het gebruik van microservices. Dat kan een obstakel zijn. Er wordt een andere manier van denken en organiseren gevraagd binnen een de IT-afdeling. De teams worden hervormd. Een team bevat niet meer de kennis van de volledige architectuur., enkel over de microservice waaraan zij werken. 
+
+
+Ten slotte kan er geconcludeerd worden dat:
+\begin{itemize}
+	\item Microservices een brede term is en kan voorkomen in verschillende contexten.
+	\item Een microservice architectuur niet altijd nodig is.
+	\item Microservices kunnen een OTC proces automatiseren.
+	\item Microservices zorgen ervoor dat elk onderdeel van het proces apart kan functioneren.
+\end{itemize}
+
+Zelf heb ik ondervonden dat het aanpassen van een monolithic niet eenvoudig is. De monolithic architectuur zit ingebakken in het informatica landschap. De manier van omgang met microservices, kan vergeleken worden met die van Agile. De Agile methode moest in eerste instatie zijn toegevoegde waarde op een project bewijzen. Dan pas zijn projectmanagers deze ook gaan gebruiken. Microservices zal eerst zijn voordeel moeten bewijzen ten opzichte van monolithic om een statement te kunnen maken.
+
+
+
