@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6840 64-bit) (preloaded format=pdflatex 2018.10.20)  30 MAY 2019 11:22
+This is XeTeX, Version 3.14159265-2.6-0.99999 (MiKTeX 2.9.6840 64-bit) (preloaded format=xelatex 2018.12.30)  13 JUN 2019 19:31
 entering extended mode
 **./bachproef-tin.tex
 (bachproef-tin.tex
@@ -69,8 +69,8 @@ Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 \Gm@layoutvoffset=\dimen111
 \Gm@dimlist=\toks15
 
-("C:\Users\Lyva\AppData\Local\Programs\MiKTeX 2.9\tex\latex\geometry\geometry.c
-fg"))
+("C:\Users\Lyva\AppData\Local\Programs\MiKTeX 2.9\tex\xelatex\xetexconfig\geome
+try.cfg"))
 ("C:\Users\Lyva\AppData\Local\Programs\MiKTeX 2.9\tex\latex\enumitem\enumitem.s
 ty"
 Package: enumitem 2011/09/28 v3.5.2 Customized lists
@@ -128,11 +128,11 @@ Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
 cs.cfg"
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
-Package graphics Info: Driver file: pdftex.def on input line 99.
+Package graphics Info: Driver file: xetex.def on input line 99.
 
-("C:\Users\Lyva\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics-def\pdftex
-.def"
-File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
+("C:\Users\Lyva\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics-def\xetex.
+def"
+File: xetex.def 2017/06/24 v5.0h Graphics/color driver for xetex
 ))
 \Gin@req@height=\dimen127
 \Gin@req@width=\dimen128
@@ -243,21 +243,27 @@ keysfiltered.code.tex"
 gf.cfg"
 File: pgf.cfg 2019/02/02 v3.1.1 (3.1.1)
 )
-Driver file for pgf: pgfsys-pdftex.def
+Driver file for pgf: pgfsys-xetex.def
 
 ("C:\Users\Lyva\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\systemlayer\p
-gfsys-pdftex.def"
-File: pgfsys-pdftex.def 2019/02/02 v3.1.1 (3.1.1)
+gfsys-xetex.def"
+File: pgfsys-xetex.def 2019/02/02 v3.1.1 (3.1.1)
+
+("C:\Users\Lyva\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\systemlayer\p
+gfsys-dvipdfmx.def"
+File: pgfsys-dvipdfmx.def 2019/02/02 v3.1.1 (3.1.1)
 
 ("C:\Users\Lyva\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\systemlayer\p
 gfsys-common-pdf.def"
 File: pgfsys-common-pdf.def 2019/02/02 v3.1.1 (3.1.1)
+)
+\pgfsys@objnum=\count112
 )))
 ("C:\Users\Lyva\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\systemlayer\p
 gfsyssoftpath.code.tex"
 File: pgfsyssoftpath.code.tex 2019/02/02 v3.1.1 (3.1.1)
-\pgfsyssoftpath@smallbuffer@items=\count112
-\pgfsyssoftpath@bigbuffer@items=\count113
+\pgfsyssoftpath@smallbuffer@items=\count113
+\pgfsyssoftpath@bigbuffer@items=\count114
 )
 ("C:\Users\Lyva\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\systemlayer\p
 gfsysprotocol.code.tex"
@@ -270,9 +276,8 @@ Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
 cfg"
 File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
-Package xcolor Info: Driver file: pdftex.def on input line 225.
+Package xcolor Info: Driver file: xetex.def on input line 225.
 Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
-Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1352.
 Package xcolor Info: Model `RGB' extended on input line 1364.
 Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1366.
 Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1367.
@@ -294,7 +299,7 @@ til.code.tex")
 ("C:\Users\Lyva\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pgfmathp
 arser.code.tex"
 \pgfmath@dimen=\dimen143
-\pgfmath@count=\count114
+\pgfmath@count=\count115
 \pgfmath@box=\box31
 \pgfmath@toks=\toks26
 \pgfmath@stack@operand=\toks27
@@ -320,7 +325,7 @@ unctions.misc.code.tex")
 unctions.integerarithmetics.code.tex")))
 ("C:\Users\Lyva\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pgfmathf
 loat.code.tex"
-\c@pgfmathroundto@lastzeros=\count115
+\c@pgfmathroundto@lastzeros=\count116
 ))
 ("C:\Users\Lyva\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclayer\pg
 fcorepoints.code.tex"
@@ -358,7 +363,7 @@ File: pgfcorescopes.code.tex 2019/02/02 v3.1.1 (3.1.1)
 \pgfpic=\box32
 \pgf@hbox=\box33
 \pgf@layerbox@main=\box34
-\pgf@picture@serial@count=\count116
+\pgf@picture@serial@count=\count117
 )
 ("C:\Users\Lyva\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclayer\pg
 fcoregraphicstate.code.tex"
@@ -393,7 +398,7 @@ File: pgfcorearrows.code.tex 2019/02/02 v3.1.1 (3.1.1)
 fcoreshade.code.tex"
 File: pgfcoreshade.code.tex 2019/02/02 v3.1.1 (3.1.1)
 \pgf@max=\dimen167
-\pgf@sys@shading@range@num=\count117
+\pgf@sys@shading@range@num=\count118
 )
 ("C:\Users\Lyva\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclayer\pg
 fcoreimage.code.tex"
@@ -467,7 +472,7 @@ Package: tikz 2019/02/02 v3.1.1 (3.1.1)
 ("C:\Users\Lyva\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\libraries\pgf
 libraryplothandlers.code.tex"
 File: pgflibraryplothandlers.code.tex 2019/02/02 v3.1.1 (3.1.1)
-\pgf@plot@mark@count=\count118
+\pgf@plot@mark@count=\count119
 \pgfplotmarksize=\dimen172
 )
 \tikz@lastx=\dimen173
@@ -480,19 +485,19 @@ File: pgflibraryplothandlers.code.tex 2019/02/02 v3.1.1 (3.1.1)
 \tikz@figbox@bg=\box38
 \tikz@tempbox=\box39
 \tikz@tempbox@bg=\box40
-\tikztreelevel=\count119
-\tikznumberofchildren=\count120
-\tikznumberofcurrentchild=\count121
-\tikz@fig@count=\count122
+\tikztreelevel=\count120
+\tikznumberofchildren=\count121
+\tikznumberofcurrentchild=\count122
+\tikz@fig@count=\count123
 
 ("C:\Users\Lyva\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\modules\pgfmo
 dulematrix.code.tex"
 File: pgfmodulematrix.code.tex 2019/02/02 v3.1.1 (3.1.1)
-\pgfmatrixcurrentrow=\count123
-\pgfmatrixcurrentcolumn=\count124
-\pgf@matrix@numberofcolumns=\count125
+\pgfmatrixcurrentrow=\count124
+\pgfmatrixcurrentcolumn=\count125
+\pgf@matrix@numberofcolumns=\count126
 )
-\tikz@expandcount=\count126
+\tikz@expandcount=\count127
 
 ("C:\Users\Lyva\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\frontendlayer
 \tikz\libraries\tikzlibrarytopaths.code.tex"
@@ -502,12 +507,20 @@ File: tikzlibrarytopaths.code.tex 2019/02/02 v3.1.1 (3.1.1)
 Package: inputenc 2018/04/06 v1.3b Input encoding file
 \inpenc@prehook=\toks31
 \inpenc@posthook=\toks32
+
+
+Package inputenc Warning: inputenc package ignored with utf8 based engines.
+
 ) ("C:\Users\Lyva\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\fontenc.sty"
 Package: fontenc 2017/04/05 v2.0i Standard LaTeX package
-
 ("C:\Users\Lyva\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\t1enc.def"
 File: t1enc.def 2017/04/05 v2.0i Standard LaTeX file
 LaTeX Font Info:    Redeclaring font encoding T1 on input line 48.
+)
+LaTeX Font Info:    Try loading font information for T1+lmr on input line 105.
+
+("C:\Users\Lyva\AppData\Local\Programs\MiKTeX 2.9\tex\latex\lm\t1lmr.fd"
+File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 ))
 ("C:\Users\Lyva\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfonts\amsfonts.s
 ty"
@@ -540,13 +553,13 @@ Package: amsbsy 1999/11/29 v1.2d Bold Symbols
 y"
 Package: amsopn 2016/03/08 v2.02 operator names
 )
-\inf@bad=\count127
+\inf@bad=\count128
 LaTeX Info: Redefining \frac on input line 213.
-\uproot@=\count128
-\leftroot@=\count129
+\uproot@=\count129
+\leftroot@=\count130
 LaTeX Info: Redefining \overline on input line 375.
-\classnum@=\count130
-\DOTSCASE@=\count131
+\classnum@=\count131
+\DOTSCASE@=\count132
 LaTeX Info: Redefining \ldots on input line 472.
 LaTeX Info: Redefining \dots on input line 475.
 LaTeX Info: Redefining \cdots on input line 596.
@@ -555,15 +568,15 @@ LaTeX Info: Redefining \cdots on input line 596.
 \big@size=\dimen181
 LaTeX Font Info:    Redeclaring font encoding OML on input line 712.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 713.
-\macc@depth=\count132
-\c@MaxMatrixCols=\count133
+\macc@depth=\count133
+\c@MaxMatrixCols=\count134
 \dotsspace@=\muskip10
-\c@parentequation=\count134
-\dspbrk@lvl=\count135
+\c@parentequation=\count135
+\dspbrk@lvl=\count136
 \tag@help=\toks35
-\row@=\count136
-\column@=\count137
-\maxfields@=\count138
+\row@=\count137
+\column@=\count138
+\maxfields@=\count139
 \andhelp@=\toks36
 \eqnshift@=\dimen182
 \alignsep@=\dimen183
@@ -625,19 +638,16 @@ LaTeX Info: Redefining \hbar on input line 50.
 .sty"
 Package: microtype 2018/01/14 v2.7a Micro-typographical refinements (RS)
 \MT@toks=\toks39
-\MT@count=\count139
+\MT@count=\count140
 LaTeX Info: Redefining \textls on input line 793.
 \MT@outer@kern=\dimen188
 LaTeX Info: Redefining \textmicrotypecontext on input line 1339.
-\MT@listname@count=\count140
+\MT@listname@count=\count141
 
 ("C:\Users\Lyva\AppData\Local\Programs\MiKTeX 2.9\tex\latex\microtype\microtype
--pdftex.def"
-File: microtype-pdftex.def 2018/01/14 v2.7a Definitions specific to pdftex (RS)
-
-LaTeX Info: Redefining \lsstyle on input line 913.
-LaTeX Info: Redefining \lslig on input line 913.
-\MT@outer@space=\skip51
+-xetex.def"
+File: microtype-xetex.def 2018/01/14 v2.7a Definitions specific to xetex (RS)
+LaTeX Info: Redefining \lsstyle on input line 256.
 )
 Package microtype Info: Loading configuration file microtype.cfg.
 
@@ -664,12 +674,14 @@ Language: english 2017/06/06 v3.3r English support from the babel system
 
 ("C:\Users\Lyva\AppData\Local\Programs\MiKTeX 2.9\tex\generic\babel\babel.def"
 File: babel.def 2018/09/26 3.24 Babel common definitions
-\babel@savecnt=\count141
+\babel@savecnt=\count142
 \U@D=\dimen189
 
+("C:\Users\Lyva\AppData\Local\Programs\MiKTeX 2.9\tex\generic\babel\xebabel.def
+"
 ("C:\Users\Lyva\AppData\Local\Programs\MiKTeX 2.9\tex\generic\babel\txtbabel.de
-f")
-\bbl@dirlevel=\count142
+f"))
+\bbl@dirlevel=\count143
 )
 \l@canadian = a dialect from \language\l@american 
 \l@australian = a dialect from \language\l@british 
@@ -703,9 +715,10 @@ sty"
 Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
 )
 Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: pdfTeX >= 1.30 not detected.
 Package pdftexcmds Info: \pdf@primitive is available.
 Package pdftexcmds Info: \pdf@ifprimitive is available.
-Package pdftexcmds Info: \pdfdraftmode found.
+Package pdftexcmds Info: \pdfdraftmode not found.
 )
 Package iflang Info: Naming convention for patterns: babel.
 )
@@ -723,15 +736,15 @@ Package: titletoc 2011/12/15 v1.6 TOC entries
 ty"
 Package: fancyhdr 2017/06/30 v3.9a Extensive control of page headers and footer
 s
-\f@nch@headwidth=\skip52
-\f@nch@O@elh=\skip53
-\f@nch@O@erh=\skip54
-\f@nch@O@olh=\skip55
-\f@nch@O@orh=\skip56
-\f@nch@O@elf=\skip57
-\f@nch@O@erf=\skip58
-\f@nch@O@olf=\skip59
-\f@nch@O@orf=\skip60
+\f@nch@headwidth=\skip51
+\f@nch@O@elh=\skip52
+\f@nch@O@erh=\skip53
+\f@nch@O@olh=\skip54
+\f@nch@O@orh=\skip55
+\f@nch@O@elf=\skip56
+\f@nch@O@erf=\skip57
+\f@nch@O@olf=\skip58
+\f@nch@O@orf=\skip59
 )
 ("C:\Users\Lyva\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amscls\amsthm.sty"
 Package: amsthm 2017/10/31 v2.20.4
@@ -740,9 +753,9 @@ Package: amsthm 2017/10/31 v2.20.4
 \thm@headfont=\toks42
 \thm@notefont=\toks43
 \thm@headpunct=\toks44
-\thm@preskip=\skip61
-\thm@postskip=\skip62
-\thm@headsep=\skip63
+\thm@preskip=\skip60
+\thm@postskip=\skip61
+\thm@headsep=\skip62
 \dth@everypar=\toks45
 )
 ("C:\Users\Lyva\AppData\Local\Programs\MiKTeX 2.9\tex\latex\mdframed\mdframed.s
@@ -773,49 +786,48 @@ Package: expl3 2019-01-28 L3 programming layer (loader)
 ("C:\Users\Lyva\AppData\Local\Programs\MiKTeX 2.9\tex\latex\l3kernel\expl3-code
 .tex"
 Package: expl3 2019-01-28 L3 programming layer (code)
-\c_max_int=\count143
-\l_tmpa_int=\count144
-\l_tmpb_int=\count145
-\g_tmpa_int=\count146
-\g_tmpb_int=\count147
-\g__kernel_prg_map_int=\count148
-\c_log_iow=\count149
-\l_iow_line_count_int=\count150
-\l__iow_line_target_int=\count151
-\l__iow_one_indent_int=\count152
-\l__iow_indent_int=\count153
+\c_max_int=\count144
+\l_tmpa_int=\count145
+\l_tmpb_int=\count146
+\g_tmpa_int=\count147
+\g_tmpb_int=\count148
+\g__kernel_prg_map_int=\count149
+\c_log_iow=\count150
+\l_iow_line_count_int=\count151
+\l__iow_line_target_int=\count152
+\l__iow_one_indent_int=\count153
+\l__iow_indent_int=\count154
 \c_zero_dim=\dimen191
 \c_max_dim=\dimen192
 \l_tmpa_dim=\dimen193
 \l_tmpb_dim=\dimen194
 \g_tmpa_dim=\dimen195
 \g_tmpb_dim=\dimen196
-\c_zero_skip=\skip64
-\c_max_skip=\skip65
-\l_tmpa_skip=\skip66
-\l_tmpb_skip=\skip67
-\g_tmpa_skip=\skip68
-\g_tmpb_skip=\skip69
+\c_zero_skip=\skip63
+\c_max_skip=\skip64
+\l_tmpa_skip=\skip65
+\l_tmpb_skip=\skip66
+\g_tmpa_skip=\skip67
+\g_tmpb_skip=\skip68
 \c_zero_muskip=\muskip11
 \c_max_muskip=\muskip12
 \l_tmpa_muskip=\muskip13
 \l_tmpb_muskip=\muskip14
 \g_tmpa_muskip=\muskip15
 \g_tmpb_muskip=\muskip16
-\l_keys_choice_int=\count154
-\l__intarray_loop_int=\count155
+\l_keys_choice_int=\count155
+\l__intarray_loop_int=\count156
 \c__intarray_sp_dim=\dimen197
-\g__intarray_font_int=\count156
-\c__fp_leading_shift_int=\count157
-\c__fp_middle_shift_int=\count158
-\c__fp_trailing_shift_int=\count159
-\c__fp_big_leading_shift_int=\count160
-\c__fp_big_middle_shift_int=\count161
-\c__fp_big_trailing_shift_int=\count162
-\c__fp_Bigg_leading_shift_int=\count163
-\c__fp_Bigg_middle_shift_int=\count164
-\c__fp_Bigg_trailing_shift_int=\count165
-\c__kernel_randint_max_int=\count166
+\g__intarray_font_int=\count157
+\c__fp_leading_shift_int=\count158
+\c__fp_middle_shift_int=\count159
+\c__fp_trailing_shift_int=\count160
+\c__fp_big_leading_shift_int=\count161
+\c__fp_big_middle_shift_int=\count162
+\c__fp_big_trailing_shift_int=\count163
+\c__fp_Bigg_leading_shift_int=\count164
+\c__fp_Bigg_middle_shift_int=\count165
+\c__fp_Bigg_trailing_shift_int=\count166
 \g__fp_array_int=\count167
 \l__fp_array_loop_int=\count168
 \l__sort_length_int=\count169
@@ -843,37 +855,35 @@ Package: expl3 2019-01-28 L3 programming layer (code)
 \c__regex_cs_mode_int=\count191
 \l__regex_catcodes_int=\count192
 \l__regex_default_catcodes_int=\count193
-\c__regex_catcode_D_int=\count194
-\c__regex_catcode_S_int=\count195
-\c__regex_catcode_L_int=\count196
-\c__regex_catcode_O_int=\count197
-\c__regex_catcode_A_int=\count198
-\c__regex_all_catcodes_int=\count199
-\l__regex_show_lines_int=\count266
-\l__regex_min_state_int=\count267
-\l__regex_max_state_int=\count268
-\l__regex_left_state_int=\count269
-\l__regex_right_state_int=\count270
-\l__regex_capturing_group_int=\count271
-\l__regex_min_pos_int=\count272
-\l__regex_max_pos_int=\count273
-\l__regex_curr_pos_int=\count274
-\l__regex_start_pos_int=\count275
-\l__regex_success_pos_int=\count276
-\l__regex_curr_char_int=\count277
-\l__regex_curr_catcode_int=\count278
-\l__regex_last_char_int=\count279
-\l__regex_case_changed_char_int=\count280
-\l__regex_curr_state_int=\count281
-\l__regex_step_int=\count282
-\l__regex_min_active_int=\count283
-\l__regex_max_active_int=\count284
-\l__regex_replacement_csnames_int=\count285
-\l__regex_match_count_int=\count286
-\l__regex_min_submatch_int=\count287
-\l__regex_submatch_int=\count288
-\l__regex_zeroth_submatch_int=\count289
-\g__regex_trace_regex_int=\count290
+\c__regex_catcode_L_int=\count194
+\c__regex_catcode_O_int=\count195
+\c__regex_catcode_A_int=\count196
+\c__regex_all_catcodes_int=\count197
+\l__regex_show_lines_int=\count198
+\l__regex_min_state_int=\count199
+\l__regex_max_state_int=\count266
+\l__regex_left_state_int=\count267
+\l__regex_right_state_int=\count268
+\l__regex_capturing_group_int=\count269
+\l__regex_min_pos_int=\count270
+\l__regex_max_pos_int=\count271
+\l__regex_curr_pos_int=\count272
+\l__regex_start_pos_int=\count273
+\l__regex_success_pos_int=\count274
+\l__regex_curr_char_int=\count275
+\l__regex_curr_catcode_int=\count276
+\l__regex_last_char_int=\count277
+\l__regex_case_changed_char_int=\count278
+\l__regex_curr_state_int=\count279
+\l__regex_step_int=\count280
+\l__regex_min_active_int=\count281
+\l__regex_max_active_int=\count282
+\l__regex_replacement_csnames_int=\count283
+\l__regex_match_count_int=\count284
+\l__regex_min_submatch_int=\count285
+\l__regex_submatch_int=\count286
+\l__regex_zeroth_submatch_int=\count287
+\g__regex_trace_regex_int=\count288
 \c_empty_box=\box44
 \l_tmpa_box=\box45
 \l_tmpb_box=\box46
@@ -918,25 +928,24 @@ Package: expl3 2019-01-28 L3 programming layer (code)
 \l__coffin_top_corner_dim=\dimen276
 \l__coffin_scaled_total_height_dim=\dimen277
 \l__coffin_scaled_width_dim=\dimen278
-\l__seq_internal_a_int=\count291
-\l__seq_internal_b_int=\count292
 )
-("C:\Users\Lyva\AppData\Local\Programs\MiKTeX 2.9\tex\latex\l3kernel\l3pdfmode.
-def"
-File: l3pdfmode.def 2019-01-28 v L3 Experimental driver: PDF mode
-\l__driver_color_stack_int=\count293
+("C:\Users\Lyva\AppData\Local\Programs\MiKTeX 2.9\tex\latex\l3kernel\l3xdvipdfm
+x.def"
+File: l3xdvipdfmx.def 2019-01-28 v L3 Experimental driver: xdvipdfmx
+\g__driver_image_int=\count289
+\g__driver_pdf_object_int=\count290
 ))
 Package: xparse 2018-10-17 L3 Experimental document command parser
-\l__xparse_current_arg_int=\count294
-\g__xparse_grabber_int=\count295
-\l__xparse_m_args_int=\count296
-\l__xparse_mandatory_args_int=\count297
-\l__xparse_v_nesting_int=\count298
+\l__xparse_current_arg_int=\count291
+\g__xparse_grabber_int=\count292
+\l__xparse_m_args_int=\count293
+\l__xparse_mandatory_args_int=\count294
+\l__xparse_v_nesting_int=\count295
 )
 ("C:\Users\Lyva\AppData\Local\Programs\MiKTeX 2.9\tex\latex\etoolbox\etoolbox.s
 ty"
 Package: etoolbox 2018/08/19 v2.5f e-TeX tools for LaTeX (JAW)
-\etb@tempcnta=\count299
+\etb@tempcnta=\count296
 )
 ("C:\Users\Lyva\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\zref-abspa
 ge.sty"
@@ -962,54 +971,54 @@ Package zref Info: New property: page on input line 761.
 .sty"
 Package: atbegshi 2016/06/09 v1.18 At begin shipout hook (HO)
 )
-\c@abspage=\count300
+\c@abspage=\count297
 Package zref Info: New property: abspage on input line 62.
 )
 ("C:\Users\Lyva\AppData\Local\Programs\MiKTeX 2.9\tex\latex\needspace\needspace
 .sty"
 Package: needspace 2010/09/12 v1.3d reserve vertical space
 )
-\mdf@templength=\skip70
-\c@mdf@globalstyle@cnt=\count301
-\mdf@skipabove@length=\skip71
-\mdf@skipbelow@length=\skip72
-\mdf@leftmargin@length=\skip73
-\mdf@rightmargin@length=\skip74
-\mdf@innerleftmargin@length=\skip75
-\mdf@innerrightmargin@length=\skip76
-\mdf@innertopmargin@length=\skip77
-\mdf@innerbottommargin@length=\skip78
-\mdf@splittopskip@length=\skip79
-\mdf@splitbottomskip@length=\skip80
-\mdf@outermargin@length=\skip81
-\mdf@innermargin@length=\skip82
-\mdf@linewidth@length=\skip83
-\mdf@innerlinewidth@length=\skip84
-\mdf@middlelinewidth@length=\skip85
-\mdf@outerlinewidth@length=\skip86
-\mdf@roundcorner@length=\skip87
-\mdf@footenotedistance@length=\skip88
-\mdf@userdefinedwidth@length=\skip89
-\mdf@needspace@length=\skip90
-\mdf@frametitleaboveskip@length=\skip91
-\mdf@frametitlebelowskip@length=\skip92
-\mdf@frametitlerulewidth@length=\skip93
-\mdf@frametitleleftmargin@length=\skip94
-\mdf@frametitlerightmargin@length=\skip95
-\mdf@shadowsize@length=\skip96
-\mdf@extratopheight@length=\skip97
-\mdf@subtitleabovelinewidth@length=\skip98
-\mdf@subtitlebelowlinewidth@length=\skip99
-\mdf@subtitleaboveskip@length=\skip100
-\mdf@subtitlebelowskip@length=\skip101
-\mdf@subtitleinneraboveskip@length=\skip102
-\mdf@subtitleinnerbelowskip@length=\skip103
-\mdf@subsubtitleabovelinewidth@length=\skip104
-\mdf@subsubtitlebelowlinewidth@length=\skip105
-\mdf@subsubtitleaboveskip@length=\skip106
-\mdf@subsubtitlebelowskip@length=\skip107
-\mdf@subsubtitleinneraboveskip@length=\skip108
-\mdf@subsubtitleinnerbelowskip@length=\skip109
+\mdf@templength=\skip69
+\c@mdf@globalstyle@cnt=\count298
+\mdf@skipabove@length=\skip70
+\mdf@skipbelow@length=\skip71
+\mdf@leftmargin@length=\skip72
+\mdf@rightmargin@length=\skip73
+\mdf@innerleftmargin@length=\skip74
+\mdf@innerrightmargin@length=\skip75
+\mdf@innertopmargin@length=\skip76
+\mdf@innerbottommargin@length=\skip77
+\mdf@splittopskip@length=\skip78
+\mdf@splitbottomskip@length=\skip79
+\mdf@outermargin@length=\skip80
+\mdf@innermargin@length=\skip81
+\mdf@linewidth@length=\skip82
+\mdf@innerlinewidth@length=\skip83
+\mdf@middlelinewidth@length=\skip84
+\mdf@outerlinewidth@length=\skip85
+\mdf@roundcorner@length=\skip86
+\mdf@footenotedistance@length=\skip87
+\mdf@userdefinedwidth@length=\skip88
+\mdf@needspace@length=\skip89
+\mdf@frametitleaboveskip@length=\skip90
+\mdf@frametitlebelowskip@length=\skip91
+\mdf@frametitlerulewidth@length=\skip92
+\mdf@frametitleleftmargin@length=\skip93
+\mdf@frametitlerightmargin@length=\skip94
+\mdf@shadowsize@length=\skip95
+\mdf@extratopheight@length=\skip96
+\mdf@subtitleabovelinewidth@length=\skip97
+\mdf@subtitlebelowlinewidth@length=\skip98
+\mdf@subtitleaboveskip@length=\skip99
+\mdf@subtitlebelowskip@length=\skip100
+\mdf@subtitleinneraboveskip@length=\skip101
+\mdf@subtitleinnerbelowskip@length=\skip102
+\mdf@subsubtitleabovelinewidth@length=\skip103
+\mdf@subsubtitlebelowlinewidth@length=\skip104
+\mdf@subsubtitleaboveskip@length=\skip105
+\mdf@subsubtitlebelowskip@length=\skip106
+\mdf@subsubtitleinneraboveskip@length=\skip107
+\mdf@subsubtitleinnerbelowskip@length=\skip108
 
 ("C:\Users\Lyva\AppData\Local\Programs\MiKTeX 2.9\tex\latex\mdframed\md-frame-0
 .mdf"
@@ -1020,66 +1029,66 @@ File: md-frame-0.mdf 2013/07/01\ 1.9b: md-frame-0
 \mdf@splitbox@one=\box64
 \mdf@splitbox@two=\box65
 \mdf@splitbox@save=\box66
-\mdfsplitboxwidth=\skip110
-\mdfsplitboxtotalwidth=\skip111
-\mdfsplitboxheight=\skip112
-\mdfsplitboxdepth=\skip113
-\mdfsplitboxtotalheight=\skip114
-\mdfframetitleboxwidth=\skip115
-\mdfframetitleboxtotalwidth=\skip116
-\mdfframetitleboxheight=\skip117
-\mdfframetitleboxdepth=\skip118
-\mdfframetitleboxtotalheight=\skip119
-\mdffootnoteboxwidth=\skip120
-\mdffootnoteboxtotalwidth=\skip121
-\mdffootnoteboxheight=\skip122
-\mdffootnoteboxdepth=\skip123
-\mdffootnoteboxtotalheight=\skip124
-\mdftotallinewidth=\skip125
-\mdfboundingboxwidth=\skip126
-\mdfboundingboxtotalwidth=\skip127
-\mdfboundingboxheight=\skip128
-\mdfboundingboxdepth=\skip129
-\mdfboundingboxtotalheight=\skip130
-\mdf@freevspace@length=\skip131
-\mdf@horizontalwidthofbox@length=\skip132
-\mdf@verticalmarginwhole@length=\skip133
-\mdf@horizontalspaceofbox=\skip134
-\mdfsubtitleheight=\skip135
-\mdfsubsubtitleheight=\skip136
-\c@mdfcountframes=\count302
+\mdfsplitboxwidth=\skip109
+\mdfsplitboxtotalwidth=\skip110
+\mdfsplitboxheight=\skip111
+\mdfsplitboxdepth=\skip112
+\mdfsplitboxtotalheight=\skip113
+\mdfframetitleboxwidth=\skip114
+\mdfframetitleboxtotalwidth=\skip115
+\mdfframetitleboxheight=\skip116
+\mdfframetitleboxdepth=\skip117
+\mdfframetitleboxtotalheight=\skip118
+\mdffootnoteboxwidth=\skip119
+\mdffootnoteboxtotalwidth=\skip120
+\mdffootnoteboxheight=\skip121
+\mdffootnoteboxdepth=\skip122
+\mdffootnoteboxtotalheight=\skip123
+\mdftotallinewidth=\skip124
+\mdfboundingboxwidth=\skip125
+\mdfboundingboxtotalwidth=\skip126
+\mdfboundingboxheight=\skip127
+\mdfboundingboxdepth=\skip128
+\mdfboundingboxtotalheight=\skip129
+\mdf@freevspace@length=\skip130
+\mdf@horizontalwidthofbox@length=\skip131
+\mdf@verticalmarginwhole@length=\skip132
+\mdf@horizontalspaceofbox=\skip133
+\mdfsubtitleheight=\skip134
+\mdfsubsubtitleheight=\skip135
+\c@mdfcountframes=\count299
 
 ****** mdframed patching \endmdf@trivlist
 
 ****** -- success******
 
-\mdf@envdepth=\count303
-\c@mdf@env@i=\count304
-\c@mdf@env@ii=\count305
-\c@mdf@zref@counter=\count306
+\mdf@envdepth=\count300
+\c@mdf@env@i=\count301
+\c@mdf@env@ii=\count302
+\c@mdf@zref@counter=\count303
 Package zref Info: New property: mdf@pagevalue on input line 895.
 )
-\c@theoremT=\count307
-\c@corollaryT=\count308
-\c@definitionT=\count309
-\c@exerciseT=\count310
-\c@exampleT=\count311
+\c@theoremT=\count304
+\c@corollaryT=\count305
+\c@definitionT=\count306
+\c@exerciseT=\count307
+\c@exampleT=\count308
 
 ("C:\Users\Lyva\AppData\Local\Programs\MiKTeX 2.9\tex\latex\tools\calc.sty"
 Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
-\calc@Acount=\count312
-\calc@Bcount=\count313
+\calc@Acount=\count309
+\calc@Bcount=\count310
 \calc@Adimen=\dimen279
 \calc@Bdimen=\dimen280
-\calc@Askip=\skip137
-\calc@Bskip=\skip138
+\calc@Askip=\skip136
+\calc@Bskip=\skip137
 LaTeX Info: Redefining \setlength on input line 80.
 LaTeX Info: Redefining \addtolength on input line 81.
-\calc@Ccount=\count314
-\calc@Cskip=\skip139
+\calc@Ccount=\count311
+\calc@Cskip=\skip138
 )
-\esp=\skip140
-\ecart=\skip141
+\esp=\skip139
+\ecart=\skip140
 
 ("C:\Users\Lyva\AppData\Local\Programs\MiKTeX 2.9\tex\latex\hyperref\hyperref.s
 ty"
@@ -1120,16 +1129,14 @@ Package: refcount 2016/05/16 v3.5 Data extraction from label references (HO)
 Package: hycolor 2016/05/16 v1.8 Color options for hyperref/bookmark (HO)
 )
 \@linkdim=\dimen281
-\Hy@linkcounter=\count315
-\Hy@pagecounter=\count316
+\Hy@linkcounter=\count312
+\Hy@pagecounter=\count313
 
 ("C:\Users\Lyva\AppData\Local\Programs\MiKTeX 2.9\tex\latex\hyperref\pd1enc.def
 "
 File: pd1enc.def 2018/09/30 v6.88a Hyperref: PDFDocEncoding definition (HO)
-Now handling font encoding PD1 ...
-... no UTF-8 mapping file for font encoding PD1
 )
-\Hy@SavedSpaceFactor=\count317
+\Hy@SavedSpaceFactor=\count314
 
 ("C:\Users\Lyva\AppData\Local\Programs\MiKTeX 2.9\tex\latex\00miktex\hyperref.c
 fg"
@@ -1142,14 +1149,14 @@ Package hyperref Info: Plain pages OFF on input line 4550.
 Package hyperref Info: Backreferencing OFF on input line 4555.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4788.
-\c@Hy@tempcnt=\count318
+\c@Hy@tempcnt=\count315
  ("C:\Users\Lyva\AppData\Local\Programs\MiKTeX 2.9\tex\latex\url\url.sty"
 \Urlmuskip=\muskip17
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
 LaTeX Info: Redefining \url on input line 5141.
 \XeTeXLinkMargin=\dimen282
-\Fld@menulength=\count319
+\Fld@menulength=\count316
 \Field@Width=\dimen283
 \Fld@charsize=\dimen284
 Package hyperref Info: Hyper figures OFF on input line 6396.
@@ -1161,18 +1168,28 @@ Package hyperref Info: Link coloring with OCG OFF on input line 6421.
 Package hyperref Info: PDF/A mode OFF on input line 6426.
 LaTeX Info: Redefining \ref on input line 6466.
 LaTeX Info: Redefining \pageref on input line 6470.
-\Hy@abspage=\count320
-\c@Item=\count321
-\c@Hfootnote=\count322
+\Hy@abspage=\count317
+\c@Item=\count318
+\c@Hfootnote=\count319
 )
-Package hyperref Info: Driver (autodetected): hpdftex.
-
-("C:\Users\Lyva\AppData\Local\Programs\MiKTeX 2.9\tex\latex\hyperref\hpdftex.de
-f"
-File: hpdftex.def 2018/09/30 v6.88a Hyperref driver for pdfTeX
-\HyAnn@Count=\count323
-\Fld@listcount=\count324
-\c@bookmark@seq@number=\count325
+Package hyperref Info: Driver (autodetected): hxetex.
+("C:\Users\Lyva\AppData\Local\Programs\MiKTeX 2.9\tex\latex\hyperref\hxetex.def
+"
+File: hxetex.def 2018/09/30 v6.88a Hyperref driver for XeTeX
+ ("C:\Users\Lyva\AppData\Local\Programs\MiKTeX 2.9\tex\latex\hyperref\puenc.def
+"
+File: puenc.def 2018/09/30 v6.88a Hyperref: PDF Unicode definition (HO)
+)
+("C:\Users\Lyva\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\stringen
+c.sty"
+Package: stringenc 2016/05/16 v1.11 Convert strings between diff. encodings (HO
+)
+)
+\pdfm@box=\box67
+\c@Hy@AnnotLevel=\count320
+\HyField@AnnotCount=\count321
+\Fld@listcount=\count322
+\c@bookmark@seq@number=\count323
 
 ("C:\Users\Lyva\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\rerunfilec
 heck.sty"
@@ -1180,7 +1197,7 @@ Package: rerunfilecheck 2016/05/16 v1.8 Rerun checks for auxiliary files (HO)
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 82.
 )
-\Hy@SectionHShift=\skip142
+\Hy@SectionHShift=\skip141
 )
 Package hyperref Info: Option `colorlinks' set `false' on input line 560.
 Package hyperref Info: Option `breaklinks' set `true' on input line 560.
@@ -1190,10 +1207,10 @@ Package hyperref Info: Option `bookmarksopen' set `false' on input line 560.
 ty"
 Package: bookmark 2016/05/17 v1.26 PDF bookmarks (HO)
 
-("C:\Users\Lyva\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\bkm-pdftex
-.def"
-File: bkm-pdftex.def 2016/05/17 v1.26 bookmark driver for pdfTeX (HO)
-\BKM@id=\count326
+("C:\Users\Lyva\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\bkm-dvipdf
+m.def"
+File: bkm-dvipdfm.def 2016/05/17 v1.26 bookmark driver for dvipdfm (HO)
+\BKM@id=\count324
 ))
 ("C:\Users\Lyva\AppData\Local\Programs\MiKTeX 2.9\tex\latex\biblatex\biblatex.s
 ty"
@@ -1201,7 +1218,7 @@ Package: biblatex 2018/03/04 v3.11 programmable bibliographies (PK/MW)
 
 ("C:\Users\Lyva\AppData\Local\Programs\MiKTeX 2.9\tex\latex\logreq\logreq.sty"
 Package: logreq 2010/08/04 v1.0 xml request logger
-\lrq@indent=\count327
+\lrq@indent=\count325
 
 ("C:\Users\Lyva\AppData\Local\Programs\MiKTeX 2.9\tex\latex\logreq\logreq.def"
 File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
@@ -1211,62 +1228,62 @@ File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
 ("C:\Users\Lyva\AppData\Local\Programs\MiKTeX 2.9\tex\generic\xstring\xstring.t
 ex"
 \@xs@message=\write4
-\integerpart=\count328
-\decimalpart=\count329
+\integerpart=\count326
+\decimalpart=\count327
 )
 Package: xstring 2013/10/13  v1.7c  String manipulations (C Tellechea)
 )
-\c@tabx@nest=\count330
-\c@listtotal=\count331
-\c@listcount=\count332
-\c@liststart=\count333
-\c@liststop=\count334
-\c@citecount=\count335
-\c@citetotal=\count336
-\c@multicitecount=\count337
-\c@multicitetotal=\count338
-\c@instcount=\count339
-\c@maxnames=\count340
-\c@minnames=\count341
-\c@maxitems=\count342
-\c@minitems=\count343
-\c@citecounter=\count344
-\c@savedcitecounter=\count345
-\c@uniquelist=\count346
-\c@uniquename=\count347
-\c@refsection=\count348
-\c@refsegment=\count349
-\c@maxextratitle=\count350
-\c@maxextratitleyear=\count351
-\c@maxextradate=\count352
-\c@maxextraalpha=\count353
-\c@abbrvpenalty=\count354
-\c@highnamepenalty=\count355
-\c@lownamepenalty=\count356
-\c@maxparens=\count357
-\c@parenlevel=\count358
-\blx@tempcnta=\count359
-\blx@tempcntb=\count360
-\blx@tempcntc=\count361
-\blx@maxsection=\count362
-\blx@maxsegment@0=\count363
-\blx@notetype=\count364
-\blx@parenlevel@text=\count365
-\blx@parenlevel@foot=\count366
-\blx@sectionciteorder@0=\count367
-\labelnumberwidth=\skip143
-\labelalphawidth=\skip144
-\biblabelsep=\skip145
-\bibitemsep=\skip146
-\bibnamesep=\skip147
-\bibinitsep=\skip148
-\bibparsep=\skip149
-\bibhang=\skip150
+\c@tabx@nest=\count328
+\c@listtotal=\count329
+\c@listcount=\count330
+\c@liststart=\count331
+\c@liststop=\count332
+\c@citecount=\count333
+\c@citetotal=\count334
+\c@multicitecount=\count335
+\c@multicitetotal=\count336
+\c@instcount=\count337
+\c@maxnames=\count338
+\c@minnames=\count339
+\c@maxitems=\count340
+\c@minitems=\count341
+\c@citecounter=\count342
+\c@savedcitecounter=\count343
+\c@uniquelist=\count344
+\c@uniquename=\count345
+\c@refsection=\count346
+\c@refsegment=\count347
+\c@maxextratitle=\count348
+\c@maxextratitleyear=\count349
+\c@maxextradate=\count350
+\c@maxextraalpha=\count351
+\c@abbrvpenalty=\count352
+\c@highnamepenalty=\count353
+\c@lownamepenalty=\count354
+\c@maxparens=\count355
+\c@parenlevel=\count356
+\blx@tempcnta=\count357
+\blx@tempcntb=\count358
+\blx@tempcntc=\count359
+\blx@maxsection=\count360
+\blx@maxsegment@0=\count361
+\blx@notetype=\count362
+\blx@parenlevel@text=\count363
+\blx@parenlevel@foot=\count364
+\blx@sectionciteorder@0=\count365
+\labelnumberwidth=\skip142
+\labelalphawidth=\skip143
+\biblabelsep=\skip144
+\bibitemsep=\skip145
+\bibnamesep=\skip146
+\bibinitsep=\skip147
+\bibparsep=\skip148
+\bibhang=\skip149
 \blx@bcfin=\read3
 \blx@bcfout=\write5
-\c@mincomprange=\count368
-\c@maxcomprange=\count369
-\c@mincompwidth=\count370
+\c@mincomprange=\count366
+\c@maxcomprange=\count367
+\c@mincompwidth=\count368
 Package biblatex Info: Trying to load biblatex default data model...
 Package biblatex Info: ... file 'blx-dm.def' found.
 
@@ -1283,98 +1300,103 @@ File: apa.dbx 2018/04/02 v7.7 APA biblatex style data model
 )
 Package biblatex Info: Trying to load biblatex custom data model...
 Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
-\c@afterword=\count371
-\c@savedafterword=\count372
-\c@annotator=\count373
-\c@savedannotator=\count374
-\c@author=\count375
-\c@savedauthor=\count376
-\c@bookauthor=\count377
-\c@savedbookauthor=\count378
-\c@commentator=\count379
-\c@savedcommentator=\count380
-\c@editor=\count381
-\c@savededitor=\count382
-\c@editora=\count383
-\c@savededitora=\count384
-\c@editorb=\count385
-\c@savededitorb=\count386
-\c@editorc=\count387
-\c@savededitorc=\count388
-\c@foreword=\count389
-\c@savedforeword=\count390
-\c@holder=\count391
-\c@savedholder=\count392
-\c@introduction=\count393
-\c@savedintroduction=\count394
-\c@namea=\count395
-\c@savednamea=\count396
-\c@nameb=\count397
-\c@savednameb=\count398
-\c@namec=\count399
-\c@savednamec=\count400
-\c@translator=\count401
-\c@savedtranslator=\count402
-\c@shortauthor=\count403
-\c@savedshortauthor=\count404
-\c@shorteditor=\count405
-\c@savedshorteditor=\count406
-\c@with=\count407
-\c@savedwith=\count408
-\c@writer=\count409
-\c@savedwriter=\count410
-\c@producer=\count411
-\c@savedproducer=\count412
-\c@execproducer=\count413
-\c@savedexecproducer=\count414
-\c@director=\count415
-\c@saveddirector=\count416
-\c@labelname=\count417
-\c@savedlabelname=\count418
-\c@institution=\count419
-\c@savedinstitution=\count420
-\c@lista=\count421
-\c@savedlista=\count422
-\c@listb=\count423
-\c@savedlistb=\count424
-\c@listc=\count425
-\c@savedlistc=\count426
-\c@listd=\count427
-\c@savedlistd=\count428
-\c@liste=\count429
-\c@savedliste=\count430
-\c@listf=\count431
-\c@savedlistf=\count432
-\c@location=\count433
-\c@savedlocation=\count434
-\c@organization=\count435
-\c@savedorganization=\count436
-\c@origlocation=\count437
-\c@savedoriglocation=\count438
-\c@origpublisher=\count439
-\c@savedorigpublisher=\count440
-\c@publisher=\count441
-\c@savedpublisher=\count442
-\c@language=\count443
-\c@savedlanguage=\count444
-\c@origlanguage=\count445
-\c@savedoriglanguage=\count446
-\c@pageref=\count447
-\c@savedpageref=\count448
-\shorthandwidth=\skip151
-\shortjournalwidth=\skip152
-\shortserieswidth=\skip153
-\shorttitlewidth=\skip154
-\shortauthorwidth=\skip155
-\shorteditorwidth=\skip156
-\locallabelnumberwidth=\skip157
-\locallabelalphawidth=\skip158
-\localshorthandwidth=\skip159
-\localshortjournalwidth=\skip160
-\localshortserieswidth=\skip161
-\localshorttitlewidth=\skip162
-\localshortauthorwidth=\skip163
-\localshorteditorwidth=\skip164
+\c@afterword=\count369
+\c@savedafterword=\count370
+\c@annotator=\count371
+\c@savedannotator=\count372
+\c@author=\count373
+\c@savedauthor=\count374
+\c@bookauthor=\count375
+\c@savedbookauthor=\count376
+\c@commentator=\count377
+\c@savedcommentator=\count378
+\c@editor=\count379
+\c@savededitor=\count380
+\c@editora=\count381
+\c@savededitora=\count382
+\c@editorb=\count383
+\c@savededitorb=\count384
+\c@editorc=\count385
+\c@savededitorc=\count386
+\c@foreword=\count387
+\c@savedforeword=\count388
+\c@holder=\count389
+\c@savedholder=\count390
+\c@introduction=\count391
+\c@savedintroduction=\count392
+\c@namea=\count393
+\c@savednamea=\count394
+\c@nameb=\count395
+\c@savednameb=\count396
+\c@namec=\count397
+\c@savednamec=\count398
+\c@translator=\count399
+\c@savedtranslator=\count400
+\c@shortauthor=\count401
+\c@savedshortauthor=\count402
+\c@shorteditor=\count403
+\c@savedshorteditor=\count404
+\c@with=\count405
+\c@savedwith=\count406
+\c@writer=\count407
+\c@savedwriter=\count408
+\c@producer=\count409
+\c@savedproducer=\count410
+\c@execproducer=\count411
+\c@savedexecproducer=\count412
+\c@director=\count413
+\c@saveddirector=\count414
+\c@labelname=\count415
+\c@savedlabelname=\count416
+\c@institution=\count417
+\c@savedinstitution=\count418
+\c@lista=\count419
+\c@savedlista=\count420
+\c@listb=\count421
+\c@savedlistb=\count422
+\c@listc=\count423
+\c@savedlistc=\count424
+\c@listd=\count425
+\c@savedlistd=\count426
+\c@liste=\count427
+\c@savedliste=\count428
+\c@listf=\count429
+\c@savedlistf=\count430
+\c@location=\count431
+\c@savedlocation=\count432
+\c@organization=\count433
+\c@savedorganization=\count434
+\c@origlocation=\count435
+\c@savedoriglocation=\count436
+\c@origpublisher=\count437
+\c@savedorigpublisher=\count438
+\c@publisher=\count439
+\c@savedpublisher=\count440
+\c@language=\count441
+\c@savedlanguage=\count442
+\c@origlanguage=\count443
+\c@savedoriglanguage=\count444
+\c@pageref=\count445
+\c@savedpageref=\count446
+\shorthandwidth=\skip150
+\shortjournalwidth=\skip151
+\shortserieswidth=\skip152
+\shorttitlewidth=\skip153
+\shortauthorwidth=\skip154
+\shorteditorwidth=\skip155
+\locallabelnumberwidth=\skip156
+\locallabelalphawidth=\skip157
+\localshorthandwidth=\skip158
+\localshortjournalwidth=\skip159
+\localshortserieswidth=\skip160
+\localshorttitlewidth=\skip161
+\localshortauthorwidth=\skip162
+\localshorteditorwidth=\skip163
+Package biblatex Info: Trying to load enhanced support for Unicode engines...
+Package biblatex Info: ... file 'blx-unicode.def' found.
+
+("C:\Users\Lyva\AppData\Local\Programs\MiKTeX 2.9\tex\latex\biblatex\blx-unicod
+e.def")
 Package biblatex Info: Trying to load compatibility code...
 Package biblatex Info: ... file 'blx-compat.def' found.
 
@@ -1388,13 +1410,13 @@ Package biblatex Info: ... file 'biblatex.def' found.
 ("C:\Users\Lyva\AppData\Local\Programs\MiKTeX 2.9\tex\latex\biblatex\biblatex.d
 ef"
 File: biblatex.def 2018/03/04 v3.11 biblatex compatibility (PK/MW)
-\c@textcitecount=\count449
-\c@textcitetotal=\count450
-\c@textcitemaxnames=\count451
-\c@biburlnumpenalty=\count452
-\c@biburlucpenalty=\count453
-\c@biburllcpenalty=\count454
-\c@smartand=\count455
+\c@textcitecount=\count447
+\c@textcitetotal=\count448
+\c@textcitemaxnames=\count449
+\c@biburlnumpenalty=\count450
+\c@biburlucpenalty=\count451
+\c@biburllcpenalty=\count452
+\c@smartand=\count453
 )
 Package biblatex Info: Trying to load bibliography style 'apa'...
 Package biblatex Info: ... file 'apa.bbx' found.
@@ -1408,8 +1430,8 @@ Package biblatex Info: ... file 'standard.bbx' found.
 ("C:\Users\Lyva\AppData\Local\Programs\MiKTeX 2.9\tex\latex\biblatex\bbx\standa
 rd.bbx"
 File: standard.bbx 2018/03/04 v3.11 biblatex bibliography style (PK/MW)
-\c@bbx:relatedcount=\count456
-\c@bbx:relatedtotal=\count457
+\c@bbx:relatedcount=\count454
+\c@bbx:relatedtotal=\count455
 ))
 Package biblatex Info: Trying to load citation style 'apa'...
 Package biblatex Info: ... file 'apa.cbx' found.
@@ -1442,12 +1464,12 @@ File: biblatex.cfg
 ("C:\Users\Lyva\AppData\Local\Programs\MiKTeX 2.9\tex\latex\csquotes\csquotes.s
 ty"
 Package: csquotes 2018/04/13 v5.2d context-sensitive quotations (JAW)
-\csq@reset=\count458
-\csq@gtype=\count459
-\csq@glevel=\count460
-\csq@qlevel=\count461
-\csq@maxlvl=\count462
-\csq@tshold=\count463
+\csq@reset=\count456
+\csq@gtype=\count457
+\csq@glevel=\count458
+\csq@qlevel=\count459
+\csq@maxlvl=\count460
+\csq@tshold=\count461
 \csq@ltx@everypar=\toks46
 
 ("C:\Users\Lyva\AppData\Local\Programs\MiKTeX 2.9\tex\latex\csquotes\csquotes.d
@@ -1481,9 +1503,9 @@ Package: hogent-thesis-titlepage 2019/01/09 Titelpagina bachelorproef HOGENT
 ("C:\Users\Lyva\AppData\Local\Programs\MiKTeX 2.9\tex\latex\titling\titling.sty
 "
 Package: titling 2009/09/04 v2.1d maketitle typesetting
-\thanksmarkwidth=\skip165
-\thanksmargin=\skip166
-\droptitle=\skip167
+\thanksmarkwidth=\skip164
+\thanksmargin=\skip165
+\droptitle=\skip166
 ))
 Package biblatex Info: Trying to load language 'dutch' -> 'dutch-apa'...
 Package biblatex Info: ... file 'dutch-apa.lbx' found.
@@ -1552,18 +1574,21 @@ LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 48.
 LaTeX Font Info:    ... okay on input line 48.
 LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 48.
 LaTeX Font Info:    ... okay on input line 48.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 48.
+LaTeX Font Info:    ... okay on input line 48.
 LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 48.
 LaTeX Font Info:    ... okay on input line 48.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 48.
 LaTeX Font Info:    ... okay on input line 48.
 LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 48.
 LaTeX Font Info:    ... okay on input line 48.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 48.
+LaTeX Font Info:    ... okay on input line 48.
 LaTeX Font Info:    Try loading font information for T1+ptm on input line 48.
 
 ("C:\Users\Lyva\AppData\Local\Programs\MiKTeX 2.9\tex\latex\psnfss\t1ptm.fd"
 File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
 )
-*geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
 *geometry* verbose mode - [ preamble ] result:
 * driver: pdftex
@@ -1597,49 +1622,14 @@ File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-
-("C:\Users\Lyva\AppData\Local\Programs\MiKTeX 2.9\tex\context\base\supp-pdf.mki
-i"
-[Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count464
-\scratchdimen=\dimen285
-\scratchbox=\box67
-\nofMPsegments=\count465
-\nofMParguments=\count466
-\everyMPshowfont=\toks47
-\MPscratchCnt=\count467
-\MPscratchDim=\dimen286
-\MPnumerator=\count468
-\makeMPintoPDFobject=\count469
-\everyMPtoPDFconversion=\toks48
-)
-("C:\Users\Lyva\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\epstopdf-b
-ase.sty"
-Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
-
-("C:\Users\Lyva\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\grfext.sty
-"
-Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
-)
-Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
-38.
-Package grfext Info: Graphics extension search list:
-(grfext)             [.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPE
-G,.JBIG2,.JB2,.eps]
-(grfext)             \AppendGraphicsExtensions on input line 456.
-)
-\c@lstlisting=\count470
- ABD: EveryShipout initializing macros
+\c@lstlisting=\count462
+ABD: EveryShipout initializing macros
 LaTeX Info: Redefining \microtypecontext on input line 48.
-Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
-Package microtype Info: Automatic font expansion enabled (level 2),
-(microtype)             stretch: 20, shrink: 20, step: 1, non-selected.
-Package microtype Info: Using default expansion set `basictext'.
 Package microtype Info: No adjustment of tracking.
-Package microtype Info: No adjustment of interword spacing.
-Package microtype Info: No adjustment of character kerning.
+Package microtype Info: No adjustment of spacing.
+Package microtype Info: No adjustment of kerning.
 
 ("C:\Users\Lyva\AppData\Local\Programs\MiKTeX 2.9\tex\latex\microtype\mt-ptm.cf
 g"
@@ -1656,27 +1646,20 @@ Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 string.sty"
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-\c@section@level=\count471
+\c@section@level=\count463
 )
 LaTeX Info: Redefining \ref on input line 48.
 LaTeX Info: Redefining \pageref on input line 48.
 LaTeX Info: Redefining \nameref on input line 48.
-Package biblatex Info: Input encoding 'utf8' detected.
+Package biblatex Info: XeTeX detected.
+(biblatex)             Assuming input encoding 'utf8'.
 Package biblatex Info: Automatic encoding selection.
 (biblatex)             Assuming data encoding 'utf8'.
 \openout5 = `bachproef-tin.bcf'.
 
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'bachproef-tin.bbl' found.
- (bachproef-tin.bbl
-
-Package biblatex Warning: The following entry could not be found
-(biblatex)                in the database:
-(biblatex)                series2018
-(biblatex)                Please verify the spelling and rerun
-(biblatex)                LaTeX afterwards.
-
-)
+ (bachproef-tin.bbl)
 Package biblatex Info: Reference section=0 on input line 48.
 Package biblatex Info: Reference segment=0 on input line 48.
 *geometry* verbose mode - [ newgeometry ] result:
@@ -1711,17 +1694,18 @@ Package biblatex Info: Reference segment=0 on input line 48.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-<img/HOGENT_Logo_Pos_rgb.png, id=6, 3503.0875pt x 1975.38pt>
-File: img/HOGENT_Logo_Pos_rgb.png Graphic file (type png)
-<use img/HOGENT_Logo_Pos_rgb.png>
-Package pdftex.def Info: img/HOGENT_Logo_Pos_rgb.png  used on input line 58.
-(pdftex.def)             Requested size: 71.13188pt x 40.08864pt.
- [1
+File: img/HOGENT_Logo_Pos_rgb.png Graphic file (type bmp)
+<img/HOGENT_Logo_Pos_rgb.png>
+
+("C:\Users\Lyva\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\se-ascii
+-print.def"
+File: se-ascii-print.def 2016/05/16 v1.11 stringenc: Printable ASCII characters
+
+) [1
 
 
 
-{C:/Users/Lyva/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map} <./img/HOGENT
-_Logo_Pos_rgb.png>] [2
+] [2
 
 ]
 *geometry* verbose mode - [ newgeometry ] result:
@@ -1756,20 +1740,10 @@ _Logo_Pos_rgb.png>] [2
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
-been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.58 \inserttitlepage
-                      [1
+ [1
 
 
-] (voorwoord.texpdfTeX warning (ext4): destination with the same identifier (na
-me{page.2}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.5 \chapter
-            *{\IfLanguageName{dutch}{Woord vooraf}{Preface}} [2
+] (voorwoord.tex [2
 
 
 ]
@@ -1808,19 +1782,22 @@ LaTeX Font Info:    Font shape `T1/pag/b/n' in size <12> not available
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [7]
-Underfull \vbox (badness 2452) has occurred while \output is active []
-
- [8])
+[8])
 \tf@toc=\write7
 \openout7 = `bachproef-tin.toc'.
 
-
-[9] [10
+ [9] [10
 
 ] (bachproef-tin.lof
-Overfull \hbox (0.38434pt too wide) in paragraph at lines 8--8
-|\T1/pag/m/n/12 (-20) 2.1| []Een mo-no-li-thic ar-chi-tec-tuur naast een mi-cro
--ser-vice ar-chi-tec-tuur. Watts
+Overfull \hbox (8.50375pt too wide) in paragraph at lines 8--8
+|\T1/pag/m/n/12 2.1| []Een mo-no-li-thic ar-chi-tec-tuur naast een mi-cro-ser-v
+ice ar-chi-tec-tuur. Watts
+ []
+
+
+Overfull \hbox (17.18015pt too wide) in paragraph at lines 24--24
+[]|\T1/pag/m/n/12 2.9| []Een mi-cro-ser-vice waar be-scher-ming aan is toe-ge-v
+oegd. Be-ne-tis (2016a)[]|
  []
 
 
@@ -1855,62 +1832,43 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
  [15])
 (standvanzaken.tex [16]
 Hoofdstuk 2.
+
+Overfull \hbox (3.11607pt too wide) in paragraph at lines 15--19
+\T1/ptm/m/n/12 een beeld schep-pen om-trent de term: 'Mo-no-li-thic soft-ware i
+s de-sig-ned to be self-contained;
+ []
+
 [17
 
 ]
-<img/microservices-vs-monolithic.jpg, id=383, 1830.84pt x 885.3075pt>
-File: img/microservices-vs-monolithic.jpg Graphic file (type jpg)
-<use img/microservices-vs-monolithic.jpg>
-Package pdftex.def Info: img/microservices-vs-monolithic.jpg  used on input lin
-e 28.
-(pdftex.def)             Requested size: 284.52756pt x 137.57246pt.
- [18 <./img/microservices-vs-monolithic.jpg>]
-<img/Mono_Micro.png, id=393, 963.6pt x 345.29pt>
-File: img/Mono_Micro.png Graphic file (type png)
-<use img/Mono_Micro.png>
-Package pdftex.def Info: img/Mono_Micro.png  used on input line 37.
-(pdftex.def)             Requested size: 284.52756pt x 101.9545pt.
-<img/microserviceswebsite.png, id=395, 1380.15625pt x 586.19pt>
-File: img/microserviceswebsite.png Graphic file (type png)
-<use img/microserviceswebsite.png>
-Package pdftex.def Info: img/microserviceswebsite.png  used on input line 44.
-(pdftex.def)             Requested size: 284.52756pt x 120.84056pt.
- [19 <./img/Mono_Micro.png> <./img/microserviceswebsite.png (PNG copy)>]
-<img/algArch.png, id=403, 1111.15125pt x 626.34pt>
-File: img/algArch.png Graphic file (type png)
-<use img/algArch.png>
-Package pdftex.def Info: img/algArch.png  used on input line 52.
-(pdftex.def)             Requested size: 284.52756pt x 160.3788pt.
- [20 <./img/algArch.png (PNG copy)>]
+File: img/microservices-vs-monolithic.jpg Graphic file (type bmp)
+<img/microservices-vs-monolithic.jpg>
+ [18]
+File: img/Mono_Micro.png Graphic file (type bmp)
+<img/Mono_Micro.png>
+File: img/microserviceswebsite.png Graphic file (type bmp)
+<img/microserviceswebsite.png>
+ [19]
+File: img/algArch.png Graphic file (type bmp)
+<img/algArch.png>
+ [20]
 LaTeX Font Info:    Font shape `T1/pag/bx/n' in size <10.95> not available
 (Font)              Font shape `T1/pag/b/n' tried instead on input line 78.
 LaTeX Font Info:    Font shape `T1/pag/b/n' in size <10.95> not available
 (Font)              Font shape `T1/pag/db/n' tried instead on input line 78.
-
-[21]
-Underfull \vbox (badness 7151) has occurred while \output is active []
-
- [22]
-<img/apiGateway_facadePattern.png, id=429, 1606.0pt x 785.93625pt>
-File: img/apiGateway_facadePattern.png Graphic file (type png)
-<use img/apiGateway_facadePattern.png>
-Package pdftex.def Info: img/apiGateway_facadePattern.png  used on input line 1
-24.
-(pdftex.def)             Requested size: 284.52756pt x 139.23183pt.
+ [21] [22]
+File: img/apiGateway_facadePattern.png Graphic file (type bmp)
+<img/apiGateway_facadePattern.png>
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<img/monolithic_auth.png, id=432, 606.265pt x 462.72874pt>
-File: img/monolithic_auth.png Graphic file (type png)
-<use img/monolithic_auth.png>
-Package pdftex.def Info: img/monolithic_auth.png  used on input line 133.
-(pdftex.def)             Requested size: 284.52756pt x 217.16481pt.
+File: img/monolithic_auth.png Graphic file (type bmp)
+<img/monolithic_auth.png>
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[23] [24 <./img/apiGateway_facadePattern.png> <./img/monolithic_auth.png (PNG c
-opy)>]
+[23] [24]
 
 LaTeX Warning: No positions in optional float specifier.
                Default added (so using `tbp') on input line 156.
@@ -1962,109 +1920,108 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 189.
 
-Underfull \hbox (badness 2903) in paragraph at lines 189--189
-\T1/ptm/m/n/12 (+20) run-ning in the same host
+Underfull \hbox (badness 3826) in paragraph at lines 189--189
+\T1/ptm/m/n/12 run-ning in the same host
+ []
+
+
+Underfull \hbox (badness 1210) in paragraph at lines 189--189
+\T1/ptm/m/n/12 where your mi-cro-ser-vice is
+ []
+
+
+Underfull \hbox (badness 4316) in paragraph at lines 189--189
+[]\T1/ptm/m/n/12 'SSO sim-ply means lo-gin,
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 189--189
-[]\T1/ptm/m/n/12 (+20) Heeft vol-gende
+[]\T1/ptm/m/n/12 Heeft vol-gende
  []
 
 
-Underfull \hbox (badness 2173) in paragraph at lines 189--189
-[]\T1/ptm/m/n/12 (+20) circuit-breakers: Een
+Underfull \hbox (badness 3138) in paragraph at lines 189--189
+[]\T1/ptm/m/n/12 circuit-breakers: Een
  []
 
 
-Underfull \hbox (badness 1755) in paragraph at lines 189--189
-\T1/ptm/m/n/12 (+20) len van de mi-cro-ser-vice(s)
+Underfull \hbox (badness 2529) in paragraph at lines 189--189
+\T1/ptm/m/n/12 au-to-ma-ti-sche ma-chine
  []
 
 
-Underfull \hbox (badness 2990) in paragraph at lines 189--189
-\T1/ptm/m/n/12 (+20) kun-nen hier-on-der ge-bracht
+Underfull \hbox (badness 10000) in paragraph at lines 189--189
+\T1/ptm/m/n/12 c'ie aan-ge-maakt die dan
+ []
+
+
+Underfull \hbox (badness 2799) in paragraph at lines 189--189
+\T1/ptm/m/n/12 len van de mi-cro-ser-vice(s)
+ []
+
+
+Underfull \hbox (badness 5431) in paragraph at lines 189--189
+\T1/ptm/m/n/12 kun-nen hier-on-der ge-bracht
  []
 
 
 LaTeX Warning: No positions in optional float specifier.
                Default added (so using `tbp') on input line 195.
 
-<img/jwt.png, id=456, 2007.5pt x 1380.15625pt>
-File: img/jwt.png Graphic file (type png)
-<use img/jwt.png>
-Package pdftex.def Info: img/jwt.png  used on input line 234.
-(pdftex.def)             Requested size: 284.52756pt x 195.60028pt.
-[25] [26] [27] [28 <./img/jwt.png (PNG copy)>]
+Missing character: There is no ’ in font ptmr8t!
+
+Underfull \hbox (badness 1910) in paragraph at lines 217--217
+\T1/ptm/m/n/12 to an au-then-ti-ca-tion ser-ver,
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [25]
+[26] [27]
+File: img/jwt.png Graphic file (type bmp)
+<img/jwt.png>
+ [28]
+Underfull \vbox (badness 7451) has occurred while \output is active []
+
+ [29]
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <12> not available
 (Font)              Font shape `T1/ptm/b/n' tried instead on input line 288.
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [29]
 [30]
-<img/1.png, id=516, 963.6pt x 425.59pt>
-File: img/1.png Graphic file (type png)
-<use img/1.png>
-Package pdftex.def Info: img/1.png  used on input line 342.
-(pdftex.def)             Requested size: 284.52756pt x 125.66484pt.
+File: img/1.png Graphic file (type bmp)
+<img/1.png>
 
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<img/2.png, id=518, 963.6pt x 425.59pt>
-File: img/2.png Graphic file (type png)
-<use img/2.png>
-Package pdftex.def Info: img/2.png  used on input line 349.
-(pdftex.def)             Requested size: 284.52756pt x 125.66484pt.
-[31]
-<img/3.png, id=524, 963.6pt x 552.0625pt>
-File: img/3.png Graphic file (type png)
-<use img/3.png>
-Package pdftex.def Info: img/3.png  used on input line 357.
-(pdftex.def)             Requested size: 284.52756pt x 163.00865pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<img/4.png, id=527, 963.6pt x 626.34pt>
-File: img/4.png Graphic file (type png)
-<use img/4.png>
-Package pdftex.def Info: img/4.png  used on input line 364.
-(pdftex.def)             Requested size: 284.52756pt x 184.94072pt.
-[32 <./img/1.png> <./img/2.png>] [33 <./img/3.png> <./img/4.png>]
-<img/5.png, id=542, 963.6pt x 626.34pt>
-File: img/5.png Graphic file (type png)
-<use img/5.png>
-Package pdftex.def Info: img/5.png  used on input line 379.
-(pdftex.def)             Requested size: 284.52756pt x 184.94072pt.
-<img/6.png, id=544, 963.6pt x 708.6475pt>
-File: img/6.png Graphic file (type png)
-<use img/6.png>
-Package pdftex.def Info: img/6.png  used on input line 392.
-(pdftex.def)             Requested size: 284.52756pt x 209.24384pt.
- [34 <./img/5.png>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [35 <./img/6.png>]
-Underfull \vbox (badness 10000) has occurred while \output is active []
+ [31]
+File: img/2.png Graphic file (type bmp)
+<img/2.png>
+File: img/3.png Graphic file (type bmp)
+<img/3.png>
+
+[32]
+File: img/4.png Graphic file (type bmp)
+<img/4.png>
+ [33]
+File: img/5.png Graphic file (type bmp)
+<img/5.png>
+ [34]
+File: img/6.png Graphic file (type bmp)
+<img/6.png>
+ [35]
+Underfull \vbox (badness 2521) has occurred while \output is active []
 
  [36]
-<img/wong.png, id=566, 948.54375pt x 1448.41125pt>
-File: img/wong.png Graphic file (type png)
-<use img/wong.png>
-Package pdftex.def Info: img/wong.png  used on input line 447.
-(pdftex.def)             Requested size: 284.52756pt x 434.46043pt.
+File: img/wong.png Graphic file (type bmp)
+<img/wong.png>
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [37]
-<img/wong2.png, id=573, 948.54375pt x 1575.8875pt>
-File: img/wong2.png Graphic file (type png)
-<use img/wong2.png>
-Package pdftex.def Info: img/wong2.png  used on input line 481.
-(pdftex.def)             Requested size: 284.52756pt x 472.69777pt.
+File: img/wong2.png Graphic file (type bmp)
+<img/wong2.png>
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
@@ -2076,26 +2033,23 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [39]
-<img/Order-to-cash-cycle.jpg, id=586, 375.65344pt x 195.73125pt>
-File: img/Order-to-cash-cycle.jpg Graphic file (type jpg)
-<use img/Order-to-cash-cycle.jpg>
-Package pdftex.def Info: img/Order-to-cash-cycle.jpg  used on input line 548.
-(pdftex.def)             Requested size: 284.52756pt x 148.2615pt.
+File: img/Order-to-cash-cycle.jpg Graphic file (type bmp)
+<img/Order-to-cash-cycle.jpg>
 
+[40]
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[40]
 
 LaTeX Warning: No positions in optional float specifier.
                Default added (so using `tbp') on input line 565.
 
-[41]
-<img/1-kyma-knative.png, id=606, 709.14937pt x 366.61969pt>
-File: img/1-kyma-knative.png Graphic file (type png)
-<use img/1-kyma-knative.png>
-Package pdftex.def Info: img/1-kyma-knative.png  used on input line 592.
-(pdftex.def)             Requested size: 284.52756pt x 147.0984pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [41]
+File: img/1-kyma-knative.png Graphic file (type bmp)
+<img/1-kyma-knative.png>
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
@@ -2104,118 +2058,92 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [42])
-(methodologie.tex [43] [44 <./img/wong.png>] [45 <./img/wong2.png>] [46 <./img/
-Order-to-cash-cycle.jpg> <./img/1-kyma-knative.png>]
+(methodologie.tex [43] [44] [45] [46]
 Hoofdstuk 3.
 
 LaTeX Warning: No positions in optional float specifier.
                Default added (so using `tbp') on input line 22.
 
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [47
+[47
 
 ]
-[48] [49] [50]
-<img/databank.png, id=659, 476.982pt x 380.01974pt>
-File: img/databank.png Graphic file (type png)
-<use img/databank.png>
-Package pdftex.def Info: img/databank.png  used on input line 128.
-(pdftex.def)             Requested size: 426.79134pt x 340.03728pt.
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [48]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [49]
+[50]
+File: img/databank.png Graphic file (type bmp)
+<img/databank.png>
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [51]
-<img/schema_communicatie.png, id=664, 527.26988pt x 237.88875pt>
-File: img/schema_communicatie.png Graphic file (type png)
-<use img/schema_communicatie.png>
-Package pdftex.def Info: img/schema_communicatie.png  used on input line 151.
-(pdftex.def)             Requested size: 426.79134pt x 192.56177pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [52 <./img/databank.png>] [53 <./img/schema_communicatie.png>]
+ [52]
+File: img/schema_communicatie.png Graphic file (type bmp)
+<img/schema_communicatie.png>
+
+[53]
 
 LaTeX Warning: No positions in optional float specifier.
                Default added (so using `tbp') on input line 176.
 
-<img/schema_microservices.png, id=680, 732.03488pt x 272.217pt>
-File: img/schema_microservices.png Graphic file (type png)
-<use img/schema_microservices.png>
-Package pdftex.def Info: img/schema_microservices.png  used on input line 196.
-(pdftex.def)             Requested size: 426.79134pt x 158.70837pt.
+File: img/schema_microservices.png Graphic file (type bmp)
+<img/schema_microservices.png>
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<img/ordermanagement.png, id=681, 358.33875pt x 180.675pt>
-File: img/ordermanagement.png Graphic file (type png)
-<use img/ordermanagement.png>
-Package pdftex.def Info: img/ordermanagement.png  used on input line 203.
-(pdftex.def)             Requested size: 142.26378pt x 71.73111pt.
+File: img/ordermanagement.png Graphic file (type bmp)
+<img/ordermanagement.png>
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
+LaTeX Warning: `h' float specifier changed to `ht'.
 
- [54]
-<img/creditmanagement.png, id=693, 372.1905pt x 176.15813pt>
-File: img/creditmanagement.png Graphic file (type png)
-<use img/creditmanagement.png>
-Package pdftex.def Info: img/creditmanagement.png  used on input line 219.
-(pdftex.def)             Requested size: 142.26378pt x 67.3332pt.
-
-[55 <./img/schema_microservices.png> <./img/ordermanagement.png> <./img/creditm
-anagement.png>]
-<img/orderfullfilment.png, id=703, 312.56775pt x 168.63pt>
-File: img/orderfullfilment.png Graphic file (type png)
-<use img/orderfullfilment.png>
-Package pdftex.def Info: img/orderfullfilment.png  used on input line 235.
-(pdftex.def)             Requested size: 142.26378pt x 76.74992pt.
-<img/ordershipment.png, id=704, 349.60612pt x 169.8345pt>
-File: img/ordershipment.png Graphic file (type png)
-<use img/ordershipment.png>
-Package pdftex.def Info: img/ordershipment.png  used on input line 250.
-(pdftex.def)             Requested size: 142.26378pt x 69.1117pt.
- [56 <./img/orderfullfilment.png> <./img/ordershipment.png>]
-<img/facturatie.png, id=713, 348.1005pt x 166.221pt>
-File: img/facturatie.png Graphic file (type png)
-<use img/facturatie.png>
-Package pdftex.def Info: img/facturatie.png  used on input line 266.
-(pdftex.def)             Requested size: 142.26378pt x 67.9329pt.
-<img/accountreceivables.png, id=714, 269.20575pt x 164.71538pt>
-File: img/accountreceivables.png Graphic file (type png)
-<use img/accountreceivables.png>
-Package pdftex.def Info: img/accountreceivables.png  used on input line 282.
-(pdftex.def)             Requested size: 142.26378pt x 87.04488pt.
-
-[57 <./img/facturatie.png> <./img/accountreceivables.png>]
-<img/klantmanagement.png, id=723, 278.54062pt x 165.0165pt>
-File: img/klantmanagement.png Graphic file (type png)
-<use img/klantmanagement.png>
-Package pdftex.def Info: img/klantmanagement.png  used on input line 296.
-(pdftex.def)             Requested size: 142.26378pt x 84.28317pt.
-<img/apiSchema.png, id=724, 369.17924pt x 324.31163pt>
-File: img/apiSchema.png Graphic file (type png)
-<use img/apiSchema.png>
-Package pdftex.def Info: img/apiSchema.png  used on input line 317.
-(pdftex.def)             Requested size: 284.52756pt x 249.95824pt.
+[54]
+File: img/creditmanagement.png Graphic file (type bmp)
+<img/creditmanagement.png>
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
+[55]
+File: img/orderfullfilment.png Graphic file (type bmp)
+<img/orderfullfilment.png>
+File: img/ordershipment.png Graphic file (type bmp)
+<img/ordershipment.png>
 
-Underfull \vbox (badness 5563) has occurred while \output is active []
 
- [58 <./img/klantmanagement.png>]) (conclusie.tex [59 <./img/apiSchema.png>] [6
-0
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[56]
+File: img/facturatie.png Graphic file (type bmp)
+<img/facturatie.png>
+File: img/accountreceivables.png Graphic file (type bmp)
+<img/accountreceivables.png>
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[57]
+File: img/klantmanagement.png Graphic file (type bmp)
+<img/klantmanagement.png>
+File: img/apiSchema.png Graphic file (type bmp)
+<img/apiSchema.png>
+
+Underfull \vbox (badness 5288) has occurred while \output is active []
+
+ [58])
+(conclusie.tex [59] [60
 
 ]
 Hoofdstuk 4.
-[61]
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [61]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [62])
@@ -2224,170 +2152,182 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 ]
 B"ylage A.
 (../voorstel/voorstel-inhoud.tex [65] [66] [67]) [68]
-Overfull \hbox (103.75824pt too wide) in paragraph at lines 132--132
-[][]\T1/ptm/m/n/12 (-20) Ananthasubramanian, H. (2018). Chal-len-ges in im-ple-
-me-ting mi-cro-ser-vi-ces. \T1/ptm/m/it/12 (-20) https://dzone.com/articles/cha
-llenges-
+Overfull \hbox (114.30978pt too wide) in paragraph at lines 132--132
+[][]\T1/ptm/m/n/12 Ananthasubramanian, H. (2018). Chal-len-ges in im-ple-me-tin
+g mi-cro-ser-vi-ces. \T1/ptm/m/it/12 https://dzone.com/articles/challenges-
  []
 
 
-Overfull \hbox (30.06398pt too wide) in paragraph at lines 132--132
-\T1/ptm/m/it/12 (-20) https://medium.com/tech-tajawal/microservice-authenticati
-on-and-authorization-solutions-
+Overfull \hbox (38.84993pt too wide) in paragraph at lines 132--132
+\T1/ptm/m/it/12 https://medium.com/tech-tajawal/microservice-authentication-and
+-authorization-solutions-
  []
 
 
-Overfull \hbox (6.26927pt too wide) in paragraph at lines 132--132
-\T1/ptm/m/n/12 (-20) ces ar-chi-tec-ture. \T1/ptm/m/it/12 (-20) https://www.dev
-bridge.com/articles/a-6-point-plan-for-implementing-
+Overfull \hbox (14.49464pt too wide) in paragraph at lines 132--132
+\T1/ptm/m/n/12 ces ar-chi-tec-ture. \T1/ptm/m/it/12 https://www.devbridge.com/a
+rticles/a-6-point-plan-for-implementing-
  []
 
 
-Overfull \hbox (8.56482pt too wide) in paragraph at lines 132--132
-\T1/ptm/m/n/12 (-20) tec-ture in fi-nan-cial ser-vi-ces. \T1/ptm/m/it/12 (-20) 
-https://www.devbridge.com/articles/path-to-microservices-
+Overfull \hbox (16.75006pt too wide) in paragraph at lines 132--132
+\T1/ptm/m/n/12 tec-ture in fi-nan-cial ser-vi-ces. \T1/ptm/m/it/12 https://www.
+devbridge.com/articles/path-to-microservices-
  []
 
 
-Overfull \hbox (75.26494pt too wide) in paragraph at lines 132--132
-[][]\T1/ptm/m/n/12 (-20) Biedron, R. (2018). A walk through the or-der to cash 
-cy-cle. \T1/ptm/m/it/12 (-20) https://www.purchasecontrol.com/uk/blog/order-
+Overfull \hbox (85.10353pt too wide) in paragraph at lines 132--132
+[][]\T1/ptm/m/n/12 Biedron, R. (2018). A walk through the or-der to cash cy-cle
+. \T1/ptm/m/it/12 https://www.purchasecontrol.com/uk/blog/order-
  []
 
 
-Overfull \hbox (117.65933pt too wide) in paragraph at lines 132--132
-[][]\T1/ptm/m/n/12 (-20) Cavalcanti, M. (2018). Sta-te-less au-then-ti-ca-tion 
-for mi-cro-ser-vi-ces. \T1/ptm/m/it/12 (-20) https://medium.com/@marcus.cavalca
-nti/stateless-
+Overfull \hbox (128.50484pt too wide) in paragraph at lines 132--132
+[][]\T1/ptm/m/n/12 Cavalcanti, M. (2018). Sta-te-less au-then-ti-ca-tion for mi
+-cro-ser-vi-ces. \T1/ptm/m/it/12 https://medium.com/@marcus.cavalcanti/stateles
+s-
  []
 
 
-Overfull \hbox (6.55476pt too wide) in paragraph at lines 132--132
-[][]\T1/ptm/m/n/12 (-20) Ciber. (2018). Mi-cro-ser-vi-ces: het einde van de SAP
- spa-ghetti? \T1/ptm/m/it/12 (-20) https://www.ciber.nl/blog/deel-
+Overfull \hbox (15.07362pt too wide) in paragraph at lines 132--132
+[][]\T1/ptm/m/n/12 Ciber. (2018). Mi-cro-ser-vi-ces: het einde van de SAP spa-g
+hetti? \T1/ptm/m/it/12 https://www.ciber.nl/blog/deel-
  []
 
 
-Overfull \hbox (27.72105pt too wide) in paragraph at lines 132--132
-[][]\T1/ptm/m/n/12 (-20) concept hub, S. (2019). Un-der-stan-ding or-der to cas
-h cy-cle in sap. \T1/ptm/m/it/12 (-20) http://sapconcepthub.com/order-
+Overfull \hbox (36.55238pt too wide) in paragraph at lines 132--132
+[][]\T1/ptm/m/n/12 concept hub, S. (2019). Un-der-stan-ding or-der to cash cy-c
+le in sap. \T1/ptm/m/it/12 http://sapconcepthub.com/order-
  []
 
 
-Overfull \hbox (139.74406pt too wide) in paragraph at lines 132--132
-[][]\T1/ptm/m/n/12 (-20) da Silva, R. C. (2017). Best prac-ti-ces to pro-tect y
-our mi-cro-ser-vi-ces ar-chi-tec-ture. \T1/ptm/m/it/12 (-20) https://medium.com
-/@rcandidosilva/best-
+Overfull \hbox (150.80272pt too wide) in paragraph at lines 132--132
+[][]\T1/ptm/m/n/12 da Silva, R. C. (2017). Best prac-ti-ces to pro-tect your mi
+-cro-ser-vi-ces ar-chi-tec-ture. \T1/ptm/m/it/12 https://medium.com/@rcandidosi
+lva/best-
+ []
+
+
+Overfull \hbox (20.56842pt too wide) in paragraph at lines 132--132
+[][]\T1/ptm/m/n/12 Everard, D. (2017). API Ga-te-way de-fi-ni-tion. \T1/ptm/m/i
+t/12 https://www.quora.com/What-is-an-API-gateway\T1/ptm/m/n/12 . 
+ []
+
+
+Overfull \hbox (43.72607pt too wide) in paragraph at lines 132--132
+\T1/ptm/m/n/12 tec-ture. \T1/ptm/m/it/12 https://hackernoon.com/monitoring-cont
+ainerized-microservices-with-a-centralized-
  []
 
 [69
 
 ]
-Overfull \hbox (76.25168pt too wide) in paragraph at lines 132--132
-[][]\T1/ptm/m/n/12 (-20) Matteson, S. (2017). 10 tips for se-cu-ring mi-cro-ser
--vice ar-chi-tec-ture. \T1/ptm/m/it/12 (-20) https://www.techrepublic.com/artic
-le/10-
+Overfull \hbox (32.43848pt too wide) in paragraph at lines 132--132
+[][]\T1/ptm/m/n/12 Hofmann, R. (2018, au-gus-tus 10). Kyma and Kna-tive In-te-g
+ra-tion - Pro-gress Up-date. \T1/ptm/m/it/12 https://kyma-
  []
 
 
-Overfull \hbox (45.35349pt too wide) in paragraph at lines 132--132
-[][]\T1/ptm/m/n/12 (-20) Melendez, C. (2018). Mi-cro-ser-vi-ces Log-ging best p
-rac-ti-ces. \T1/ptm/m/it/12 (-20) https://dzone.com/articles/microservices-
+Overfull \hbox (86.16992pt too wide) in paragraph at lines 132--132
+[][]\T1/ptm/m/n/12 Matteson, S. (2017). 10 tips for se-cu-ring mi-cro-ser-vice 
+ar-chi-tec-ture. \T1/ptm/m/it/12 https://www.techrepublic.com/article/10-
  []
 
 
-Overfull \hbox (30.10884pt too wide) in paragraph at lines 132--132
-[][]\T1/ptm/m/n/12 (-20) Morgan, L. (2019). De-vOps and Mi-cro-ser-vi-ces. \T1/
-ptm/m/it/12 (-20) https://www.datamation.com/applications/devops-
+Overfull \hbox (20.075pt too wide) in paragraph at lines 132--132
+\T1/ptm/m/n/12 ces. \T1/ptm/m/it/12 https://blog.leanix.net/en/why-netflix-amaz
+on-and-apple-care-about-microservices\T1/ptm/m/n/12 . 
  []
 
 
-Overfull \hbox (119.24962pt too wide) in paragraph at lines 132--132
-[][]\T1/ptm/m/n/12 (-20) Mulesoft. (2019). Mi-cro-ser-vi-ces and De-vOps: bet-t
-er to-gether. \T1/ptm/m/it/12 (-20) https://www.mulesoft.com/resources/api/micr
-oservices-
+Overfull \hbox (54.71803pt too wide) in paragraph at lines 132--132
+[][]\T1/ptm/m/n/12 Melendez, C. (2018). Mi-cro-ser-vi-ces Log-ging best prac-ti
+-ces. \T1/ptm/m/it/12 https://dzone.com/articles/microservices-
  []
 
 
-Overfull \hbox (16.81995pt too wide) in paragraph at lines 132--132
-[][]\T1/ptm/m/n/12 (-20) Saldanha, L. (2016). Tips on log-ging mi-cro-ser-vi-ce
-s. \T1/ptm/m/it/12 (-20) https://logz.io/blog/logging-microservices/\T1/ptm/m/n
-/12 (-20) . 
+Overfull \hbox (39.22774pt too wide) in paragraph at lines 132--132
+[][]\T1/ptm/m/n/12 Morgan, L. (2019). De-vOps and Mi-cro-ser-vi-ces. \T1/ptm/m/
+it/12 https://www.datamation.com/applications/devops-
  []
 
 
-Overfull \hbox (38.79297pt too wide) in paragraph at lines 132--132
-[][]\T1/ptm/m/n/12 (-20) Sandoval, K. (2018). 3 com-mon me-thods of API Au-then
--ti-ca-tion ex-plai-ned. \T1/ptm/m/it/12 (-20) https://nordicapis.com/3-
+Overfull \hbox (130.17436pt too wide) in paragraph at lines 132--132
+[][]\T1/ptm/m/n/12 Mulesoft. (2019). Mi-cro-ser-vi-ces and De-vOps: bet-ter to-
+gether. \T1/ptm/m/it/12 https://www.mulesoft.com/resources/api/microservices-
  []
 
 
-Overfull \hbox (96.98909pt too wide) in paragraph at lines 132--132
-[][]\T1/ptm/m/n/12 (-20) Semerdzhiev, K. (2018, juni 24). In-tro-du-cing pro-je
-ct Kyma. \T1/ptm/m/it/12 (-20) https://kyma-project.io/blog/2018/7/24/introduct
-ion-
+Overfull \hbox (25.61908pt too wide) in paragraph at lines 132--132
+[][]\T1/ptm/m/n/12 Saldanha, L. (2016). Tips on log-ging mi-cro-ser-vi-ces. \T1
+/ptm/m/it/12 https://logz.io/blog/logging-microservices/\T1/ptm/m/n/12 . 
  []
 
 
-Overfull \hbox (6.52328pt too wide) in paragraph at lines 132--132
-\T1/ptm/m/n/12 (-20) tion. \T1/ptm/m/it/12 (-20) https://sdtimes.com/apis/secur
-ing-microservices-the-api-gateway-authentication-
+Overfull \hbox (47.89192pt too wide) in paragraph at lines 132--132
+[][]\T1/ptm/m/n/12 Sandoval, K. (2018). 3 com-mon me-thods of API Au-then-ti-ca
+-tion ex-plai-ned. \T1/ptm/m/it/12 https://nordicapis.com/3-
  []
 
 
-Overfull \hbox (70.51866pt too wide) in paragraph at lines 132--132
-[][]\T1/ptm/m/n/12 (-20) Stecky-Efantis, M. (2016). 5 Esay steps to un-der-stan
--ding JSON Web To-kens. \T1/ptm/m/it/12 (-20) https://medium.com/vandium-
+Overfull \hbox (107.40123pt too wide) in paragraph at lines 132--132
+[][]\T1/ptm/m/n/12 Semerdzhiev, K. (2018, juni 24). In-tro-du-cing pro-ject Kym
+a. \T1/ptm/m/it/12 https://kyma-project.io/blog/2018/7/24/introduction-
  []
 
 
-Overfull \hbox (65.13863pt too wide) in paragraph at lines 132--132
-[][]\T1/ptm/m/n/12 (-20) Swersky, D. (2019). Best prac-ti-ces for tra-cing and 
-de-bug-ging mi-cro-ser-vi-ces. \T1/ptm/m/it/12 (-20) https://raygun.com/blog/be
-st-
+Overfull \hbox (14.78221pt too wide) in paragraph at lines 132--132
+\T1/ptm/m/n/12 tion. \T1/ptm/m/it/12 https://sdtimes.com/apis/securing-microser
+vices-the-api-gateway-authentication-
+ []
+
+
+Overfull \hbox (80.24377pt too wide) in paragraph at lines 132--132
+[][]\T1/ptm/m/n/12 Stecky-Efantis, M. (2016). 5 Esay steps to un-der-stan-ding 
+JSON Web To-kens. \T1/ptm/m/it/12 https://medium.com/vandium-
+ []
+
+
+Overfull \hbox (74.78331pt too wide) in paragraph at lines 132--132
+[][]\T1/ptm/m/n/12 Swersky, D. (2019). Best prac-ti-ces for tra-cing and de-bug
+-ging mi-cro-ser-vi-ces. \T1/ptm/m/it/12 https://raygun.com/blog/best-
+ []
+
+
+Overfull \hbox (53.27065pt too wide) in paragraph at lines 132--132
+[][]\T1/ptm/m/n/12 Wasson, M. (2018). De-sig-ning mi-cro-ser-vi-ces: log-ging a
+nd mo-ni-to-ring. \T1/ptm/m/it/12 https://docs.microsoft.com/en-
  []
 
 [70]
-Overfull \hbox (43.96507pt too wide) in paragraph at lines 132--132
-[][]\T1/ptm/m/n/12 (-20) Wasson, M. (2018). De-sig-ning mi-cro-ser-vi-ces: log-
-ging and mo-ni-to-ring. \T1/ptm/m/it/12 (-20) https://docs.microsoft.com/en-
+Overfull \hbox (32.03873pt too wide) in paragraph at lines 132--132
+[][]\T1/ptm/m/n/12 Wigmore, I. (2016). Mo-no-li-thic ar-chi-tec-ture. \T1/ptm/m
+/it/12 https://whatis.techtarget.com/definition/monolithic-
  []
 
 
-Overfull \hbox (23.02646pt too wide) in paragraph at lines 132--132
-[][]\T1/ptm/m/n/12 (-20) Wigmore, I. (2016). Mo-no-li-thic ar-chi-tec-ture. \T1
-/ptm/m/it/12 (-20) https://whatis.techtarget.com/definition/monolithic-
+Overfull \hbox (20.27425pt too wide) in paragraph at lines 132--132
+\T1/ptm/m/it/12 https://www.salesforce.com/products/cpq/resources/what-to-know-
+about-order-to-cash-
  []
 
 [71]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 134.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 134.
  (bachproef-tin.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 134.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 134.
 Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 134.
 Package logreq Info: Writing requests to 'bachproef-tin.run.xml'.
 \openout1 = `bachproef-tin.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 40441 strings out of 492970
- 758616 string characters out of 3127037
- 1358464 words of memory out of 3000000
- 43237 multiletter control sequences out of 15000+200000
- 591988 words of font info for 203 fonts, out of 3000000 for 9000
- 1141 hyphenation exceptions out of 8191
- 62i,12n,67p,1920b,3825s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/Users/Lyva/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/base/8r.enc}
-<C:/Users/Lyva/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm
-/cmsy10.pfb><C:/Users/Lyva/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/av
-antgar/uagd8a.pfb><C:/Users/Lyva/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/
-urw/avantgar/uagk8a.pfb><C:/Users/Lyva/AppData/Local/Programs/MiKTeX 2.9/fonts/
-type1/urw/times/utmb8a.pfb><C:/Users/Lyva/AppData/Local/Programs/MiKTeX 2.9/fon
-ts/type1/urw/times/utmr8a.pfb><C:/Users/Lyva/AppData/Local/Programs/MiKTeX 2.9/
-fonts/type1/urw/times/utmri8a.pfb>
-Output written on bachproef-tin.pdf (73 pages, 2210864 bytes).
-PDF statistics:
- 1006 PDF objects out of 1200 (max. 8388607)
- 240 named destinations out of 1000 (max. 500000)
- 33230 words of extra memory for PDF output out of 35830 (max. 10000000)
+ 42241 strings out of 427796
+ 765112 string characters out of 3147988
+ 1378828 words of memory out of 3000000
+ 45660 multiletter control sequences out of 15000+200000
+ 571444 words of font info for 67 fonts, out of 3000000 for 9000
+ 1328 hyphenation exceptions out of 8191
+ 62i,12n,59p,1912b,6265s stack positions out of 5000i,500n,10000p,200000b,50000s
 
+Output written on bachproef-tin.pdf (73 pages).

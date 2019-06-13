@@ -473,35 +473,6 @@
       \field{year}{2018}
       \field{dateera}{ce}
     \endentry
-    \entry{Kannappan2018}{article}{}
-      \name{author}{1}{}{%
-        {{uniquename=0,uniquepart=base,hash=f2c05b99af3092c52d38a9983772c6b9}{%
-           family={Kannappan},
-           familyi={K\bibinitperiod},
-           given={Gopi},
-           giveni={G\bibinitperiod},
-           givenun=0}}%
-      }
-      \strng{namehash}{f2c05b99af3092c52d38a9983772c6b9}
-      \strng{fullhash}{f2c05b99af3092c52d38a9983772c6b9}
-      \strng{bibnamehash}{f2c05b99af3092c52d38a9983772c6b9}
-      \strng{authorbibnamehash}{f2c05b99af3092c52d38a9983772c6b9}
-      \strng{authornamehash}{f2c05b99af3092c52d38a9983772c6b9}
-      \strng{authorfullhash}{f2c05b99af3092c52d38a9983772c6b9}
-      \field{sortinit}{K}
-      \field{sortinithash}{9fd838a31ba64d981e8f44562bd33f89}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \true{uniqueprimaryauthor}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{day}{18}
-      \field{journaltitle}{https://kyma-project.io/blog/2018/10/18/accelerate-innovation-with-kyma}
-      \field{month}{10}
-      \field{title}{Accelerate innovation with Kyma}
-      \field{year}{2018}
-      \field{dateera}{ce}
-    \endentry
     \entry{Koukia2018}{article}{}
       \name{author}{1}{}{%
         {{uniquename=0,uniquepart=base,hash=f52a5a440b0738c126b1f821e35c1434}{%
@@ -1129,7 +1100,6 @@
       \field{dateera}{ce}
     \endentry
   \enddatalist
-  \missing{series2018}
 \endrefsection
 \endinput
 
