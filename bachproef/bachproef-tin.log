@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99999 (MiKTeX 2.9.6840 64-bit) (preloaded format=xelatex 2018.12.30)  13 JUL 2019 21:42
+This is XeTeX, Version 3.14159265-2.6-0.99999 (MiKTeX 2.9.6840 64-bit) (preloaded format=xelatex 2018.12.30)  20 JUL 2019 19:58
 entering extended mode
 **./bachproef-tin.tex
 (bachproef-tin.tex
@@ -1781,4 +1781,504 @@ LaTeX Font Info:    Font shape `T1/pag/b/n' in size <12> not available
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [7
+ [7]
+[8])
+\tf@toc=\write7
+\openout7 = `bachproef-tin.toc'.
+
+ [9] [10
+
+] (bachproef-tin.lof
+Overfull \hbox (8.50375pt too wide) in paragraph at lines 8--8
+|\T1/pag/m/n/12 2.1| []Een mo-no-li-thic ar-chi-tec-tuur naast een mi-cro-ser-v
+ice ar-chi-tec-tuur. Watts
+ []
+
+
+Overfull \hbox (17.18015pt too wide) in paragraph at lines 22--22
+[]|\T1/pag/m/n/12 2.8| []Een mi-cro-ser-vice waar be-scher-ming aan is toe-ge-v
+oegd. Be-ne-tis (2016a)[]|
+ []
+
+[11
+
+])
+\tf@lof=\write8
+\openout8 = `bachproef-tin.lof'.
+
+ [12] (bachproef-tin.lot)
+\tf@lot=\write9
+\openout9 = `bachproef-tin.lot'.
+
+ (inleiding.tex [13
+
+] [14
+
+]
+Hoofdstuk 1.
+LaTeX Font Info:    Try loading font information for OMS+ptm on input line 16.
+("C:\Users\Lyva\AppData\Local\Programs\MiKTeX 2.9\tex\latex\psnfss\omsptm.fd"
+File: omsptm.fd 
+)
+LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <12> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 16.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [15])
+(standvanzaken.tex [16]
+Hoofdstuk 2.
+[17
+
+]
+File: img/microservices-vs-monolithic.jpg Graphic file (type bmp)
+<img/microservices-vs-monolithic.jpg>
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [18]
+File: img/Mono_Micro.png Graphic file (type bmp)
+<img/Mono_Micro.png>
+File: img/algArch.png Graphic file (type bmp)
+<img/algArch.png>
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[19]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [20]
+LaTeX Font Info:    Font shape `T1/pag/bx/n' in size <10.95> not available
+(Font)              Font shape `T1/pag/b/n' tried instead on input line 81.
+LaTeX Font Info:    Font shape `T1/pag/b/n' in size <10.95> not available
+(Font)              Font shape `T1/pag/db/n' tried instead on input line 81.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [21]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [22]
+File: img/apiGateway_facadePattern.png Graphic file (type bmp)
+<img/apiGateway_facadePattern.png>
+File: img/monolithic_auth.png Graphic file (type bmp)
+<img/monolithic_auth.png>
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[23]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [24]
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 160.
+
+LaTeX Font Info:    Try loading font information for OT1+ztmcm on input line 18
+2.
+("C:\Users\Lyva\AppData\Local\Programs\MiKTeX 2.9\tex\latex\psnfss\ot1ztmcm.fd"
+File: ot1ztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OT1/ztmcm.
+)
+Package microtype Info: Loading generic protrusion settings for font family
+(microtype)             `ztmcm' (encoding: OT1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+LaTeX Font Info:    Try loading font information for OML+ztmcm on input line 18
+2.
+ ("C:\Users\Lyva\AppData\Local\Programs\MiKTeX 2.9\tex\latex\psnfss\omlztmcm.fd
+"
+File: omlztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OML/ztmcm.
+)
+LaTeX Font Info:    Try loading font information for OMS+ztmcm on input line 18
+2.
+
+("C:\Users\Lyva\AppData\Local\Programs\MiKTeX 2.9\tex\latex\psnfss\omsztmcm.fd"
+File: omsztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMS/ztmcm.
+)
+LaTeX Font Info:    Try loading font information for OMX+ztmcm on input line 18
+2.
+ ("C:\Users\Lyva\AppData\Local\Programs\MiKTeX 2.9\tex\latex\psnfss\omxztmcm.fd
+"
+File: omxztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMX/ztmcm.
+)
+("C:\Users\Lyva\AppData\Local\Programs\MiKTeX 2.9\tex\latex\microtype\mt-msa.cf
+g"
+File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
+)
+("C:\Users\Lyva\AppData\Local\Programs\MiKTeX 2.9\tex\latex\microtype\mt-msb.cf
+g"
+File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
+)
+LaTeX Font Info:    Try loading font information for OT1+ptm on input line 182.
+
+ ("C:\Users\Lyva\AppData\Local\Programs\MiKTeX 2.9\tex\latex\psnfss\ot1ptm.fd"
+File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
+)
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 182.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 182.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 182.
+Missing character: There is no ’ in font ptmr8t!
+
+Underfull \hbox (badness 1910) in paragraph at lines 182--182
+\T1/ptm/m/n/12 to an au-then-ti-ca-tion ser-ver,
+ []
+
+
+Underfull \vbox (badness 1448) has occurred while \output is active []
+
+ [25]
+File: img/jwt.png Graphic file (type bmp)
+<img/jwt.png>
+
+[26]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [27]
+LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <12> not available
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 253.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [28]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [29]
+File: img/1.png Graphic file (type bmp)
+<img/1.png>
+File: img/2.png Graphic file (type bmp)
+<img/2.png>
+File: img/3.png Graphic file (type bmp)
+<img/3.png>
+
+[30]
+File: img/4.png Graphic file (type bmp)
+<img/4.png>
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+File: img/5.png Graphic file (type bmp)
+<img/5.png>
+[31] [32]
+File: img/6.png Graphic file (type bmp)
+<img/6.png>
+ [33]
+Underfull \vbox (badness 6284) has occurred while \output is active []
+
+ [34]
+File: img/wong.png Graphic file (type bmp)
+<img/wong.png>
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[35]
+File: img/wong2.png Graphic file (type bmp)
+<img/wong2.png>
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [36]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [37]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [38]
+File: img/1-kyma-knative.png Graphic file (type bmp)
+<img/1-kyma-knative.png>
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[39]) (methodologie.tex [40] [41] [42] [43] [44
+
+]
+Hoofdstuk 3.
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 22.
+
+[45]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [46]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [47]
+[48]
+File: img/databank.png Graphic file (type bmp)
+<img/databank.png>
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[49]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [50]
+File: img/schema_communicatie.png Graphic file (type bmp)
+<img/schema_communicatie.png>
+
+[51]
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 176.
+
+File: img/schema_microservices.png Graphic file (type bmp)
+<img/schema_microservices.png>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+File: img/ordermanagement.png Graphic file (type bmp)
+<img/ordermanagement.png>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[52]
+File: img/creditmanagement.png Graphic file (type bmp)
+<img/creditmanagement.png>
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[53]
+File: img/orderfullfilment.png Graphic file (type bmp)
+<img/orderfullfilment.png>
+File: img/ordershipment.png Graphic file (type bmp)
+<img/ordershipment.png>
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[54]
+File: img/facturatie.png Graphic file (type bmp)
+<img/facturatie.png>
+File: img/accountreceivables.png Graphic file (type bmp)
+<img/accountreceivables.png>
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[55]
+File: img/klantmanagement.png Graphic file (type bmp)
+<img/klantmanagement.png>
+File: img/apiSchema.png Graphic file (type bmp)
+<img/apiSchema.png>
+
+Underfull \vbox (badness 5288) has occurred while \output is active []
+
+ [56])
+(conclusie.tex [57] [58
+
+]
+Hoofdstuk 4.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [59]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [60])
+[61] [62
+
+]
+B"ylage A.
+(../voorstel/voorstel-inhoud.tex [63] [64] [65]) [66]
+Overfull \hbox (114.30978pt too wide) in paragraph at lines 132--132
+[][]\T1/ptm/m/n/12 Ananthasubramanian, H. (2018). Chal-len-ges in im-ple-me-tin
+g mi-cro-ser-vi-ces. \T1/ptm/m/it/12 https://dzone.com/articles/challenges-
+ []
+
+
+Overfull \hbox (38.84993pt too wide) in paragraph at lines 132--132
+\T1/ptm/m/it/12 https://medium.com/tech-tajawal/microservice-authentication-and
+-authorization-solutions-
+ []
+
+
+Overfull \hbox (14.49464pt too wide) in paragraph at lines 132--132
+\T1/ptm/m/n/12 ces ar-chi-tec-ture. \T1/ptm/m/it/12 https://www.devbridge.com/a
+rticles/a-6-point-plan-for-implementing-
+ []
+
+
+Overfull \hbox (16.75006pt too wide) in paragraph at lines 132--132
+\T1/ptm/m/n/12 tec-ture in fi-nan-cial ser-vi-ces. \T1/ptm/m/it/12 https://www.
+devbridge.com/articles/path-to-microservices-
+ []
+
+
+Overfull \hbox (85.10353pt too wide) in paragraph at lines 132--132
+[][]\T1/ptm/m/n/12 Biedron, R. (2018). A walk through the or-der to cash cy-cle
+. \T1/ptm/m/it/12 https://www.purchasecontrol.com/uk/blog/order-
+ []
+
+
+Overfull \hbox (128.50484pt too wide) in paragraph at lines 132--132
+[][]\T1/ptm/m/n/12 Cavalcanti, M. (2018). Sta-te-less au-then-ti-ca-tion for mi
+-cro-ser-vi-ces. \T1/ptm/m/it/12 https://medium.com/@marcus.cavalcanti/stateles
+s-
+ []
+
+
+Overfull \hbox (15.07362pt too wide) in paragraph at lines 132--132
+[][]\T1/ptm/m/n/12 Ciber. (2018). Mi-cro-ser-vi-ces: het einde van de SAP spa-g
+hetti? \T1/ptm/m/it/12 https://www.ciber.nl/blog/deel-
+ []
+
+
+Overfull \hbox (36.55238pt too wide) in paragraph at lines 132--132
+[][]\T1/ptm/m/n/12 concept hub, S. (2019). Un-der-stan-ding or-der to cash cy-c
+le in sap. \T1/ptm/m/it/12 http://sapconcepthub.com/order-
+ []
+
+
+Overfull \hbox (150.80272pt too wide) in paragraph at lines 132--132
+[][]\T1/ptm/m/n/12 da Silva, R. C. (2017). Best prac-ti-ces to pro-tect your mi
+-cro-ser-vi-ces ar-chi-tec-ture. \T1/ptm/m/it/12 https://medium.com/@rcandidosi
+lva/best-
+ []
+
+
+Overfull \hbox (20.56842pt too wide) in paragraph at lines 132--132
+[][]\T1/ptm/m/n/12 Everard, D. (2017). API Ga-te-way de-fi-ni-tion. \T1/ptm/m/i
+t/12 https://www.quora.com/What-is-an-API-gateway\T1/ptm/m/n/12 . 
+ []
+
+
+Overfull \hbox (43.72607pt too wide) in paragraph at lines 132--132
+\T1/ptm/m/n/12 tec-ture. \T1/ptm/m/it/12 https://hackernoon.com/monitoring-cont
+ainerized-microservices-with-a-centralized-
+ []
+
+[67
+
+]
+Overfull \hbox (32.43848pt too wide) in paragraph at lines 132--132
+[][]\T1/ptm/m/n/12 Hofmann, R. (2018, au-gus-tus 10). Kyma and Kna-tive In-te-g
+ra-tion - Pro-gress Up-date. \T1/ptm/m/it/12 https://kyma-
+ []
+
+
+Overfull \hbox (86.16992pt too wide) in paragraph at lines 132--132
+[][]\T1/ptm/m/n/12 Matteson, S. (2017). 10 tips for se-cu-ring mi-cro-ser-vice 
+ar-chi-tec-ture. \T1/ptm/m/it/12 https://www.techrepublic.com/article/10-
+ []
+
+
+Overfull \hbox (20.075pt too wide) in paragraph at lines 132--132
+\T1/ptm/m/n/12 ces. \T1/ptm/m/it/12 https://blog.leanix.net/en/why-netflix-amaz
+on-and-apple-care-about-microservices\T1/ptm/m/n/12 . 
+ []
+
+
+Overfull \hbox (54.71803pt too wide) in paragraph at lines 132--132
+[][]\T1/ptm/m/n/12 Melendez, C. (2018). Mi-cro-ser-vi-ces Log-ging best prac-ti
+-ces. \T1/ptm/m/it/12 https://dzone.com/articles/microservices-
+ []
+
+
+Overfull \hbox (39.22774pt too wide) in paragraph at lines 132--132
+[][]\T1/ptm/m/n/12 Morgan, L. (2019). De-vOps and Mi-cro-ser-vi-ces. \T1/ptm/m/
+it/12 https://www.datamation.com/applications/devops-
+ []
+
+
+Overfull \hbox (130.17436pt too wide) in paragraph at lines 132--132
+[][]\T1/ptm/m/n/12 Mulesoft. (2019). Mi-cro-ser-vi-ces and De-vOps: bet-ter to-
+gether. \T1/ptm/m/it/12 https://www.mulesoft.com/resources/api/microservices-
+ []
+
+
+Overfull \hbox (25.61908pt too wide) in paragraph at lines 132--132
+[][]\T1/ptm/m/n/12 Saldanha, L. (2016). Tips on log-ging mi-cro-ser-vi-ces. \T1
+/ptm/m/it/12 https://logz.io/blog/logging-microservices/\T1/ptm/m/n/12 . 
+ []
+
+
+Overfull \hbox (47.89192pt too wide) in paragraph at lines 132--132
+[][]\T1/ptm/m/n/12 Sandoval, K. (2018). 3 com-mon me-thods of API Au-then-ti-ca
+-tion ex-plai-ned. \T1/ptm/m/it/12 https://nordicapis.com/3-
+ []
+
+
+Overfull \hbox (107.40123pt too wide) in paragraph at lines 132--132
+[][]\T1/ptm/m/n/12 Semerdzhiev, K. (2018, juni 24). In-tro-du-cing pro-ject Kym
+a. \T1/ptm/m/it/12 https://kyma-project.io/blog/2018/7/24/introduction-
+ []
+
+
+Overfull \hbox (14.78221pt too wide) in paragraph at lines 132--132
+\T1/ptm/m/n/12 tion. \T1/ptm/m/it/12 https://sdtimes.com/apis/securing-microser
+vices-the-api-gateway-authentication-
+ []
+
+
+Overfull \hbox (80.24377pt too wide) in paragraph at lines 132--132
+[][]\T1/ptm/m/n/12 Stecky-Efantis, M. (2016). 5 Esay steps to un-der-stan-ding 
+JSON Web To-kens. \T1/ptm/m/it/12 https://medium.com/vandium-
+ []
+
+
+Overfull \hbox (74.78331pt too wide) in paragraph at lines 132--132
+[][]\T1/ptm/m/n/12 Swersky, D. (2019). Best prac-ti-ces for tra-cing and de-bug
+-ging mi-cro-ser-vi-ces. \T1/ptm/m/it/12 https://raygun.com/blog/best-
+ []
+
+
+Overfull \hbox (53.27065pt too wide) in paragraph at lines 132--132
+[][]\T1/ptm/m/n/12 Wasson, M. (2018). De-sig-ning mi-cro-ser-vi-ces: log-ging a
+nd mo-ni-to-ring. \T1/ptm/m/it/12 https://docs.microsoft.com/en-
+ []
+
+[68]
+Overfull \hbox (32.03873pt too wide) in paragraph at lines 132--132
+[][]\T1/ptm/m/n/12 Wigmore, I. (2016). Mo-no-li-thic ar-chi-tec-ture. \T1/ptm/m
+/it/12 https://whatis.techtarget.com/definition/monolithic-
+ []
+
+
+Overfull \hbox (20.27425pt too wide) in paragraph at lines 132--132
+\T1/ptm/m/it/12 https://www.salesforce.com/products/cpq/resources/what-to-know-
+about-order-to-cash-
+ []
+
+[69]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 134.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 134.
+ (bachproef-tin.aux)
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 134.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 134.
+
+
+Package biblatex Warning: Please rerun LaTeX.
+(biblatex)                Page breaks have changed.
+
+Package logreq Info: Writing requests to 'bachproef-tin.run.xml'.
+\openout1 = `bachproef-tin.run.xml'.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 42228 strings out of 427796
+ 764780 string characters out of 3147988
+ 1371589 words of memory out of 3000000
+ 45649 multiletter control sequences out of 15000+200000
+ 571444 words of font info for 67 fonts, out of 3000000 for 9000
+ 1328 hyphenation exceptions out of 8191
+ 62i,12n,59p,1355b,6265s stack positions out of 5000i,500n,10000p,200000b,50000s
+
+Output written on bachproef-tin.pdf (71 pages).
