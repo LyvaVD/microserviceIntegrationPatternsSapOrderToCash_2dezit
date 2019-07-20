@@ -608,11 +608,82 @@
 
 @Article{Arungupta2015,
   author       = {Arungupta},
-  title        = {MIcroservice design pattners},
+  title        = {MIcroservice design patterns},
   journal      = {http://blog.arungupta.me/microservice-design-patterns/},
   journaltitle = {http://blog.arungupta.me/microservice-design-patterns/},
   year         = {2015},
   date         = {2015-04-10},
+}
+
+@Article{Smith2019,
+  author  = {Ben Smith},
+  title   = {Microservice integration patterns},
+  journal = {https://10consulting.com/2019/04/12/microservice-integration-patterns/},
+  year    = {2019},
+  date    = {2019-04-12},
+}
+
+@Article{Scott2018,
+  author  = {Patrick Lee Scott},
+  title   = {Learning these 5 microservice patterns will make you a better engineer},
+  journal = {https://hackernoon.com/learning-these-5-microservice-patterns-will-make-you-a-better-engineer-52fc779c470a},
+  year    = {2018},
+  date    = {2018-01-11},
+}
+
+@Article{Kong2018,
+  author  = {Kong},
+  title   = {Pattern: Database per service},
+  journal = {https://microservices.io/patterns/data/database-per-service.html},
+  year    = {2018},
+}
+
+@Article{Behara2018,
+  author  = {Samir Behara},
+  title   = {Breking the monolithic database inyour microservices architecture},
+  journal = {https://dzone.com/articles/breaking-the-monolithic-database-in-your-microserv},
+  year    = {2018},
+  date    = {2018-09-12},
+}
+
+@Article{Aradhye2018a,
+  author  = {Yogi Aradhye},
+  title   = {Principles for microservices integration},
+  journal = {https://dzone.com/articles/principles-for-microservices-integration},
+  year    = {2018},
+  date    = {2018-08-24},
+}
+
+@Article{Davison2016,
+  author  = {Mikey Davison},
+  title   = {Data integration design patterns with microservices},
+  journal = {https://blogs.technet.microsoft.com/cansql/2016/12/05/data-integration-design-patterns-with-microservices/},
+  year    = {2016},
+  date    = {2016-12-05},
+}
+
+@Article{Wollert2016,
+  author  = {Fabian Wollert},
+  title   = {Data integration in the world of microservices},
+  journal = {https://www.slideshare.net/FabianWollert/data-integration-in-a-microservices-world},
+  year    = {2016},
+  date    = {2016-05-18},
+}
+
+@Article{Krivtsov2019,
+  author  = {Roman Krivtsov},
+  title   = {Is a Shared Database in Microservices Actually an Anti-pattern?},
+  journal = {https://hackernoon.com/is-shared-database-in-microservices-actually-anti-pattern-8cc2536adfe4},
+  year    = {2019},
+  date    = {2019-02-21},
+}
+
+@Article{Kumar2018,
+  author  = {Roshan Kumar},
+  title   = {Selecting the Right Database for Your Microservices},
+  journal = {https://thenewstack.io/selecting-the-right-database-for-your-microservices/},
+  year    = {2018},
+  date    = {2018-09-13},
 }
 
 @Comment{jabref-meta: databaseType:biblatex;}

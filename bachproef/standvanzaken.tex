@@ -12,7 +12,7 @@ Dit hoofdstuk bevat de literatuurstudie omtrent het onderwerp. Hier wordt de arc
 
 \section{Microservices}
 \subsection{Definitie}
-Aangezien monolithic veelvuldig zal gebruikt worden, zal de definitie bij aanvang reeds een beeld scheppen omtrent de term:  'Monolithic software is designed to be self-contained; components of the program are interconnected and interdependent rather than loosely coupled as is the case with ' software programs.',  \textcite{Wigmore2016}.
+Aangezien de term monolithic veelvuldig zal gebruikt worden, zal er bij aanvang reeds een beeld scheppen omtrent de term:  'Monolithic software is designed to be self-contained; components of the program are interconnected and interdependent rather than loosely coupled as is the case with ' software programs.',  \textcite{Wigmore2016}.
 Om te begrijpen waarom een overschakeling naar microservices een goed idee is, worden de de moeilijkheden bij monolithic architectuur aangehaald. Bij een verandering binnen een monolithic architectuur, wordt een geheel nieuwe  versie hiervan uitgebracht. Dit creëert een aanzienlijke overhead. Met architectuur wordt de algemene manier van implementatie bedoeld. Bij het gebruik van het woord architectuur, wordt er niet verwezen naar de applicatie maar de achterliggende logica ervan.
 De overschakeling naar microservice omvat onder andere
 \begin{itemize}
@@ -22,15 +22,25 @@ De overschakeling naar microservice omvat onder andere
 	\item De impact van een verandering kan verkeerd ingeschat worden.
 	\item Bij een fout in een proces, kan de volledige architectuur falen.
 \end{itemize}
-De definitie die te vinden is in het artikel van \textcite{Mauersberger2017}, luidt als volgt: 'A method of developing software applications as a suite of independently deployable, small, ' services in which each service runs a unique process and communicates through a  well-defined, light weight mechanism to serve a business goals.'. Wanneer men de definitie herleest, zijn er 3 onderdelen aanwezig. Het eerste onderdeel spitst zich toe op de  werking van een microservice. Het is een onafhankelijke, kleine, modulaire service. Modulaire services zijn services waarbij veel delen uitwisselbaar zijn met diverse services. Wordt er info gestuurd of gevraagd van services A dan zal dit geen invloed hebben op de andere services. Een tweede eigenschap is de eenvoudig communicatie. Er is nood aan omdat sommige services data moeten uitwisselen om hun 'job' te kunnen doen. De communicatie kan gebeuren op verschillende manieren. De manier die gekender is, is 'Messaging via a Message Broker'. Dit wil zeggen dat microservice A een bericht plaatst op de wachtrij bij microservice B wanneer die data wil doorsturen. Dan kan microservices B aan die data wanneer hij die nodig heeft. Ze zullen soms moeten wachten maar ze zijn zo goed als onafhankelijk van elkaar. De derde eigenschap omvat dat een microservice wordt gemaakt in functie van een requirement uit de business. Elk product in de business heeft een doel dat moet voldoen aan eisen. Het unieke aan microservices is dat  men  ze gaat bekijken vanuit de eisen binnen de business. Het doel van microservices is, de problemen die te vinden zijn bij een monolithic, verhelpen. De vorige definite legde uit wat microservices zijn. Dit artikel zegt waar men microservices kan plaatsen. Er is dus één groot framework. Daar zitten meerdere onafhankelijke services in.
+Er zijn meerdere definities terug te vinden over microservices. In volgende opsomming kunnen enkele definities gevonden worden:
+\begin{itemize}
+	\item 'A method of developing software applications as a suite of independently deployable, small, services in which each service runs a unique process and communicates through a  well-defined, light weight mechanism to serve a business goals.', \textcite{Mauersberger2017}
+	\item 'A software architecting pattern that allows software to be developed into relatively small, distinct components. Each of the components is abstracted by an API(s) and provides a distinct subset of the functionality of the entire application.', \textcite{Watts2018}
+	\item 'microservices stems from the same ideology as Agile and DevOps by seeking to break down slow moving, monolithic systems into multiple small, independent services that are highly decoupled and self-contained to focus on a specific function or capability.', \textcite{Benetis2016a}
+\end{itemize}
+ Wanneer men de definities herleest, zijn er enkele terugkerende onderdelen aanwezig. Een eerste onderdeel spitst zich toe op de  werking van een microservice. Het is een onafhankelijke, kleine, modulaire service. Modulaire services zijn services waarbij veel delen uitwisselbaar zijn met diverse services. Wordt er info gestuurd of gevraagd van services A dan zal dit geen invloed hebben op de andere services. Een tweede eigenschap is de eenvoudig communicatie. Er is nood aan omdat sommige services data moeten uitwisselen om hun 'job' te kunnen doen. De communicatie kan gebeuren op verschillende manieren. De manier die gekender is, is 'Messaging via a Message Broker'. Dit wil zeggen dat microservice A een bericht plaatst op de wachtrij bij microservice B wanneer die data wil doorsturen. Dan kan microservices B aan die data wanneer hij die nodig heeft. Ze zullen soms moeten wachten maar ze zijn zo goed als onafhankelijk van elkaar. De derde eigenschap omvat dat een microservice wordt gemaakt in functie van een requirement uit de business. Elk product in de business heeft een doel dat moet voldoen aan eisen. Het unieke aan microservices is dat  men  ze gaat bekijken vanuit de eisen binnen de business. Het doel van microservices is, de problemen die te vinden zijn bij een monolithic, verhelpen. 
+ 
+ De verschillen tussen een monolithic en microservices kunnen het best afgebeeld worden in een afbeelding 2.1.
 
 \begin{figure}[h]
 	\includegraphics[width=10cm]{microservices-vs-monolithic.jpg}
 	\centering
 	\caption{Een monolithic architectuur naast een microservice architectuur. \textcite{Watts2018}}
 \end{figure}
-Zoals te zien in figuur 2.1, \textcite{Watts2018}, is er een groot verschil tussen een monolithic architectuur en die van een microservice. De monolithic wordt  weergegeven in de linkerkant van de foto. Aan de rechterkant van de foto is een voorbeeld te zien van een microservice architectuur. Daar is duidelijk te zien dat elke microservice een eigen databank/datastore heeft. Voor elke functionaliteit wordt een microserives aangemaakt, die dan nog eens apart een databank voor zich krijgt. Met functionaliteit verwijst men naar de geschiktheid van het onderdeel om zijn taak te volbrengen. Als bij microservice A een probleem is dan heeft dit niet meteen impact op de andere services. De communicatie tussen microservice A en de anderen zullen hier echter wel hinder ondervinden. Maar de andere microservices kunnen wel nog steeds onafhankelijk verder. 
-Een andere definitie van microservices is: 'A software architecting pattern that allows software to be developed into relatively small, distinct components. Each of the components is abstracted by an API(s) and provides a distinct subset of the functionality of the entire application'. Hier ziet men het punt passeren dat een microservice een klein component is van een groter geheel. Deze eigenschap wordt heel hard benadrukt. Er wordt uileg gegeven over wat microservices zijn. Dan schrijven ze over hoe microservices scalable zijn. De mogelijkheid van software om mee te groeien als het aantal gebruikers vermeerderd. De software moet nog even goed presteren bij 10 gebruikers als bij 2 000 gebruikers. Er wordt toegelicht hoe belangrijk API's zijn binnen een microservice architectuur. API's zijn een set van definities die ervoor zorgen dat deeltjes in een programma met elkaar kunnen communcieren. Een voordeel van API's is dat je niet moet  weten hoe de andere code werkt.
+ De monolithic wordt  weergegeven in de linkerkant van de foto. Aan de rechterkant van de foto is een voorbeeld te zien van een microservice architectuur. Daar is duidelijk te zien dat elke microservice een eigen databank/datastore heeft. 
+ Als bij microservice A een probleem is dan heeft dit niet meteen impact op de andere services. De communicatie tussen microservice A en de anderen zullen hier echter wel hinder ondervinden. Maar de andere microservices kunnen wel nog steeds onafhankelijk verder. 
+ Hier ziet men het punt passeren dat een microservice een klein component is van een groter geheel.
+ Er is een mogelijkheid van de software om mee te groeien als het aantal gebruikers vermeerderd. De software moet nog even goed presteren bij 10 gebruikers als bij 2 000 gebruikers. Er wordt toegelicht hoe belangrijk API's zijn binnen een microservice architectuur. API's zijn een set van definities die ervoor zorgen dat deeltjes in een programma met elkaar kunnen communcieren. Een voordeel van API's is dat je niet moet  weten hoe de andere code werkt.
 
  Op figuur 2.2 ziet men dat de monolithic alle puntjes in een kader heeft. Dit staat symbolisch voor het grote geheel dat eigen is aan een monolithic. Alles zit samen in één grote doos. Maar bij microservices is dit niet zo, daar zit elk deeltje/requirement in een aparte doos, \textcite{Benetis2016a} . 
 \begin{figure}[h]
@@ -39,25 +49,18 @@ Een andere definitie van microservices is: 'A software architecting pattern that
 	\caption{Een monolithic vergeleken met een microservice. \textcite{Benetis2016a}}
 \end{figure}
 
-In figuur 2.3 is een voorbeeld te zien hoe microservices een  website pagina opvullen.
-\begin{figure}[h]
-	\includegraphics[width=10cm]{microserviceswebsite.png}
-	\centering
-	\caption{Microservices die de inhoud op een site invullen. \textcite{Koukia2018}}
-\end{figure}
-De site bestaat uit zes onderdelen. Deze onderdelen zijn allemaal dynamisch en ze halen hun info uit databanken. Bij het laden van de pagina gaat elk onderdeel zijn info opvragen. Omdat dit allemaal met microservices gebeurt, wordt de info gelijktijdig opgehaald. Men zal niet moeten wachten op elkaar, eens de één info heeft ontvangen om dan naar de volgende info te sturen. Elk spreekt zijn eigen databank aan. De microservices die de  website opvullen, kunnen onderliggend ' nog andere microservices aanspreken. Een voorbeeld hiervan is een klant is aangemeld op de  website van Amazon. De authenticatie, bij microservices, zorgt ervoor dat de microservice weet dat die persoon is aangemeld. Dan bij het inladen van voorkeuren of 'soort gelijke producten', kan de microservices die die sectie moet opvullen, vragen aan een andere microservice om de voorkeuren te laten genereren, \textcite{Koukia2018}.
 
-Een voorbeeld van een algemene architectuur is te zien op figuur 2.4.
+Een voorbeeld van een algemene architectuur is te zien op figuur 2.3.
 \begin{figure}[h]
 	\includegraphics[width=10cm]{algArch.png}
 	\centering
 	\caption{Een algemene architectuur voor microservices. \textcite{Koukia2018}}
 \end{figure}
-Als eerste wordt er een request gemaakt. Die wordt naar de gateway gestuurd. Vervolgens wordt er gekeken, moet er een commando of een query uitgevoerd worden. Een commando wordt binnen het domein naar een microservice gestuurd of naar een real-model microservice.  Daarna worden er gegevens opgeslaan.
+Deze afbeelding zal naar het einde van de stand van zaken duidelijk zijn.
 
 
 \subsection{Het belang van microservices}
-Bij een monolithic kan het aanpassen van een deeltje, veel  werk vragen. Dit  werd meer uitgelegd bij de definite van microservices. Microservices spelen gemakkelijker in op het periodieke opleveren van delen software. Deze technologie heeft nauwelijks invloed op het framework als er deeltjes bij gecodeerd worden. Microservices kunnen sneller inspelen op de Agile analyse/ontwikkelsmethode. Dit is ' een reden waarom microservices zo een opkomst kent. De analyse methode Agile  werkt met periodieke opleveringen die kunnen gaan van twee  weken tot een maand. In de periode wordt er gewerkt aan een functionaliteit of een eis van de klant. 
+Microservices zijn van belang wanneer de monolithic architectuur niet meer optimaal werkt. Microservices hebben nauwelijks invloed op het framework als er deeltjes bij gecodeerd worden. Ze kunnen sneller inspelen op de Agile analyse/ontwikkelsmethode. De analyse methode Agile werkt met periodieke opleveringen, die kunnen gaan van twee weken tot een maand. In de periode wordt er gewerkt aan een functionaliteit of een eis van de klant. 
 Er voor zorgen dat software schaalbaar is, is een belangrijk punt en daar spelen microservices goed op in.
 
 
@@ -76,14 +79,14 @@ Enkele andere redenen om microservices te gebruiken volgens \textcite{Koukia2018
 Onder volgende deeltjes wordt er dieper ingegaan op de authenticatie en authorisatie, het verband met Agile en Devops, het debuggen binnen microservices en de bescherming van microservices.
 
 \subsubsection{De verschillende manieren van bescherming}
-Microservices moeten een doel in de business vervullen. Naast dit, zorgen microservices er ' voor dat de bescherming eenvoudiger wordt, \textcite{RDX2016}.
+'Microservices moeten een doel in de business vervullen. Naast dit, zorgen microservices er voor dat de bescherming eenvoudiger wordt.', \textcite{RDX2016}.
 
 De term bescherming omvat volgende: Er voor zorgen dat hackers de applicatie niet kapot maken.
-Hackers zijn mensen die inbreken op applicatie.
+Hackers zijn mensen die inbreken op een applicatie.
 
 Enkele tips om de bescherming van microservices aan te pakken, \textcite{Matteson2017}, \textcite{Silva2017}:
 \begin{itemize}
-	\item Zorg bij het ontwikkelen van microservices voor coderingsstandaarden die kunnen herbruikt worden. Door eenmaal een goede code te voorzien wordt de kans op kwetsbaarheden en gaten in de bescherming kleiner.
+	\item Zorg bij het ontwikkelen van microservices voor coderingsstandaarden die herbruikt kunnen worden. Door eenmaal een goede code te voorzien wordt de kans op kwetsbaarheden en gaten in de bescherming kleiner.
 	\item Ga na  welke schade er kan toegebracht worden aan een microservice als die zonder bescherming zou worden geüpload.
 	\item Maak gebruik van toegangscontroles. Zorg ervoor dat er gewerkt wordt met leesrechten. Een microservice dat de aankooporders ophaalt moet niet aan de verkooporders kunnen.
 	\item Ga geen beveiligingsprincipes gebruiken van externen, implementeer deze in de code van de microservice.
@@ -119,7 +122,7 @@ Eén van de meer bekendere manieren is, API gateway. De verantwoordelijkheden va
 	\item De requests doorsturen naar de correcte microservice.
 	\item Het 'antwoord' van de microservice in ontvangst nemen en doorsturen naar de gebruiker.
 \end{itemize}
-Zoals te zien is op figuur 2.5, is een API gateway het toegangspunt. Om via de API gateway requests te kunnen maken, moet er eerst authenticatie en authorisatie toegepast worden. Meer uitleg hierover in de sectie over authenticatie en authorisatie.
+Zoals te zien is op figuur 2.4, is een API gateway het toegangspunt. Om via de API gateway requests te kunnen maken, moet er eerst authenticatie en authorisatie toegepast worden. Meer uitleg hierover in de sectie over authenticatie en authorisatie.
 \begin{figure}[h]
 	\includegraphics[width=10cm]{apiGateway_facadePattern.png}
 	\centering
@@ -134,14 +137,14 @@ Een belangrijk aspect van microservices is de authenticatie en de authorisatie. 
 	\centering
 	\caption{Een diagram van authenticatie bij een monolithic. \textcite{Ayoub2018}}
 \end{figure}
-Zoals te zien is op bovenstaande afbeelding, figuur 2.6, wordt de authenticatie afgehandeld binnen het monlithic proces. Wanneer de gebruiker inlogt, wordt de beveiligings module aangesproken. Deze kijkt of de gebruiker een bekende is, of er al gegevens in de databank zitten. Als het aanmelden gelukt is, wordt er een sessie gecreëerd. Een sessie wordt opgeslaan aan de hand van c'ies. C'ies worden op je computer geplaatst door je browser. Het zijn kleine tekstbestanden. De sessie onthoudt wie je bent aan de hand van een ID. Dit zorgt ervoor dat je je niet elke keer opnieuw moet aanmelden als je van pagina verandert.  Elke keer dat de bezoeker van de site iets doet, wordt de sessie ID samen gestuurd met de request. Een request is een aanvraag. Als het ID correct is,  weet de site dat de gebruiker ingelogd is. Bij elke aanvraag wordt de ID meegestuurd zodat er kan gecontroleerd worden of die zo wordt de authenticatie bij een monolithic afgehandeld.
+Zoals te zien is op bovenstaande afbeelding, figuur 2.4, wordt de authenticatie afgehandeld binnen het monlithic proces. Wanneer de gebruiker inlogt, wordt de beveiligings module aangesproken. Deze kijkt of de gebruiker een bekende is, of er al gegevens in de databank zitten. Als het aanmelden gelukt is, wordt er een sessie gecreëerd. Een sessie wordt opgeslaan aan de hand van tokens. Tokens worden op je computer geplaatst door je browser. Het zijn kleine tekstbestanden. De sessie onthoudt wie je bent aan de hand van een ID. Dit zorgt ervoor dat je je niet elke keer opnieuw moet aanmelden als je van pagina verandert.  Elke keer dat de bezoeker van de site iets doet, wordt de sessie ID samen gestuurd met de request. Een request is een aanvraag. Als het ID correct is,  weet de site dat de gebruiker ingelogd is. Bij elke aanvraag wordt de ID meegestuurd zodat er kan gecontroleerd worden of die zo wordt de authenticatie bij een monolithic afgehandeld.
 Wanneer er gekeken wordt om authenticatie toe te passen bij microservices, komen volgende puntjes veel voor:
 \begin{itemize}
 	\item In elke microcservice moet er authenticatie en authorisatie afgehandeld worden. Het beste wordt dit toegepast op een uniforme manier. Dan gaat men er van uit dat er in elke microservices een stukje code gaat komen dat herbruikt wordt. Maar dit zorgt ervoor dat elke microservice toch afhankelijk is. Bij het uitkomen van een nieuwe  versie, moet dit deeltje dan  weer geüpdate worden. Dit heeft invloed op de flexibiliteit van het framework.
 	\item 'Single responsibility' zijn twee woorden die microservices mooi omschrijven. Een microservice omvat een stukje business logica. De algemene logica van authenticatie en authorisatie mag niet in een microservices gegoten worden. 
 \end{itemize}
 In het algemeen zijn authenticatie en authorisatie een complex onderdeel van microservices.
-Er zijn vijf oplossingen volgens \textcite{Ayoub2018}
+Er zijn vier oplossingen volgens \textcite{Ayoub2018}
 \begin{itemize}
 	\item Distributed session manangement,
 	\item client token,
@@ -149,47 +152,9 @@ Er zijn vijf oplossingen volgens \textcite{Ayoub2018}
 	\item client token with API gateway.
 \end{itemize}
 Distributed Session management is de eerste oplossing. Het managen van een sessie over microservices. Dit kan op verschillende manieren. Aan de hand van Sticky sessions. Dit houdt in dat alle requests van één gebruiker naar dezelfde server worden gestuurd. Dan kan men ervan uitgaan dat de gebruikte data van die specifieke gebruiker is. Of men kan dit toepassen via session replication. Dit houdt in dat alle instanties de sessie data synchronizeren. Deze manier van toepassen heeft als nadeel dat er veel overhead aanwezig zal zijn op het netwerk. Een andere methode is centralized session storage. Deze omvat dat bij het aanspreken van een microservice, deze de gebruikersdata gaat ophalen van op een gedeelde plaats. 
-Een andere manier om authenticatie en authorizatie toe te passen is via een client token. Een token wordt gebruikt om aan te tonen dat je ' echt de gebruiker bent. Een token wordt bijna altijd onleesbaar gemaakt. Het klinkt bijna hetzelfde als een sessie. Het verschil ligt hem in het feit dat een sessie op de server centraal wordt bijgehouden. Een token wordt bijgehouden door de user zelf.
-Naast de Distributed session management en client token is er ' nog single sign-on. Na een enkele aanmelding, kan de gebruiker alle microservices gebruiken binnen de applicatie. 
+Een andere manier om authenticatie en authorizatie toe te passen is via een client token. Een token wordt gebruikt om aan te tonen dat je echt de gebruiker bent. Een token wordt bijna altijd onleesbaar gemaakt. Het klinkt bijna hetzelfde als een sessie. Het verschil ligt hem in het feit dat een sessie op de server centraal wordt bijgehouden. Een token wordt bijgehouden door de user zelf.
+Naast de Distributed session management en client token is er nog single sign-on. Na een enkele aanmelding, kan de gebruiker alle microservices gebruiken binnen de applicatie. 
 Een andere manier is een client token with API gateway. Deze manier is gebaseerd op de client token. Maar nu is er een API gateway toegevoegd aan het begin van een externe request. Dit zorgt ervoor dat het framework niet zichtbaar is aan de buiten wereld. 
-
-\begin{table}[]
-	\resizebox{\textwidth}{!}{%
-		\begin{tabular}{|p{3cm}|p{5cm}|p{5cm}|p{5cm}|}
-			\hline 
-			Eigenschappen 
-				& Sidecar proxy 
-				& API gateway
-				& Single SignON (SSO) \\ \hline
-			Wat?  
-				& 'A sidecar proxy, is a proxy running in the same host where your microservice is deployed', \textcite{Cavalcanti2018}.
-				& 'An API gateway is a piece of software running on or near the periphery of the network hosting your system services', \textcite{Everard2017}. 
-				& 'SSO simply means login, just once to a suite of independent applications.', \textcite{Everard2017}. \\ \hline
-			Heeft volgende opties:
-				& De ingebouwde functies zijn volgende:
-					\begin{itemize}
-						\item Authenticatie / authorizatie
-						\item Retry policies
-						\item Routing
-						\item Error afhandeling
-						\item circuit-breakers: Een automatische machine voor het stoppen van de flow voor veiligheidsredenen.
-					\end{itemize} 
-				&  \\ \hline
-				& Bij het inloggen wordt een c'ie aangemaakt die dan wordt opgeslaan in de API gateway. \\ \hline
-			Voordelen 
-				& De niet-functionele onderdelen van de microservice(s) kunnen hieronder gebracht worden. 
-				& Dit zorgt ervoor dat de microservice zich enkel moet bezig houden met de business logica.
-				&  \\ \hline
-			Nadelen
-				& Er komen meerdere componenten bij om te monitoren, te onderhouden en te deployen. 
-				& Omdat dit een single point of entry kan dit een bottleneck, een plek van opstopping, zijn in de architectuur. 
-				& \\ \hline
-			
-		\end{tabular}%
-	}
-	\caption{De verschillende manieren om authenticatie en authorisatie toe te passen.
-		\textcite{Cavalcanti2018}, \textcite{Everard2017} }
-\end{table}
 
 De meest voorkomende methodes in API authenticatie terug te vinden in tabel 2.2, \textcite{Sandoval2018}.
 \begin{table}[]
@@ -205,11 +170,11 @@ De meest voorkomende methodes in API authenticatie terug te vinden in tabel 2.2,
 				& 'An unique generated value is assigned to each first time user, signifying that the user is known. When the user attempts to re-enter the system, their unique key is used to prove that they’re the same user as before.'.
 				& 'The user logs into a system. That system will then request authentication, usually in the form of a token. The user will then forward this request to an authentication server, which will either reject or allow this authentication. From here, the token is provided to the user, and then to the requester. Such a token can then be checked at any time independently of the user by the requester for validation, and can be used over time with strictly limited scope and age of validity'.\\ \hline
 			Voordelen
-				& Er is geen nood aan c'ies, session ID's, login pagina's, ' een handshake bevestigen is niet nodig.
+				& Er is geen nood aan tokens, session ID's, login pagina's en een handshake bevestigen is niet nodig.
 				& Dit is een manier van authenticatie die snel gebeurt. Het is een niet zo complex proces om de sleutels te genereren. 
 				& Het is de beste manier van authenticatie en authorisatie uit deze tabel. \\ \hline
 			Nadelen
-				& Is er geen SSL (Secure Sockets Layer) aanwezig dan is het eenvoudig om de gegevens op te halen en ligt alles open en bloot op het internet. ' bij het gebruik van SSL is er een nadeel. De tijd dat moet gewacht worden op een antwoord wordt vertraagd.
+				& Is er geen SSL (Secure Sockets Layer) aanwezig dan is het eenvoudig om de gegevens op te halen en ligt alles open en bloot op het internet. Bij het gebruik van SSL is er een nadeel. De tijd dat moet gewacht worden op een antwoord wordt vertraagd.
 				& De API key is niet geschikt voor authorisatie. Bij het fout gebruik van API keys kan dit een grote impact hebben op de bescherming van de applicatie.
 				& Als er enkel gebruik moet gemaakt worden van één van de twee, authenticatie of authorisatie, dan is OAuth overbodig. Want OAuth heeft veel meer te bieden. 
 				\\ \hline
@@ -229,7 +194,7 @@ Door de API Gateway to combineren met JSON  web Tokens is er meer mogelijkheid o
 \end{enumerate}
 De token vervalt na een bepaalde tijd. Er kan gekozen worden om deze automatisch te laten verlengen. Hier wordt niet verder op ingegaan. 
 
-De definitie van JSON  web Token, \textcite{Stecky-Efantis2016}: 'A JSON  web Token (JWT) is a JSON object that is defined in RFC 7519 as a safe way to represent a set of information between two parties. The token is composed of a header, a payload, and a signature.'. Het diagram te zien in figuur 2.7, is een schematische voorstelling van hoe een JWT token wordt gegeven aan een gebruiker.
+De definitie van JSON  web Token, \textcite{Stecky-Efantis2016}: 'A JSON  web Token (JWT) is a JSON object that is defined in RFC 7519 as a safe way to represent a set of information between two parties. The token is composed of a header, a payload, and a signature.'. Het diagram te zien in figuur 2.6, is een schematische voorstelling van hoe een JWT token wordt gegeven aan een gebruiker.
 \begin{figure}[h]
 	\includegraphics[width=10cm]{jwt.png}
 	\centering
@@ -237,7 +202,7 @@ De definitie van JSON  web Token, \textcite{Stecky-Efantis2016}: 'A JSON  web To
 \end{figure}
 Het proces gaat als volgt:
 \begin{enumerate}
-	\item Aanmelden op een platform. Bijvoorbeeld aanmelden op faceb', twitter, instagram of google.
+	\item Aanmelden op een platform. Bijvoorbeeld aanmelden op Facebook, Twitter, Instagram of Google.
 	\item De authenticatie server stuurt een JWT terug.
 	\item Bij het maken van requests wordt de token meegestuurd.
 	\item De microservice kijkt dan of de gebruiker het recht heeft om deze microserivce/functie te gebruiken.
@@ -247,7 +212,7 @@ Het proces gaat als volgt:
 \subsubsection{Verband met Agile en DevOps}
 Microservices komen uit dezelfde ideologie als Agile en DevOps. DevOps is een contaminatie  van development en operations. Bij deze methode ligt de nadruk op de samenwerking en communicatie tussen verschillende partijen. Hier zijn de partijen de software engineers en andere IT specialisten. Deze ideologie omvat het volgende: het afbreken van kleine, traag evoluerende architectuur of monolithic en deze in microservices steken.
 
-DevOps heeft volgende definitie: 'DevOps is a methodology that enables developers and IT Ops to work closer together so they can deliver better quality software faster', \textcite{Morgan2019}. Met DevOps probeert men de productie zo goed mogelijk na te bootsen. Net zoals bij Agile, zorgt DevOps ervoor dat de software in kleinere delen wordt opgesplitst om '  weer op kortere periodes kleinere deeltjes software op te leveren. Dit is iets waar ' microservices in terug te vinden is. Verschillende DevOp teams kunnen dus tegelijkertijd aan microservices  werken.
+DevOps heeft volgende definitie: 'DevOps is a methodology that enables developers and IT Ops to work closer together so they can deliver better quality software faster', \textcite{Morgan2019}. Met DevOps probeert men de productie zo goed mogelijk na te bootsen. Net zoals bij Agile, zorgt DevOps ervoor dat de software in kleinere delen wordt opgesplitst om weer op kortere periodes kleinere deeltjes software op te leveren. Dit is iets waar ' microservices in terug te vinden is. Verschillende DevOp teams kunnen dus tegelijkertijd aan microservices  werken.
 
 Enkele voordelen van de combinatie microservices en DevOps:
 \begin{itemize}
@@ -271,7 +236,7 @@ Microservices en DevOps vullen elkaar aan op volgende vlakken, \textcite{Mulesof
 Logs zijn records binnen een databank naar weggeschreven wordt terwijl de applicatie draait. Metrics zijn numerieke waarden die kunnen geanalyseerd worden. Metrics zijn terug te vinden op volgende niveau's van een applicatie, \textcite{Wasson2018}:
 \begin{itemize}
 	\item Node-level: Dit houdt in de gegevens van de CPU, het geheugen, netwerk en de harde schijf. 
-	\item Container: Draait de service binnen een container dan moeten er ' metrics bijgehouden worden van die container. 
+	\item Container: Draait de service binnen een container dan moeten er metrics bijgehouden worden van die container. 
 	\item Applicatie: Hier kunnen metrics bijgehouden worden om het gedrag van de service te begrijpen. Gegevens die kunnen bijgehouden worden zijn het aantal HTTP requests, de vertraging en de lengte van een bericht.
 	\item Dependent service: Bij interactie met een externe service, hoelang deze duurt voordat de externe service reageert. 
 \end{itemize}
@@ -337,7 +302,7 @@ De eerste stap is 'Serve a business purpose'. De titel zegt al veel van wat er v
 	\item Opslag van data
 	\item Schaalbaarheid en belasting
 \end{itemize}
-Zoals te zien is op figuur 2.8, is een microservices één klein deeltje in een groot geheel. Later in dit stappenplan zal de figuur ' uitgebreidt worden en zal het geheel duidelijk worden. 
+Zoals te zien is op figuur 2.7, is een microservices één klein deeltje in een groot geheel. Later in dit stappenplan zal de figuur ' uitgebreidt worden en zal het geheel duidelijk worden. 
 \begin{figure}[h]
 	\includegraphics[width=10cm]{1.png}
 	\caption{Een microservice dat voldoet aan een business requirement. \textcite{Benetis2016}}
@@ -350,7 +315,7 @@ Na 'Serve a business purpose' komt 'Protect your stuff'. Dit gaat over de besche
 	\caption{Een microservice waar bescherming aan is toegevoegd. \textcite{Benetis2016}}
 	\centering
 \end{figure}
-In figuur 2.9 is de authenticatie in een microservices gestoken. 
+In figuur 2.8 is de authenticatie in een microservices gestoken. 
 
 Na de eerste twee stappen komt 'See no evil, hear no evil'. Eens de microservice is opgezet en gedeployed, moet er gemonitord worden. Daarmee wordt bedoeld dat hoe de microserivces zich gedraagd goed moet bijgehouden worden. Alles zou goed moeten gelogd worden, zodat bij een probleem het geen moeite is om te vinden waar het probleem zich voordeed. Hier is het aangeraden om doorheen het hele systeem een uniforme manier van loggen aan te houden. Men kan hiervan een microservice maken. Dit wordt ' afgebeeld in figuur 2.10.
 \begin{figure}[h]
@@ -359,7 +324,7 @@ Na de eerste twee stappen komt 'See no evil, hear no evil'. Eens de microservice
 	\centering
 \end{figure}
 
-Als vierde stap komt er 'Find your stuff'. In deze stap wordt er gezocht naar een manier om de microservices met elkaar te communiceren. Hiermee wordt bedoelt hoe dat microservices A gegevens vragen aan microservices B. Die dit op zijn beurt vraagt aan  een andere microservice. Een veel gebruikte techniek hiervoor is 'service registry'. Een service registry is een databank waar alle services met hun instanties en locatie woren opgeslaan. Daar worden dan ' connecties in opgeslaan. Er wordt aangeraden om dat in een microservices te gieten. Zodat hiervan het gedrag kan gemonitord worden. In figuur 2.11 zie je hoe de service registry kan toegevoegd worden. In de figuur is die terug te vinden onder de naam 'service discorvery'.
+Als vierde stap komt er 'Find your stuff'. In deze stap wordt er gezocht naar een manier om de microservices met elkaar te communiceren. Hiermee wordt bedoelt hoe dat microservices A gegevens vragen aan microservices B. Die dit op zijn beurt vraagt aan  een andere microservice. Een veel gebruikte techniek hiervoor is 'service registry'. Een service registry is een databank waar alle services met hun instanties en locatie woren opgeslaan. Daar worden dan ' connecties in opgeslaan. Er wordt aangeraden om dat in een microservices te gieten. Zodat hiervan het gedrag kan gemonitord worden. In figuur 2.10 zie je hoe de service registry kan toegevoegd worden. In de figuur is die terug te vinden onder de naam 'service discorvery'.
 \begin{figure}[h]
 	\includegraphics[width=10cm]{4.png}
 	\caption{Een microservice dat authenticatie als bescherming toepast. \textcite{Benetis2016}}
@@ -374,7 +339,7 @@ Nu is er een service, bestaande uit microservices, dat beschermd is en kan doen 
 	\item Abstractie van de clientinterface. Wanneer er van microservice verandert wordt, moet er niet van interface/scherm verandert worden. 
 \end{itemize}
 
-In figuur 2.12 is te zien hoe zo een API gateway kan worden toegepast. Zo is te zien dat de authenticatie microservice er niet inzit. Die wordt apart gehouden. De request naar de authenticatie mogen niet langs de API gateway gaan. Omdat ze dan zo meteen 'binnen' zitten. Pas na authenticatie mag men een request sturen naar de API gateway.
+In figuur 2.11 is te zien hoe zo een API gateway kan worden toegepast. Zo is te zien dat de authenticatie microservice er niet inzit. Die wordt apart gehouden. De request naar de authenticatie mogen niet langs de API gateway gaan. Omdat ze dan zo meteen 'binnen' zitten. Pas na authenticatie mag men een request sturen naar de API gateway.
 \begin{figure}[h]
 	\includegraphics[width=10cm]{5.png}
 	\caption{Een microservice dat een gateway gebruikt. \textcite{Benetis2016}}
@@ -387,7 +352,7 @@ Nu is er al een deftige architectuur aanwezig. Stap 6, 'construct events', zal h
 	\item Abonneren op bepaalde events.
 	\item Het asynchrone systeem laten bloot leggen zodat externe klanten verschillende notificaties kunnen handelen.
 \end{itemize}
-In figuur 2.13 wordt de volledige architectuur  weergegeven. Daar wordt er ' mooi afgebeeld hoe men events pland. Als event A voor event B moet gebeuren dan zetten ze die zo op de wachtrij event A voor event B want een wachtrij  werkt volgens het FIFO (first in first out) principe.
+In figuur 2.12 wordt de volledige architectuur  weergegeven. Daar wordt er ' mooi afgebeeld hoe men events pland. Als event A voor event B moet gebeuren dan zetten ze die zo op de wachtrij event A voor event B want een wachtrij  werkt volgens het FIFO (first in first out) principe.
 \begin{figure}[h]
 	\includegraphics[width=10cm]{6.png}
 	\caption{Een microservice met asynchronisatie. \textcite{Benetis2016}}
@@ -410,9 +375,9 @@ Velen komen niet tot deze stap, door de onderschatting van de overschakeling naa
 
 
 \subsection{De voordelen en nadelen van microserivces}
-Er wordt veel goed geschreven over microservices. Het gebruik van microservices zou ervoor zorgen dat de architectuur flexibeler wordt. Met flexibeler wordt bedoelt dat de architectuur zich kan 'aanpassen' of kan inspelen op verschillende situaties. Microservices kunnen meerdere keren terugkomen in een architectuur. Dit wordt duidelijker in de methodologie. Dankzij microservices is het hermodeleren, implementeren van nieuwe  technologieën, ... 
+Er wordt veel goed geschreven over microservices. Het gebruik van microservices zou ervoor zorgen dat de architectuur flexibeler wordt. Met flexibeler wordt bedoelt dat de architectuur zich kan 'aanpassen' of kan inspelen op verschillende situaties. Microservices kunnen meerdere keren terugkomen in een architectuur. Dit wordt duidelijker in de methodologie. Dankzij microservices is het hermodeleren, implementeren van nieuwe  technologieën, ... eenvoudiger.
 Kleinere deeltjes zijn gemakkelijker te documenteren. De snelheid van microservices zijn een groot pluspunt. Hiermee wordt er geprobeert om aan te halen dat microservices sneller reageren omdat zo kleine, onafhankelijke services zijn. Ze moeten geen 'onnodige' stappen maken om de  wens van de klant te vervullen. 
-\textcite{Watts2018} geeft enkele voordelen van een microservice. Een developer is onafhankelijk. Ze hebben vrijheid. ' het scalen van een microservice is veel eenvoudiger. Dit komt door dat microservices minder resources nodig hebben dan een volledige monolithic. Resources zijn hulpbronnen. Zoals al vaak aangehaald in deze bachelorproef, zijn microservices onafhankelijk en zouden ze daarom ' geen hulpbronnen nodig mogen hebben. Binnen een monolithic zijn deeltjes afhankelijk van elkaar en hebben elkaar dus nodig om goed te kunnen functioneren. De deeltjes binnen de monolithic hebben elkaar dus nodig en mogelijk als hulpbron. Een ander voordeel is bij het falen van een microservices, de andere microservices er geen last van zullen hebben. Dit komt door hun onafhankelijkheid. 
+\textcite{Watts2018} geeft enkele voordelen van een microservice. Een developer is onafhankelijk. Ze hebben vrijheid. Het scalen van een microservice is veel eenvoudiger. Dit komt door dat microservices minder resources nodig hebben dan een volledige monolithic. Resources zijn hulpbronnen. Zoals al vaak aangehaald in deze bachelorproef, zijn microservices onafhankelijk en zouden ze daarom geen hulpbronnen nodig mogen hebben. Binnen een monolithic zijn deeltjes afhankelijk van elkaar en hebben elkaar dus nodig om goed te kunnen functioneren. De deeltjes binnen de monolithic hebben elkaar dus nodig en mogelijk als hulpbron. Een ander voordeel is bij het falen van een microservices, de andere microservices er geen last van zullen hebben. Dit komt door hun onafhankelijkheid. 
 \textcite{Benetis2016} geeft aan dat volgende puntjes voordelen zijn van microservices:
 \begin{itemize}
 	\item Sneller en gemakkelijker developen
@@ -421,26 +386,28 @@ Kleinere deeltjes zijn gemakkelijker te documenteren. De snelheid van microservi
 	\item Het deployen van een onderdeel gaat sneller omdat het team gespecialiseerd is in die bepaalde service
 	\item Als er iets faalt dan is de impact veel kleiner dan bij een monolithic. Dit komt ' door de onafhankelijkheid van de services
 \end{itemize}
-Maar om ervoor te zorgen dat dit allemaal vlot verloopt moeten er ' aanpassingen binnen in het bedrijf/ de organisatie gebeuren. 
+Maar om ervoor te zorgen dat dit allemaal vlot verloopt moeten er aanpassingen binnen in het bedrijf/ de organisatie gebeuren. 
 \begin{itemize}
 	\item Een project zal ingedeeld moeten worden in kleine requirements. De scope zal gedetailleerder moeten zijn.
 	\item Een team zal kleiner zijn. Zodat er meer op de Agile methode kan gewerkt worden.
 	\item Er zal een sterke band komen met DevOps. Dit komt omdat veel services volledige automatische deployment vragen.
-	\item ' de communicatie tussen de services zal beter moeten worden uitgedacht.
-	\item Documenteren is belangrijk. Dit is niet enkel het geval voor microservices maar ' voor elk project.
+	\item De communicatie tussen de services zal beter moeten worden uitgedacht.
+	\item Documenteren is belangrijk. Dit is niet enkel het geval voor microservices maar ook voor elk project.
 \end{itemize}
 
 Enkele nadelen en moeilijkheden, \textcite{Koukia2018}:
 \begin{itemize}
 	\item Distributed systems zijn ingewikkeld. Microservices vragen meer  werk. Dit komt omdat het een nieuwere technologie is en het concept is niet altijd meteen duidelijk. 
-	\item Complexiteit is overal. Een monolithic bevat ' complexiteit, maar  wel een bekende complexiteit. Als er al een tijdje gewerkt wordt met monolithic, dan is die complexiteit een bekende eigenschap van de architectuur. Omdat microservices iets nieuws is, komt er complexiteit die minder bekend is onder de developers.
+	\item Complexiteit is overal. Een monolithic bevat complexiteit, maar  wel een bekende complexiteit. Als er al een tijdje gewerkt wordt met monolithic, dan is die complexiteit een bekende eigenschap van de architectuur. Omdat microservices iets nieuws is, komt er complexiteit die minder bekend is onder de developers.
 	\item Debuggen en fouten vinden is moeilijker. Bij een monolithic is het eenvoudig, bij aanpassingen wordt de volledige architectuur gerund. De gehele architectuur bij een microservices moet getest worden. Hier werd in het vorige deel meer uitleg over gegeven.
 	\item Bij aanpassingen binnen een monolithic moest er maar één request gedaan worden om code samen te voegen. Bij microservices is dit verschillend. Er moet bijvoorbeeld in vier microservices iets aangepast worden voor een nieuwe  feature. Dan moeten er vier requests verstuurd worden om die code te mergen. Want de services binnen de microservice architectuur zijn onafhankelijk van elkaar. 
 \end{itemize}
 
+\section{Microservices integration patterns}
+
 \section{Order-to-cash proces in SAP}
 \subsection{Definite}
-\textcite{Wong2018} legt uit wat een order-to-cash proces inhoudt. Dit proces heeft veel invloed op het succes van een bedrijf. Dit proces heeft veel invloed met de klant. Een voordeel met de huidige technologie is dat het mogelijk is om het proces volledig te automatiseren. Dit heeft veel zorgt voor een minimaal aantal fouten en vertragingen. De data en gegevens die worden opgehaald en geanalyseerd is correcter. 
+\textcite{Wong2018} legt uit wat een order-to-cash proces inhoudt. Dit proces heeft veel invloed op het succes van een bedrijf. Dit proces heeft veel invloed met de klant. Een voordeel met de huidige technologie is dat het mogelijk is om het proces volledig te automatiseren. Dit zorgt voor een minimaal aantal fouten en vertragingen. De data en gegevens die worden opgehaald en geanalyseerd is correcter. 
 Het proces begint bij het plaatsen van een order door de klant. Alles wat ervoor zorgt dat de klant een order plaatst behoort tot branding, marketing of sales. De hoofdactiviteit van deze afdelingen ligt bij customer relationship, iets wat plaatsvindt voor het OTC proces. Het maakt er geen deel van uit. 
 Velen denken dat een OTC is afgerond wanneer de inning heeft plaatsgevonden. Maar er zijn nog belangrijke stappen die gebeuren na het innen van het geld. Onder andere de data die verzameld is tijdens het proces moet geanalyseerd worden om zo het proces te optimaliseren. 
 \begin{figure}[h]
@@ -455,7 +422,7 @@ Het OTC proces heeft invloed op volgende delen van het bedrijf:
 	\item Human resources
 	\item Financiële afdeling
 \end{itemize}
-Zijn er problemen in één van die afdelingen, kan dit voor vertraging zorgen in de andere afdelingen. Bij vertragingen van betalingen of inningen kan zorgen voor een minder goede cash flow binnen het bedrijf. 
+Zijn er problemen in één van die afdelingen, dan kan een vertraging in de andere afdelingen als gevolg hebben. Alsook een minder vlotte cashflow. 
 Een goed OTC proces maakt indruk op de buiten wereld. Doordat het OTC goed gemanaged wordt, wordt er een beeld gecreërd dat het bedrijf stabiel is. 
 Bij een OTC is technologie cruciaal. Elk deeltje van het proces kan beter worden door de nieuwe  technologie. Er zijn verschillende onderdelen nodig om het proces te optimaliseren om accurate en real-time informatie te verkrijgen. Zoals: 
 \begin{itemize}
@@ -531,63 +498,16 @@ Om dit alles  weg te werken moet er goed gekeken worden naar waar de problemen n
 \end{itemize}
 
 
-\subsection{Technologie}
-\subsubsection{Onderdelen van een order-to-cash proces}
-Er zijn vier grote onderdelen, namelijk:
-\begin{itemize}
-	\item Voor-verkoopsactiviteiten.
-	\item Het order proces.
-	\item Order afwerking.
-	\item Betalingen.
-\end{itemize}
-Bij de voor-verkoopsactiviteiten verstaat  men  het contact dat moet worden gemaakt worden met klant. De klant moet overtuigd worden van het product. Na contact komt er al dan niet een offerte. Soms kan er van contact rechtstreeks naar een order gaan. 
-Het orderproces bevat maar één onderdeel namelijk: de sales orders. 
-Binnen het order afwerking valt het leveren van goederen, het verzenden van goederen.
-\textcite{Kumaran2015} geeft een mooi overzicht van de stappen die een order to cash proces kan bevatten. Zo begint het artikel met een toelichting dat dit proces een core proces is van de business. Dit wil zeggen dat een bedrijf, zonder dit proces, geen winst kan maken. Het is een essentieel onderdeel van zo wat elk bedrijf. Hoe deze vorm krijgt binnen een bedrijf, is heel verschillend. Een OTC proces start met het ontvangen van orders. Daarna kan, dit gebeurt niet overal, er gekeken worden naar het krediet van de klanten. Mag deze klant  wel nog een bestelling plaatsen? Hierna wordt het order opgenomen in het systeem. Het product wordt verzonden en geleverd. En als laatste wordt de factuur betaald. Dit is  welliswaar het 'perfecte' verloop van een order to cash proces, figuur 2.16. 
-\begin{figure}[h]
-	\includegraphics[width=10cm]{Order-to-cash-cycle.jpg}
-	\caption{Order-to-cash proces volgens \textcite{Kumaran2015}.}
-	\centering
-\end{figure}
-Er zijn ' enkele uitdagingen verbonden met dit proces. In de volgende opsomming zijn er enkele vermeld:
-\begin{itemize}
-	\item Hou de orders goed bij, anders loopt het fout vanaf het begin. 
-	\item Zonder automatisering verliest men veel tijd.
-	\item Zorgen dat de logistiek 'on point' is, is heel belangrijk. Dit is een belangrijk onderdeel binnen het proces.
-	\item Bij wanbetalingen, moet de customer service ingrijpen. Zij zijn een belangrijk onderdeel van het proces.
-\end{itemize}
-Het managen van een OTC proces is even belangrijk als de andere aspecten. Een slecht gemanaged proces kan op lange termijn duurder uitkomen dan een onderdeel dat nog niet geautomatiseerd is. 
+\subsection{Technologie: Wat biedt SAP zelf aan voor microservices}
 
-\textcite{PEARSON2017} vindt dat een OTC proces bestaat uit twee subprocessen. Het order managmenet proces en het bill-to-cash proces. Het laatst vernoemde proces gaat over de facturatie en de inning van het geld.
+ Kyma is een recent project van SAP om toenadering te geven tot microserivces. Kyma is een open-source project gemaakt om Kubernetes. Kubernetes wordt gebruikt om applicaties op verschillende machines te managen. Je kan hiermee cloud-based applicaties en on-premise applicaties omzetten naar een microservice architectuur of naar serverless computing. Cloud-based applicaties zijn applicaties die hun data gaan ophalen over het internet in de plaats van op de harde schijf van de computer. On-premise applicaties zijn de tegenhangers van cloud-based. On-premise is lokaal op de computer, op de harde schijf. Serverless computing gebeurt in de cloud. Dit zorgt ervoor dat er op een dynamische manier de resources van een machine kan aangepast worden. 
+Kyma zorgt voor betere end-to-end ervarings scenario's. Die volgen een best-practices voor performance, schaalbaarheid, efficentie en beveiliging. \textcite{Kyma2019}
 
-\textcite{2019} geeft meer uitleg bij enkele termen die in SAP voorkomen. Bij het proces is er een sales team aanwezig. Die spreken met de klant en maken afspraken. Zij zorgen voor een deal met de klant. Zij hebben toegang tot informatie over de klant, producten, kwaliteit, prijzen, etc. 
-Om ervoor te zorgen dat een order kan verzonden worden, moeten de goederen  opgehaald worden. Die goederen worden opgeslaan in een magazijn. Daar wordt aan order picking en packing gedaan. Bij picking gaat men gaan kijken naar de voorraad om het order op te vullen. Packing gaat over het inpakken van de goederen tegen beschadigingen. Dit kan door allemaal dozen op een pallet te zetten. Eens de goederen door de fase picking en packing afgerond zijn, komt het laden voor transport. De goederen worden dan in containers geladen om dan te verzenden via vrachtwagen of per boot. Hierna komt de facturatie. Dan moet er gewacht worden op de betaling van de klant. Bij laattijdige betaling worden er aanmaningen gestuurd. 
-\begin{table}[]
-	\resizebox{\textwidth}{!}{%
-		\begin{tabular}{|l|p{10cm}|}
-				\hline Delivery document & Dit is het leveringsdocument dat gekoppeld is aan een order. Dit wordt uitgestuurd om te bewijzen dat het order geleverd is. \\ \hline
-			Picking & Het nagaan of de goederen in de voorraad zitten en ze ophalen uit het magazijn. \\ \hline
-			Packing & Het inpakken van goederen in dozen, containers, palletten. \\ \hline
-			Loading & De goederen inladen in de vrachtwagen of de container. \\ \hline
-			Shipment document & Dit document wordt mee afgeleverd met de goederen. Het kan als een soort checklist dienen om na te gaan of alles  wel in het afgeleverd pakket zit. \\ \hline
-			Shipment cost document & Hierop is de kost terug te vinden van het transport. \\ \hline
-			Customer billing document & Dit is een verkoopsdocument, dus dit moet de klant niet betalen. Dit document refereerd naar het delivery document. \\ \hline
-			Customer invoice & Dit is de factuur die de klant opgestuurd krijgt. \\ \hline
-		\end{tabular}%
-	}
-	\caption{Tabel met uitleg over termen. \textcite{2019}}
-\end{table}
-
-
-\subsubsection{Wat biedt SAP zelf aan voor microservices}
-\textcite{Kyma2019} verteld hoe Kyma in elkaar zit. Dit is een recent project van SAP om toenadering te geven toto microserivces. Kyma is een open-source project gemaakt om Kubernetes. Kubernetes wordt gebruikt om applicaties op verschillende machines te managen. Je kan hiermee cloud-based applicaties en on-premise applicaties omzetten naar een microservice architectuur of naar serverless computing. Cloud-based applicaties zijn applicaties die hun data gaan ophalen over het internet in de plaats van op de harde schijf van de computer. On-premise applicaties zijn de tegenhangers van cloud-based. On-premise is lokaal op de computer, op de harde schijf. Serverless computing gebeurt in de cloud. Dit zorgt ervoor dat er op een dynamische manier de resources van een machine kan aangepast worden. 
-Kyma zorgt voor betere end-to-end ervarings scenario's. Die volgen een best-practices voor performance, schaalbaarheid, efficentie en beveiliging. 
-
-\textcite{Semerdzhiev2018} geeft een introductie in het project Kyma van SAP. Binnen SAP wordt er omgegaan met software van verschillende leveranciers. SAP probeert om hun software te customizen naar de  wensen van de klant. Dit vraagt meer openheid en een modernere architectuur. 
+Binnen SAP wordt er omgegaan met software van verschillende leveranciers. SAP probeert om hun software te customizen naar de  wensen van de klant. Dit vraagt meer openheid en een modernere architectuur. 
 Het idee achter Kyma is het creëeren van serverless applicaties, mashups en microservices. ' kan het gebruikt worden om snel kleine, gecustomizede modules te developen. Die modules zijn dan verworven met business logica. 
-Er  werd iets zoals Knative gemaakt. Knative is een platform dat developers ondersteund om serverless applicaties te maken op Kubernetes. Dit zorgde voor groot enthousiasme bij SAP omdat hun Kyma project een soort van bevesteging keer. Al snel  werd Kyma gerefactored om samen te kunnen  werken met Knative. Er  werden overlappende componenten  weggelaten, wat Kyma slanker en gestroomlijnder maakt. Dankzij Knative kan Kyma zich richten op higer-level enterprise applications en service consumption scenario's. En gebruik maken van Knative voor de infrastructuur en development scenario's. 
+Er  werd iets zoals Knative gemaakt. Knative is een platform dat developers ondersteund om serverless applicaties te maken op Kubernetes. Dit zorgde voor groot enthousiasme bij SAP omdat hun Kyma project een soort van bevesteging keer. Al snel  werd Kyma gerefactored om samen te kunnen  werken met Knative. Er  werden overlappende componenten  weggelaten, wat Kyma slanker en gestroomlijnder maakt. Dankzij Knative kan Kyma zich richten op higer-level enterprise applications en service consumption scenario's. En gebruik maken van Knative voor de infrastructuur en development scenario's. \textcite{Semerdzhiev2018}
 
-\textcite{Hofmann2018} geeft het update over de integratie tussen Kyma en Knative. De samenwerking is belangrijk. Er wordt een complete set van bouwblokken aangeboden en het zijn twee sterke frameworks. Bij het gebruik van beide kunnen er could-native oplossingen gebouwd worden op Kubernetes met een sterk framework. Op figuur 2.17 is te zien wat Kyma en wat Knative aanbiedt. 
+ De samenwerking tussen Kyma en Knative is belangrijk. Er wordt een complete set van bouwblokken aangeboden en het zijn twee sterke frameworks. Bij het gebruik van beide kunnen er could-native oplossingen gebouwd worden op Kubernetes met een sterk framework. Op figuur 2.17 is te zien wat Kyma en wat Knative aanbiedt. \textcite{Hofmann2018}
 \begin{figure}[h]
 	\includegraphics[width=10cm]{1-kyma-knative.png}
 	\caption{Wat Kyma, boven de lijn, aanbiedt en wat Knative, onder de lijn, aanbiedt \textcite{Hofmann2018}.}
