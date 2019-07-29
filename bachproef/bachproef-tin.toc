@@ -33,13 +33,25 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {2.2}Microservices integration patterns}{35}{section.2.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.3}Order-to-cash proces in SAP}{35}{section.2.3}
+\contentsline {subsection}{\numberline {2.2.1}Anti-patterns}{36}{subsection.2.2.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.3.1}Definite}{35}{subsection.2.3.1}
+\contentsline {subsection}{\numberline {2.2.2}Architecture patterns}{36}{subsection.2.2.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.3.2}Technologie: Wat biedt SAP zelf aan voor microservices}{38}{subsection.2.3.2}
+\contentsline {subsection}{\numberline {2.2.3}Communicatie tussen de microservices}{36}{subsection.2.2.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.4}Requirements van de business}{39}{section.2.4}
+\contentsline {subsection}{\numberline {2.2.4}Data integration}{36}{subsection.2.2.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.2.5}ETL}{36}{subsection.2.2.5}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.2.6}REST}{36}{subsection.2.2.6}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.3}Order-to-cash proces in SAP}{36}{section.2.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.3.1}Definite}{36}{subsection.2.3.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.3.2}Technologie: Wat biedt SAP zelf aan voor microservices}{39}{subsection.2.3.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.4}Requirements van de business}{40}{section.2.4}
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {3}Methodologie}{45}{chapter.3}
 \defcounter {refsection}{0}\relax 

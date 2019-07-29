@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99999 (MiKTeX 2.9.6840 64-bit) (preloaded format=xelatex 2018.12.30)  20 JUL 2019 19:58
+This is XeTeX, Version 3.14159265-2.6-0.99999 (MiKTeX 2.9.6840 64-bit) (preloaded format=xelatex 2018.12.30)  29 JUL 2019 20:03
 entering extended mode
 **./bachproef-tin.tex
 (bachproef-tin.tex
@@ -1782,11 +1782,14 @@ LaTeX Font Info:    Font shape `T1/pag/b/n' in size <12> not available
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [7]
-[8])
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [8])
 \tf@toc=\write7
 \openout7 = `bachproef-tin.toc'.
 
- [9] [10
+
+[9] [10
 
 ] (bachproef-tin.lof
 Overfull \hbox (8.50375pt too wide) in paragraph at lines 8--8
@@ -1975,13 +1978,16 @@ File: img/6.png Graphic file (type bmp)
 Underfull \vbox (badness 6284) has occurred while \output is active []
 
  [34]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [35]
 File: img/wong.png Graphic file (type bmp)
 <img/wong.png>
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[35]
+[36]
 File: img/wong2.png Graphic file (type bmp)
 <img/wong2.png>
 
@@ -1991,28 +1997,28 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [36]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
  [37]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [38]
+Underfull \vbox (badness 6284) has occurred while \output is active []
+
+ [39]
 File: img/1-kyma-knative.png Graphic file (type bmp)
 <img/1-kyma-knative.png>
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[39]) (methodologie.tex [40] [41] [42] [43] [44
-
-]
+[40]) (methodologie.tex [41] [42] [43] [44]
 Hoofdstuk 3.
 
 LaTeX Warning: No positions in optional float specifier.
                Default added (so using `tbp') on input line 22.
 
-[45]
+[45
+
+]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [46]
@@ -2104,6 +2110,12 @@ g mi-cro-ser-vi-ces. \T1/ptm/m/it/12 https://dzone.com/articles/challenges-
  []
 
 
+Overfull \hbox (59.27806pt too wide) in paragraph at lines 132--132
+\T1/ptm/m/n/12 chi-tec-ture. \T1/ptm/m/it/12 https://headspring.com/2018/11/14/
+integration-patterns-microservices-architecture/\T1/ptm/m/n/12 . 
+ []
+
+
 Overfull \hbox (38.84993pt too wide) in paragraph at lines 132--132
 \T1/ptm/m/it/12 https://medium.com/tech-tajawal/microservice-authentication-and
 -authorization-solutions-
@@ -2141,22 +2153,10 @@ hetti? \T1/ptm/m/it/12 https://www.ciber.nl/blog/deel-
  []
 
 
-Overfull \hbox (36.55238pt too wide) in paragraph at lines 132--132
-[][]\T1/ptm/m/n/12 concept hub, S. (2019). Un-der-stan-ding or-der to cash cy-c
-le in sap. \T1/ptm/m/it/12 http://sapconcepthub.com/order-
- []
-
-
 Overfull \hbox (150.80272pt too wide) in paragraph at lines 132--132
 [][]\T1/ptm/m/n/12 da Silva, R. C. (2017). Best prac-ti-ces to pro-tect your mi
 -cro-ser-vi-ces ar-chi-tec-ture. \T1/ptm/m/it/12 https://medium.com/@rcandidosi
 lva/best-
- []
-
-
-Overfull \hbox (20.56842pt too wide) in paragraph at lines 132--132
-[][]\T1/ptm/m/n/12 Everard, D. (2017). API Ga-te-way de-fi-ni-tion. \T1/ptm/m/i
-t/12 https://www.quora.com/What-is-an-API-gateway\T1/ptm/m/n/12 . 
  []
 
 
@@ -2273,10 +2273,10 @@ Package logreq Info: Writing requests to 'bachproef-tin.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 42228 strings out of 427796
- 764780 string characters out of 3147988
- 1371589 words of memory out of 3000000
- 45649 multiletter control sequences out of 15000+200000
+ 42233 strings out of 427796
+ 764758 string characters out of 3147988
+ 1371613 words of memory out of 3000000
+ 45654 multiletter control sequences out of 15000+200000
  571444 words of font info for 67 fonts, out of 3000000 for 9000
  1328 hyphenation exceptions out of 8191
  62i,12n,59p,1355b,6265s stack positions out of 5000i,500n,10000p,200000b,50000s

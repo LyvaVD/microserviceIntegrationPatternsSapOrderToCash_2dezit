@@ -97,6 +97,35 @@
       \field{title}{Principles for Microservices Integration}
       \field{year}{2018}
     \endentry
+    \entry{Aradhye2018}{article}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,uniquepart=base,hash=9e8569aabab4be3d289a89775c482dc1}{%
+           family={Aradhye},
+           familyi={A\bibinitperiod},
+           given={Yogi},
+           giveni={Y\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{9e8569aabab4be3d289a89775c482dc1}
+      \strng{fullhash}{9e8569aabab4be3d289a89775c482dc1}
+      \strng{bibnamehash}{9e8569aabab4be3d289a89775c482dc1}
+      \strng{authorbibnamehash}{9e8569aabab4be3d289a89775c482dc1}
+      \strng{authornamehash}{9e8569aabab4be3d289a89775c482dc1}
+      \strng{authorfullhash}{9e8569aabab4be3d289a89775c482dc1}
+      \field{sortinit}{A}
+      \field{sortinithash}{d77c7cdd82ff690d4c3ef13216f92f0b}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{14}
+      \field{journaltitle}{https://headspring.com/2018/11/14/integration-patterns-microservices-architecture/}
+      \field{month}{11}
+      \field{title}{How integration patterns impact your microservices architecture}
+      \field{year}{2018}
+      \field{dateera}{ce}
+    \endentry
     \entry{Atrash2018}{article}{}
       \name{author}{1}{}{%
         {{uniquename=0,uniquepart=base,hash=2a4a54bf620ca88af8debcc7b4942795}{%
@@ -286,35 +315,6 @@
       \field{title}{Microservices: het einde van de SAP spaghetti?}
       \field{year}{2018}
     \endentry
-    \entry{2019}{article}{}
-      \name{author}{1}{}{%
-        {{uniquename=0,uniquepart=base,hash=c1073bcebc27d5c931d7b4def4596c2e}{%
-           family={hub},
-           familyi={h\bibinitperiod},
-           given={SAP},
-           giveni={S\bibinitperiod},
-           givenun=0,
-           prefix={concept},
-           prefixi={c\bibinitperiod}}}%
-      }
-      \strng{namehash}{c1073bcebc27d5c931d7b4def4596c2e}
-      \strng{fullhash}{c1073bcebc27d5c931d7b4def4596c2e}
-      \strng{bibnamehash}{c1073bcebc27d5c931d7b4def4596c2e}
-      \strng{authorbibnamehash}{c1073bcebc27d5c931d7b4def4596c2e}
-      \strng{authornamehash}{c1073bcebc27d5c931d7b4def4596c2e}
-      \strng{authorfullhash}{c1073bcebc27d5c931d7b4def4596c2e}
-      \field{sortinit}{c}
-      \field{sortinithash}{963e9d84a3da2344e8833203de5aed05}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \true{uniqueprimaryauthor}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{http://sapconcepthub.com/order-to-cash-cycle/}
-      \field{title}{Understanding order to cash cycle in sap.}
-      \field{year}{2019}
-      \field{dateera}{ce}
-    \endentry
     \entry{Silva2017}{article}{}
       \name{author}{1}{}{%
         {{uniquename=0,uniquepart=base,hash=22a03fc4628dc6542a58a50f51523e61}{%
@@ -365,32 +365,6 @@
       \field{journaltitle}{Devoteam}
       \field{title}{Microservices: just another word fo 'tiny-SOA'?}
       \field{year}{2018}
-    \endentry
-    \entry{Everard2017}{article}{}
-      \name{author}{1}{}{%
-        {{uniquename=0,uniquepart=base,hash=3e0d81bb38cf422817535a782e3ab9f7}{%
-           family={Everard},
-           familyi={E\bibinitperiod},
-           given={Daniel},
-           giveni={D\bibinitperiod},
-           givenun=0}}%
-      }
-      \strng{namehash}{3e0d81bb38cf422817535a782e3ab9f7}
-      \strng{fullhash}{3e0d81bb38cf422817535a782e3ab9f7}
-      \strng{bibnamehash}{3e0d81bb38cf422817535a782e3ab9f7}
-      \strng{authorbibnamehash}{3e0d81bb38cf422817535a782e3ab9f7}
-      \strng{authornamehash}{3e0d81bb38cf422817535a782e3ab9f7}
-      \strng{authorfullhash}{3e0d81bb38cf422817535a782e3ab9f7}
-      \field{sortinit}{E}
-      \field{sortinithash}{f615fb9c6fba11c6f962fb3fd599810e}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{year}
-      \true{uniqueprimaryauthor}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{https://www.quora.com/What-is-an-API-gateway}
-      \field{title}{API Gateway definition}
-      \field{year}{2017}
     \endentry
     \entry{Eyee2018}{article}{}
       \name{author}{1}{}{%
@@ -498,33 +472,6 @@
       \field{journaltitle}{https://koukia.ca/a-microservices-implementation-journey-part-1-9f6471fe917}
       \field{title}{A microservices implementation journey - Part 1}
       \field{year}{2018}
-    \endentry
-    \entry{Kumaran2015}{article}{}
-      \name{author}{1}{}{%
-        {{uniquename=0,uniquepart=base,hash=5ea1e48e7a5eee2e95c49141b42aa8cf}{%
-           family={Kumaran},
-           familyi={K\bibinitperiod},
-           given={Senthil},
-           giveni={S\bibinitperiod},
-           givenun=0}}%
-      }
-      \strng{namehash}{5ea1e48e7a5eee2e95c49141b42aa8cf}
-      \strng{fullhash}{5ea1e48e7a5eee2e95c49141b42aa8cf}
-      \strng{bibnamehash}{5ea1e48e7a5eee2e95c49141b42aa8cf}
-      \strng{authorbibnamehash}{5ea1e48e7a5eee2e95c49141b42aa8cf}
-      \strng{authornamehash}{5ea1e48e7a5eee2e95c49141b42aa8cf}
-      \strng{authorfullhash}{5ea1e48e7a5eee2e95c49141b42aa8cf}
-      \field{sortinit}{K}
-      \field{sortinithash}{9fd838a31ba64d981e8f44562bd33f89}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \true{uniqueprimaryauthor}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{https://www.invensis.net/blog/finance-and-accounting/what-is-order-to-cash-cycle/}
-      \field{title}{What is Order to Cash Cycle}
-      \field{year}{2015}
-      \field{dateera}{ce}
     \endentry
     \entry{Kyma2019}{article}{}
       \name{author}{1}{}{%

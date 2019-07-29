@@ -404,7 +404,31 @@ Enkele nadelen en moeilijkheden, \textcite{Koukia2018}:
 \end{itemize}
 
 \section{Microservices integration patterns}
+Hierboven werd uitgelegd wat microservices zijn. Het zijn kleine, onafhankelijke services (synoniem vinden). Maar die moeten met elkaar kunnen communiceren, taken uitvoeren, data updaten en raadplegen. Er zijn manieren om gestructureerd microservices te integreren in de applicatie.
+Die verschillende manieren zijn onderstaande patterns:
+\begin{itemize}
+	\item Anti-patterns
+	\item Architecture patterns
+	\item Communicatie tussen de microservices
+	\item Data integration
+	\item Extract, transform en load
+	\item REST	
+\end{itemize}
 
+In het derde hoofdstuk zal één van de bovenstaande patterns theoretisch toegepast worden op het order-to-cash proces. Het order-to-cash proces zal verder uitgelegd wroden in deel 2.3.
+\subsection{Anti-patterns}
+\subsection{Architecture patterns}
+\subsection{Communicatie tussen de microservices}
+\subsection{Data integration}
+Een opsomming van enkele definites omtrend 'Data integration':
+	\begin{itemize}
+		\item 'Two or more services read and write data out of one central data store', \textcite{Aradhye2018}.
+	\end{itemize}
+
+Een opvallende eigenschap van dit pattern is de centrale databank. Dit heeft als gevolg dat de architectuur schalen duurder is. Om iets aan te passen en te deployen, moet volledig de architectuur opnieuw gecompiled worden. Wat een nadeel is van monolithic. Dit pattern zorgt ervoor dat de microservices niet meer onafhankelijk zijn van elkaar. Ze zijn niet rechtstreeks afhankelijk van elkaar, maar door de gedeelde databank, moeten ze wachten tot de andere microservice gedaan heeft met zijn taak in de databank.
+
+\subsection{ETL}
+\subsection{REST}
 \section{Order-to-cash proces in SAP}
 \subsection{Definite}
 \textcite{Wong2018} legt uit wat een order-to-cash proces inhoudt. Dit proces heeft veel invloed op het succes van een bedrijf. Dit proces heeft veel invloed met de klant. Een voordeel met de huidige technologie is dat het mogelijk is om het proces volledig te automatiseren. Dit zorgt voor een minimaal aantal fouten en vertragingen. De data en gegevens die worden opgehaald en geanalyseerd is correcter. 
