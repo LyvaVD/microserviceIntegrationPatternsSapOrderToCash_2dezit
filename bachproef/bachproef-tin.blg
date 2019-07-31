@@ -1,22 +1,22 @@
-[1] Config.pm:302> INFO - This is Biber 2.11
-[1] Config.pm:305> INFO - Logfile is 'bachproef-tin.blg'
-[70] biber-MSWIN64:313> INFO - === 
-[124] Biber.pm:371> INFO - Reading 'bachproef-tin.bcf'
-[345] Biber.pm:857> INFO - Found 39 citekeys in bib section 0
-[382] Biber.pm:3976> INFO - Processing section 0
-[414] Biber.pm:4136> INFO - Looking for bibtex format file 'bachproef-tin.bib' for section 0
-[423] bibtex.pm:1500> INFO - LaTeX decoding ...
-[681] bibtex.pm:1316> INFO - Found BibTeX data source 'bachproef-tin.bib'
-[897] Biber.pm:4136> INFO - Looking for bibtex format file '../voorstel/voorstel.bib' for section 0
-[903] bibtex.pm:1500> INFO - LaTeX decoding ...
-[932] bibtex.pm:1316> INFO - Found BibTeX data source '../voorstel/voorstel.bib'
-[934] Utils.pm:193> WARN - Duplicate entry key: 'Spichale2018' in file '../voorstel/voorstel.bib', skipping ...
-[935] Utils.pm:193> WARN - Duplicate entry key: 'Kyma2019' in file '../voorstel/voorstel.bib', skipping ...
-[935] Utils.pm:193> WARN - Duplicate entry key: 'Semerdzhiev2018' in file '../voorstel/voorstel.bib', skipping ...
-[1107] UCollate.pm:68> INFO - Overriding locale 'nl-NL' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[1107] UCollate.pm:68> INFO - Overriding locale 'nl-NL' defaults 'variable = shifted' with 'variable = non-ignorable'
-[1108] Biber.pm:3804> INFO - Sorting list 'apa/global//global/global' of type 'entry' with template 'apa' and locale 'nl-NL'
-[1108] Biber.pm:3810> INFO - No sort tailoring available for locale 'nl-NL'
-[1184] bbl.pm:617> INFO - Writing 'bachproef-tin.bbl' with encoding 'UTF-8'
-[1227] bbl.pm:720> INFO - Output to bachproef-tin.bbl
-[1228] Biber.pm:110> INFO - WARNINGS: 3
+[0] Config.pm:302> INFO - This is Biber 2.11
+[0] Config.pm:305> INFO - Logfile is 'bachproef-tin.blg'
+[46] biber-MSWIN64:313> INFO - === 
+[79] Biber.pm:371> INFO - Reading 'bachproef-tin.bcf'
+[230] Biber.pm:857> INFO - Found 40 citekeys in bib section 0
+[271] Biber.pm:3976> INFO - Processing section 0
+[292] Biber.pm:4136> INFO - Looking for bibtex format file 'bachproef-tin.bib' for section 0
+[297] bibtex.pm:1500> INFO - LaTeX decoding ...
+[456] bibtex.pm:1316> INFO - Found BibTeX data source 'bachproef-tin.bib'
+[613] Biber.pm:4136> INFO - Looking for bibtex format file '../voorstel/voorstel.bib' for section 0
+[616] bibtex.pm:1500> INFO - LaTeX decoding ...
+[633] bibtex.pm:1316> INFO - Found BibTeX data source '../voorstel/voorstel.bib'
+[634] Utils.pm:193> WARN - Duplicate entry key: 'Spichale2018' in file '../voorstel/voorstel.bib', skipping ...
+[635] Utils.pm:193> WARN - Duplicate entry key: 'Kyma2019' in file '../voorstel/voorstel.bib', skipping ...
+[635] Utils.pm:193> WARN - Duplicate entry key: 'Semerdzhiev2018' in file '../voorstel/voorstel.bib', skipping ...
+[763] UCollate.pm:68> INFO - Overriding locale 'nl-NL' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[764] UCollate.pm:68> INFO - Overriding locale 'nl-NL' defaults 'variable = shifted' with 'variable = non-ignorable'
+[764] Biber.pm:3804> INFO - Sorting list 'apa/global//global/global' of type 'entry' with template 'apa' and locale 'nl-NL'
+[764] Biber.pm:3810> INFO - No sort tailoring available for locale 'nl-NL'
+[826] bbl.pm:617> INFO - Writing 'bachproef-tin.bbl' with encoding 'UTF-8'
+[852] bbl.pm:720> INFO - Output to bachproef-tin.bbl
+[852] Biber.pm:110> INFO - WARNINGS: 3

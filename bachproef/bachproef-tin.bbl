@@ -577,6 +577,35 @@
       \field{title}{Microservices Logging best practices}
       \field{year}{2018}
     \endentry
+    \entry{Monson2019}{article}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,uniquepart=base,hash=7b0ecb82faeb86f0ded21d43c72fa431}{%
+           family={Monson},
+           familyi={M\bibinitperiod},
+           given={Dallas},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{7b0ecb82faeb86f0ded21d43c72fa431}
+      \strng{fullhash}{7b0ecb82faeb86f0ded21d43c72fa431}
+      \strng{bibnamehash}{7b0ecb82faeb86f0ded21d43c72fa431}
+      \strng{authorbibnamehash}{7b0ecb82faeb86f0ded21d43c72fa431}
+      \strng{authornamehash}{7b0ecb82faeb86f0ded21d43c72fa431}
+      \strng{authorfullhash}{7b0ecb82faeb86f0ded21d43c72fa431}
+      \field{sortinit}{M}
+      \field{sortinithash}{cfd219b90152c06204fab207bc6c7cab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{18}
+      \field{journaltitle}{https://keyholesoftware.com/2019/03/18/microservices-anti-patterns/}
+      \field{month}{3}
+      \field{title}{Microservices Anti-Patterns}
+      \field{year}{2019}
+      \field{dateera}{ce}
+    \endentry
     \entry{Morgan2019}{article}{}
       \name{author}{1}{}{%
         {{uniquename=0,uniquepart=base,hash=b569bb5cc8c4cccba593d7335c471166}{%

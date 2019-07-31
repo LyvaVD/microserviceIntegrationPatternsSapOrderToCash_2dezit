@@ -417,6 +417,26 @@ Die verschillende manieren zijn onderstaande patterns:
 
 In het derde hoofdstuk zal één van de bovenstaande patterns theoretisch toegepast worden op het order-to-cash proces. Het order-to-cash proces zal verder uitgelegd wroden in deel 2.3.
 \subsection{Anti-patterns}
+Anti-patterns ontstaan bij een ongeplande overschakeling naar microservices. Wanneer microservices gebruikt worden, zonder grondig onderzoek, kan dat tot chaos leiden. Anti-patterns komen vaker voor dan een gestructureerde microservice architectuur. Er moet grondig onderzoek gedaan worden naar de verschillende 'microservice integration patterns'. Op welke manier kan de applicatie, gestructureerd, naar een microservice architectuur gewerkt worden.
+De meeste mensen hebben niet door dat ze een anti-pattern aan het maken zijn. Door ongestructureerd de microservices te gebruiken, kan er, onbewust, een anti-pattern ontstaan. 
+
+Er zullen vier anti-patterns besproken worden. Dit kan helpen bij het vinden van een anti-pattern. Volgende anti-patterns zullen besproken worden, \textcite{Monson2019}:
+\begin{itemize}
+	\item Break the piggy bank
+	\item Everything micro
+	\item We are Agile: The Frankenstein
+	\item Magic pixie dust
+\end{itemize}
+\subsubsection{Break the piggy bank}
+Bij deze 'manier' van toepassing van microservices kan de applicatie voorgesteld worden als een spaarvarken. Om van een monlithic applicatie naar een microservice applicatie te gaan, moet het spaarvarken (de monolithic applicatie) aan stukken geslaan worden. De applicaties architectuur wordt volledig uit elkaar gehaald en in kleine deeltjes opgedeeld. In het begin van de verandering naar microservices, lijkt het dat de complexiteit verminderd. Maar eens verder in het proces zal het duidelijk worden dat het enkel schijn was, de complexiteit wordt enkel verhoogd. 
+De applicatie is opgedeeld in onderdelen en die onderdelen zijn omgezet in microservices. Bij het samenvoegen van de microservices tot een architectuur, is het mogelijk dat de applicatie een mini-monolithic wordt. Dit komt voor wanneer de services niet opgedeeld worden en random worden samengevoegd.
+Deze anti-pattern is het populairst wanneer een monolithic applictie niet meer houdbaar is. 
+\subsubsection{Everyting micro}
+
+\subsubsection{We are Agile: The Frankenstein}
+
+\subsubsection{Magic pixie dust}
+
 \subsection{Architecture patterns}
 \subsection{Communicatie tussen de microservices}
 \subsection{Data integration}
