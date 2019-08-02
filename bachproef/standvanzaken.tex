@@ -404,41 +404,78 @@ Enkele nadelen en moeilijkheden, \textcite{Koukia2018}:
 \end{itemize}
 
 \section{Microservices integration patterns}
-Hierboven werd uitgelegd wat microservices zijn. Het zijn kleine, onafhankelijke services (synoniem vinden). Maar die moeten met elkaar kunnen communiceren, taken uitvoeren, data updaten en raadplegen. Er zijn manieren om gestructureerd microservices te integreren in de applicatie.
+Hierboven werd uitgelegd wat microservices zijn. Het zijn kleine, onafhankelijke services (synoniem vinden). Maar die moeten met elkaar kunnen communiceren, taken uitvoeren, data updaten en raadplegen. Er zijn manieren om microservices gestructureerd te integreren in de applicatie. Dit kan aan de hand van 
 Die verschillende manieren zijn onderstaande patterns:
 \begin{itemize}
 	\item Anti-patterns
-	\item Architecture patterns
 	\item Communicatie tussen de microservices
 	\item Data integration
-	\item Extract, transform en load
+	\item Extract, transform en load (ETL)
 	\item REST	
 \end{itemize}
 
-In het derde hoofdstuk zal één van de bovenstaande patterns theoretisch toegepast worden op het order-to-cash proces. Het order-to-cash proces zal verder uitgelegd wroden in deel 2.3.
+In het derde hoofdstuk zal één van de bovenstaande patterns theoretisch toegepast worden op het order-to-cash proces. Het order-to-cash proces zal verder uitgelegd worden in deel 2.3.
 \subsection{Anti-patterns}
 Anti-patterns ontstaan bij een ongeplande overschakeling naar microservices. Wanneer microservices gebruikt worden, zonder grondig onderzoek, kan dat tot chaos leiden. Anti-patterns komen vaker voor dan een gestructureerde microservice architectuur. Er moet grondig onderzoek gedaan worden naar de verschillende 'microservice integration patterns'. Op welke manier kan de applicatie, gestructureerd, naar een microservice architectuur gewerkt worden.
 De meeste mensen hebben niet door dat ze een anti-pattern aan het maken zijn. Door ongestructureerd de microservices te gebruiken, kan er, onbewust, een anti-pattern ontstaan. 
 
-Er zullen vier anti-patterns besproken worden. Dit kan helpen bij het vinden van een anti-pattern. Volgende anti-patterns zullen besproken worden, \textcite{Monson2019}:
+Er zullen vier anti-patterns besproken worden. Dit kan helpen bij het achterhalen van een anti-pattern. Volgende anti-patterns zullen besproken worden, \textcite{Monson2019}:
 \begin{itemize}
 	\item Break the piggy bank
 	\item Everything micro
 	\item We are Agile: The Frankenstein
-	\item Magic pixie dust
 \end{itemize}
 \subsubsection{Break the piggy bank}
-Bij deze 'manier' van toepassing van microservices kan de applicatie voorgesteld worden als een spaarvarken. Om van een monlithic applicatie naar een microservice applicatie te gaan, moet het spaarvarken (de monolithic applicatie) aan stukken geslaan worden. De applicaties architectuur wordt volledig uit elkaar gehaald en in kleine deeltjes opgedeeld. In het begin van de verandering naar microservices, lijkt het dat de complexiteit verminderd. Maar eens verder in het proces zal het duidelijk worden dat het enkel schijn was, de complexiteit wordt enkel verhoogd. 
-De applicatie is opgedeeld in onderdelen en die onderdelen zijn omgezet in microservices. Bij het samenvoegen van de microservices tot een architectuur, is het mogelijk dat de applicatie een mini-monolithic wordt. Dit komt voor wanneer de services niet opgedeeld worden en random worden samengevoegd.
-Deze anti-pattern is het populairst wanneer een monolithic applictie niet meer houdbaar is. 
+Bij deze manier van toepassing van microservices kan de applicatie voorgesteld worden als een spaarvarken. Om van een monlithic applicatie naar een microservice applicatie te gaan, moet het spaarvarken (de monolithic applicatie) aan stukken geslaan worden. De applicaties architectuur wordt volledig uit elkaar gehaald en in kleine delen opgedeeld. De kleine delen worden omgezet naar microservices. In het begin van de verandering naar microservices, lijkt het dat de complexiteit verminderd. Maar eens verder in het proces zal het duidelijk worden dat het enkel schijn was, de complexiteit wordt enkel verhoogd. Dit komt door de ongestructureerde manier waarop men te werk is gegaan.
+De applicatie is opgedeeld in onderdelen en die onderdelen zijn omgezet in microservices. Bij het samenvoegen van de microservices tot een architectuur, is het mogelijk dat de applicatie een mini-monolithic wordt. Dit komt voor wanneer de services niet opgedeeld worden en willekeurig worden samengevoegd.
+Dit anti-pattern is het populairst wanneer een monolithic applictie niet meer houdbaar is. 
+\begin{figure}[h!]
+	\includegraphics[width=10cm]{breakthepiggybank.png}
+	\centering
+	\caption{Break the piggy bank, van monolithic naar microservices via anti-pattern \textcite{Monson2019}}
+\end{figure}
+
 \subsubsection{Everyting micro}
+Alles in de applicatie wordt omgezet naar microservices, behalve de databank. Bij deze anit-pattern blijft de databank dezelfde als bij de monolithic applicatie. De verschillende microservices moeten de data uit een gemeenschappelijke databank opvragen. De databank is de 'bottleneck' in de applicatie. De term 'bottleneck' wordt gebruikt wanneer een plaats is binnen de applicatie waar alle delen vertraagt worden. Een 'bottleneck' is een soort van trechter. Alle aanvragen komen binnen maar er kunnen maar enkele verwerkt worden. Daar wordt vertraging opgelopen. 
+Om de data van de databank op te halen moet er aan 'access control' gedaan worden. Niet alle microservices kunnen tegelijkertijd hun data opvragen en ontvangen. De databank moet op een gecontroleerde manier gebruikt worden. Wie de databank wanneer mag 'gebruiken' moet goed uitgedacht zijn. Anders is er kans op 'deadlock'. Deadlock komt voor wanneer twee of meerdere services data van de databank willen halen. Wanneer er geen controle gebeurt over de toegang kan het zijn dat een services de databank voor zichzelf houdt.
+De onderdelen van de applicatie kunnen microservices zijn, maar als de databank nog steeds monolithic is, wordt de 'bottleneck' verplaatst.
+De datastructuur blijft monolithic.
+In het begin lijkt dit niet zo een groot probleem. Maar de monolithic databank heeft een negatieve invloed op de applicatie. Naast de negatieve invloed is er een uitdaging: de verandering van de databank schema's bijhouden. Wanneer er een aanpassing gemaakt wordt, moet dat bijgehouden worden. Omdat er maar één databank gebruikt wordt, moet elke verandering van elke microservices genoteerd worden. Naast die uitdaging, moet bij een verandering in de productie databank, de volledige applicatie opnieuw gedeployed worden. Een productie databank is de databank die live gebruikt wordt. Het is de databank waarmee je communiceert als je op Zalando iets besteld. 
+\begin{figure}[h!]
+	\includegraphics[width=10cm]{everythingmicro.png}
+	\centering
+	\caption{Everyhting micro, anti-pattern met een monolithic databank. \textcite{Monson2019}}
+\end{figure}
 
 \subsubsection{We are Agile: The Frankenstein}
+Dit anti-pattern ontstaat vaker door de overschakeling van waterval analyse naar de Agile methodologie. Door die overschakeling kan er gedacht worden dat er niks meer gedaan moet worden op vlak van voorbereiding. Dat alles duidelijk zal worden eens het probleem zich echt voordoet. De meeste teams gaan van de waterval methode naar een combinatie van Agile en waterval. 
+Door een ongestructureerde planning, worden er losse delen geprogrammeerd. Die losse delen moeten samen werken. Ze worden aan elkaar 'genaaid' om samen te werken. Net zoals Frankenstein aan elkaar is genaaid met verschillende onderdelen. Al de samengevoegde onderdelen moeten de data delen. Moet er een nieuw deel functionaliteit toegevoegd worden, wordt de architectuur complexer en moeilijker om te deployen. 
+Omdat de architectuur een samenhang is van onderdelen, kan de applicatie op lange termijn dingen doen dat niet zou mogen. Er zouden transacties kunnen gebeuren die niet mogen gebeuren binnen de applicatie. De mogelijkheid bestaat dat de applicatie gewoon uit elkaar valt door de slechte architectuur en de chaos die er is. 
+\begin{figure}[h!]
+	\includegraphics[width=10cm]{frankenstein.png}
+	\centering
+	\caption{The Frankenstein, anti-pattern waarbij de microservices bij elkaar zijn gevoegd zonder samenhang. \textcite{Monson2019}}
+\end{figure}
 
-\subsubsection{Magic pixie dust}
 
-\subsection{Architecture patterns}
+
 \subsection{Communicatie tussen de microservices}
+Er zijn verschillende manieren om microservices te laten communiceren met elkaar. De verschillende microservices moeten met elkaar kunnen communiceren om data uit te wisselen. De microservices kunnen bijvoorbeeld elke microservice kennen die het nodig heeft. Maar dit maakt de gehele architectuur enkel maar complexer. Zoals in afbeelding X te zien is, wordt de architectuur chaotisch bij deze manier van communiceren.
+\begin{figure}[h!]
+	\includegraphics[width=10cm]{chaos.PNG}
+	\centering
+	\caption{Een architectuur waarbij de microservices elkaar direct kennen om informatie met elkaar te delen.}
+\end{figure}
+
+Dit zorgt ervoor dat de microservices niet meer onafhankelijk zijn van elkaar. Ze worden weer afhankelijk van elkaar en vormen zo een mini-monolithic. Een soort anti-pattern zal ontstaan. Om ervoor te zorgen dat microservices onafhankelijk blijven, kan er 'messaging' toegepast worden, \textcite{Solance2018}. Messaging is een manier van communiceren, om business entiteiten up te daten, dat gebeurt via een 'message broker'. Een 'message broker' is de logica die de berichten van een microservice naar een andere stuurt zonder dat ze elkaar moeten kennen. Het meest gekende patroon hiervoor is publish-subscribe pattern. Deze wordt weergegeven in afbeelding X.
+\begin{figure}[h!]
+	\includegraphics[width=10cm]{messaging.PNG}
+	\centering
+	\caption{Een architectuur waarbij een message broker als communicatiemiddel wordt gebruikt.}
+\end{figure}
+In de 'message broker' heeft elke microservices zijn queue. De queue is een wachtrij waar berichten worden opgeslaan. De berichten worden verwijderd van de queue eens ze gelezen en opgehaald worden. Het bericht moet eerst gelezen worden voordat het verwijderd kan worden van de queue. 
+Een microservice stuurt een bericht naar de 'message broker' en moet zich verder niks van het bericht aantrekken. De 'message broker' zorgt ervoor dat het bericht bij de juiste microservice(s) wordt afgeleverd. De uiteinden kennen elkaar niet. Ze kunnen volledig onafhankelijk van elkaar functioneren. Dit is een doel van microservices. En om dat doel te bereiken, moet de manier van communicatie goed gekozen worden.
+
 \subsection{Data integration}
 Een opsomming van enkele definites omtrend 'Data integration':
 	\begin{itemize}
@@ -447,7 +484,7 @@ Een opsomming van enkele definites omtrend 'Data integration':
 
 Een opvallende eigenschap van dit pattern is de centrale databank. Dit heeft als gevolg dat de architectuur schalen duurder is. Om iets aan te passen en te deployen, moet volledig de architectuur opnieuw gecompiled worden. Wat een nadeel is van monolithic. Dit pattern zorgt ervoor dat de microservices niet meer onafhankelijk zijn van elkaar. Ze zijn niet rechtstreeks afhankelijk van elkaar, maar door de gedeelde databank, moeten ze wachten tot de andere microservice gedaan heeft met zijn taak in de databank.
 
-\subsection{ETL}
+\subsection{Extract, transform en load (ETL)}
 \subsection{REST}
 \section{Order-to-cash proces in SAP}
 \subsection{Definite}

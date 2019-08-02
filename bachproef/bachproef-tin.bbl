@@ -838,6 +838,29 @@
       \field{title}{Securing microservices: The API gateway, authentication and authorization}
       \field{year}{2017}
     \endentry
+    \entry{Solance2018}{article}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,uniquepart=base,hash=f614c1b4dc5e93cb95cdf0a1e47e5094}{%
+           family={Solance},
+           familyi={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{f614c1b4dc5e93cb95cdf0a1e47e5094}
+      \strng{fullhash}{f614c1b4dc5e93cb95cdf0a1e47e5094}
+      \strng{bibnamehash}{f614c1b4dc5e93cb95cdf0a1e47e5094}
+      \strng{authorbibnamehash}{f614c1b4dc5e93cb95cdf0a1e47e5094}
+      \strng{authornamehash}{f614c1b4dc5e93cb95cdf0a1e47e5094}
+      \strng{authorfullhash}{f614c1b4dc5e93cb95cdf0a1e47e5094}
+      \field{sortinit}{S}
+      \field{sortinithash}{322b1d5276f2f6c1bccdcd15920dbee6}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{https://solace.com/blog/messaging-between-microservices/}
+      \field{title}{Communication Between Microservices: Why You Need Messaging}
+      \field{year}{2018}
+    \endentry
     \entry{Stecky-Efantis2016}{article}{}
       \name{author}{1}{}{%
         {{uniquename=0,uniquepart=base,hash=de2594d75943056ecbc958305b80037e}{%

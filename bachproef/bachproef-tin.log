@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99999 (MiKTeX 2.9.6840 64-bit) (preloaded format=xelatex 2018.12.30)  31 JUL 2019 16:06
+This is XeTeX, Version 3.14159265-2.6-0.99999 (MiKTeX 2.9.6840 64-bit) (preloaded format=xelatex 2018.12.30)  1 AUG 2019 18:48
 entering extended mode
 **./bachproef-tin.tex
 (bachproef-tin.tex
@@ -1981,14 +1981,46 @@ Underfull \vbox (badness 6284) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [35]
+File: img/breakthepiggybank.png Graphic file (type bmp)
+<img/breakthepiggybank.png>
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+File: img/everythingmicro.png Graphic file (type bmp)
+<img/everythingmicro.png>
 [36]
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+File: img/frankenstein.png Graphic file (type bmp)
+<img/frankenstein.png>
+[37]
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+File: img/chaos.PNG Graphic file (type bmp)
+<img/chaos.PNG>
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `!tbp') on input line 471.
+
+File: img/messaging.PNG Graphic file (type bmp)
+<img/messaging.PNG>
+[38] [39]
 File: img/wong.png Graphic file (type bmp)
 <img/wong.png>
 
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [40]
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[37]
+[41]
 File: img/wong2.png Graphic file (type bmp)
 <img/wong2.png>
 
@@ -1998,8 +2030,10 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [38]
-[39]
+ [42]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [43]
 File: img/1-kyma-knative.png Graphic file (type bmp)
 <img/1-kyma-knative.png>
 
@@ -2007,39 +2041,39 @@ File: img/1-kyma-knative.png Graphic file (type bmp)
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-Underfull \vbox (badness 2941) has occurred while \output is active []
+Underfull \vbox (badness 3449) has occurred while \output is active []
 
- [40]
-[41]) (methodologie.tex [42] [43] [44] [45] [46
-
-]
+ [44])
+(methodologie.tex [45] [46] [47] [48]
 Hoofdstuk 3.
 
 LaTeX Warning: No positions in optional float specifier.
                Default added (so using `tbp') on input line 22.
 
-[47]
+[49
+
+]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [48]
+ [50]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [49]
-[50]
+ [51]
+[52]
 File: img/databank.png Graphic file (type bmp)
 <img/databank.png>
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[51]
+[53]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [52]
+ [54]
 File: img/schema_communicatie.png Graphic file (type bmp)
 <img/schema_communicatie.png>
 
-[53]
+[55]
 
 LaTeX Warning: No positions in optional float specifier.
                Default added (so using `tbp') on input line 176.
@@ -2054,14 +2088,14 @@ File: img/ordermanagement.png Graphic file (type bmp)
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[54]
+[56]
 File: img/creditmanagement.png Graphic file (type bmp)
 <img/creditmanagement.png>
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[55]
+[57]
 File: img/orderfullfilment.png Graphic file (type bmp)
 <img/orderfullfilment.png>
 File: img/ordershipment.png Graphic file (type bmp)
@@ -2070,7 +2104,7 @@ File: img/ordershipment.png Graphic file (type bmp)
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[56]
+[58]
 File: img/facturatie.png Graphic file (type bmp)
 <img/facturatie.png>
 File: img/accountreceivables.png Graphic file (type bmp)
@@ -2079,7 +2113,7 @@ File: img/accountreceivables.png Graphic file (type bmp)
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[57]
+[59]
 File: img/klantmanagement.png Graphic file (type bmp)
 <img/klantmanagement.png>
 File: img/apiSchema.png Graphic file (type bmp)
@@ -2087,23 +2121,23 @@ File: img/apiSchema.png Graphic file (type bmp)
 
 Underfull \vbox (badness 5288) has occurred while \output is active []
 
- [58])
-(conclusie.tex [59] [60
+ [60])
+(conclusie.tex [61] [62
 
 ]
 Hoofdstuk 4.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [61]
+ [63]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [62])
-[63] [64
+ [64])
+[65] [66
 
 ]
 B"ylage A.
-(../voorstel/voorstel-inhoud.tex [65] [66] [67]) [68]
+(../voorstel/voorstel-inhoud.tex [67] [68] [69]) [70]
 Overfull \hbox (114.30978pt too wide) in paragraph at lines 132--132
 [][]\T1/ptm/m/n/12 Ananthasubramanian, H. (2018). Chal-len-ges in im-ple-me-tin
 g mi-cro-ser-vi-ces. \T1/ptm/m/it/12 https://dzone.com/articles/challenges-
@@ -2165,7 +2199,7 @@ Overfull \hbox (43.72607pt too wide) in paragraph at lines 132--132
 ainerized-microservices-with-a-centralized-
  []
 
-[69
+[71
 
 ]
 Overfull \hbox (32.43848pt too wide) in paragraph at lines 132--132
@@ -2245,13 +2279,13 @@ Overfull \hbox (74.78331pt too wide) in paragraph at lines 132--132
 -ging mi-cro-ser-vi-ces. \T1/ptm/m/it/12 https://raygun.com/blog/best-
  []
 
-
+[72]
 Overfull \hbox (53.27065pt too wide) in paragraph at lines 132--132
 [][]\T1/ptm/m/n/12 Wasson, M. (2018). De-sig-ning mi-cro-ser-vi-ces: log-ging a
 nd mo-ni-to-ring. \T1/ptm/m/it/12 https://docs.microsoft.com/en-
  []
 
-[70]
+
 Overfull \hbox (32.03873pt too wide) in paragraph at lines 132--132
 [][]\T1/ptm/m/n/12 Wigmore, I. (2016). Mo-no-li-thic ar-chi-tec-ture. \T1/ptm/m
 /it/12 https://whatis.techtarget.com/definition/monolithic-
@@ -2263,7 +2297,7 @@ Overfull \hbox (20.27425pt too wide) in paragraph at lines 132--132
 about-order-to-cash-
  []
 
-[71]
+[73]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 134.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 134.
  (bachproef-tin.aux)
@@ -2274,12 +2308,12 @@ Package logreq Info: Writing requests to 'bachproef-tin.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 42235 strings out of 427796
- 764788 string characters out of 3147988
- 1371629 words of memory out of 3000000
- 45656 multiletter control sequences out of 15000+200000
+ 42260 strings out of 427796
+ 765365 string characters out of 3147988
+ 1371776 words of memory out of 3000000
+ 45675 multiletter control sequences out of 15000+200000
  571444 words of font info for 67 fonts, out of 3000000 for 9000
  1328 hyphenation exceptions out of 8191
  62i,12n,59p,1355b,6265s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on bachproef-tin.pdf (73 pages).
+Output written on bachproef-tin.pdf (75 pages).
