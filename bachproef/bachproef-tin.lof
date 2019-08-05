@@ -39,35 +39,39 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {2.17}{\ignorespaces Een architectuur waarbij een message broker als communicatiemiddel wordt gebruikt.}}{40}{figure.2.17}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.18}{\ignorespaces Het percentage van van bedrijven dat gebruik maken van order-to-cash proces. \textcite {Wong2018}}}{46}{figure.2.18}
+\contentsline {figure}{\numberline {2.18}{\ignorespaces Hoe een microservice de databank van een andere microservice aanspreekt.}}{41}{figure.2.18}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.19}{\ignorespaces Het order-to-cash proces. \textcite {Wong2018}}}{47}{figure.2.19}
+\contentsline {figure}{\numberline {2.19}{\ignorespaces Hoe het ETL proces eruit ziet. \textcite {Panolapy2019}}}{42}{figure.2.19}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.20}{\ignorespaces Wat Kyma, boven de lijn, aanbiedt en wat Knative, onder de lijn, aanbiedt \textcite {Hofmann2018}.}}{48}{figure.2.20}
+\contentsline {figure}{\numberline {2.20}{\ignorespaces Het percentage van van bedrijven dat gebruik maken van order-to-cash proces. \textcite {Wong2018}}}{48}{figure.2.20}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {2.21}{\ignorespaces Het order-to-cash proces. \textcite {Wong2018}}}{49}{figure.2.21}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {2.22}{\ignorespaces Wat Kyma, boven de lijn, aanbiedt en wat Knative, onder de lijn, aanbiedt \textcite {Hofmann2018}.}}{50}{figure.2.22}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.1}{\ignorespaces De databank structuur.}}{54}{figure.3.1}
+\contentsline {figure}{\numberline {3.1}{\ignorespaces De databank structuur.}}{56}{figure.3.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.2}{\ignorespaces De communicatie tussen de verschillende onderdelen van het order-to-cash proces.}}{55}{figure.3.2}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces De communicatie tussen de verschillende onderdelen van het order-to-cash proces.}}{57}{figure.3.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Welk onderdeel, welke microservices aanspreekt.}}{57}{figure.3.3}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Welk onderdeel, welke microservices aanspreekt.}}{59}{figure.3.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.4}{\ignorespaces Order management communiceert met volgende microservices.}}{58}{figure.3.4}
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Order management communiceert met volgende microservices.}}{60}{figure.3.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.5}{\ignorespaces Credit management communiceert met volgende microservices.}}{58}{figure.3.5}
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Credit management communiceert met volgende microservices.}}{60}{figure.3.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.6}{\ignorespaces Order fullfilment communiceert met volgende microservices.}}{58}{figure.3.6}
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Order fullfilment communiceert met volgende microservices.}}{60}{figure.3.6}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.7}{\ignorespaces Order shipment communiceert met volgende microservices.}}{59}{figure.3.7}
+\contentsline {figure}{\numberline {3.7}{\ignorespaces Order shipment communiceert met volgende microservices.}}{61}{figure.3.7}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.8}{\ignorespaces Facturatie communiceert met volgende microservices.}}{59}{figure.3.8}
+\contentsline {figure}{\numberline {3.8}{\ignorespaces Facturatie communiceert met volgende microservices.}}{61}{figure.3.8}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.9}{\ignorespaces Accounts receivables communiceert met volgende microservices.}}{60}{figure.3.9}
+\contentsline {figure}{\numberline {3.9}{\ignorespaces Accounts receivables communiceert met volgende microservices.}}{62}{figure.3.9}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.10}{\ignorespaces Klant management communiceert met volgende microservices.}}{60}{figure.3.10}
+\contentsline {figure}{\numberline {3.10}{\ignorespaces Klant management communiceert met volgende microservices.}}{62}{figure.3.10}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.11}{\ignorespaces Vereenvoudigd schema.}}{61}{figure.3.11}
+\contentsline {figure}{\numberline {3.11}{\ignorespaces Vereenvoudigd schema.}}{63}{figure.3.11}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 

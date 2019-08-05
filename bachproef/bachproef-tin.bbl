@@ -45,6 +45,32 @@
       \field{title}{What order-to-cash cycle controls in SAP ensure compliance?}
       \field{year}{2018}
     \endentry
+    \entry{Alley2018}{article}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,uniquepart=base,hash=41f51d6064cb386503d3cc8b061f4387}{%
+           family={Alley},
+           familyi={A\bibinitperiod},
+           given={Garrett},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{41f51d6064cb386503d3cc8b061f4387}
+      \strng{fullhash}{41f51d6064cb386503d3cc8b061f4387}
+      \strng{bibnamehash}{41f51d6064cb386503d3cc8b061f4387}
+      \strng{authorbibnamehash}{41f51d6064cb386503d3cc8b061f4387}
+      \strng{authornamehash}{41f51d6064cb386503d3cc8b061f4387}
+      \strng{authorfullhash}{41f51d6064cb386503d3cc8b061f4387}
+      \field{sortinit}{A}
+      \field{sortinithash}{d77c7cdd82ff690d4c3ef13216f92f0b}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{https://www.alooma.com/blog/what-is-etl}
+      \field{title}{What is ETL?}
+      \field{year}{2018}
+    \endentry
     \entry{Ananthasubramanian2018}{article}{}
       \name{author}{1}{}{%
         {{uniquename=0,uniquepart=base,hash=3c3092c2475c1cf63b6350e1d7a54923}{%
@@ -418,6 +444,29 @@
       \field{title}{Wiring Microservices, Integration Microservices \& APIs.}
       \field{year}{2018}
     \endentry
+    \entry{Guru2019}{article}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,uniquepart=base,hash=45d909a817398ff956eb79ff1146c5e4}{%
+           family={Guru},
+           familyi={G\bibinitperiod}}}%
+      }
+      \strng{namehash}{45d909a817398ff956eb79ff1146c5e4}
+      \strng{fullhash}{45d909a817398ff956eb79ff1146c5e4}
+      \strng{bibnamehash}{45d909a817398ff956eb79ff1146c5e4}
+      \strng{authorbibnamehash}{45d909a817398ff956eb79ff1146c5e4}
+      \strng{authornamehash}{45d909a817398ff956eb79ff1146c5e4}
+      \strng{authorfullhash}{45d909a817398ff956eb79ff1146c5e4}
+      \field{sortinit}{G}
+      \field{sortinithash}{5e8d2bf9d38de41b1528bd307546008f}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{https://www.guru99.com/etl-extract-load-process.html}
+      \field{title}{ETL (Extract, Transform, and Load) Process}
+      \field{year}{2019}
+    \endentry
     \entry{Hofmann2018}{article}{}
       \name{author}{1}{}{%
         {{uniquename=0,uniquepart=base,hash=f969a0c7cb3b0cd99a75ea7c1d90c1b5}{%
@@ -473,6 +522,35 @@
       \field{title}{A microservices implementation journey - Part 1}
       \field{year}{2018}
     \endentry
+    \entry{Kumar2018}{article}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,uniquepart=base,hash=5e81a18cf5e6ac319227660b60aece6e}{%
+           family={Kumar},
+           familyi={K\bibinitperiod},
+           given={Roshan},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{5e81a18cf5e6ac319227660b60aece6e}
+      \strng{fullhash}{5e81a18cf5e6ac319227660b60aece6e}
+      \strng{bibnamehash}{5e81a18cf5e6ac319227660b60aece6e}
+      \strng{authorbibnamehash}{5e81a18cf5e6ac319227660b60aece6e}
+      \strng{authornamehash}{5e81a18cf5e6ac319227660b60aece6e}
+      \strng{authorfullhash}{5e81a18cf5e6ac319227660b60aece6e}
+      \field{sortinit}{K}
+      \field{sortinithash}{9fd838a31ba64d981e8f44562bd33f89}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{13}
+      \field{journaltitle}{https://thenewstack.io/selecting-the-right-database-for-your-microservices/}
+      \field{month}{9}
+      \field{title}{Selecting the Right Database for Your Microservices}
+      \field{year}{2018}
+      \field{dateera}{ce}
+    \endentry
     \entry{Kyma2019}{article}{}
       \name{author}{1}{}{%
         {{uniquename=0,uniquepart=base,hash=c3d6752305b32e460afe796f12cd8a22}{%
@@ -494,6 +572,32 @@
       \field{labeltitlesource}{title}
       \field{journaltitle}{https://kyma-project.io/}
       \field{title}{What is Kyma?}
+      \field{year}{2019}
+    \endentry
+    \entry{Loshin2019}{article}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,uniquepart=base,hash=61a407bcbda05868f01db930de2f7ef4}{%
+           family={Loshin},
+           familyi={L\bibinitperiod},
+           given={David},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{61a407bcbda05868f01db930de2f7ef4}
+      \strng{fullhash}{61a407bcbda05868f01db930de2f7ef4}
+      \strng{bibnamehash}{61a407bcbda05868f01db930de2f7ef4}
+      \strng{authorbibnamehash}{61a407bcbda05868f01db930de2f7ef4}
+      \strng{authornamehash}{61a407bcbda05868f01db930de2f7ef4}
+      \strng{authorfullhash}{61a407bcbda05868f01db930de2f7ef4}
+      \field{sortinit}{L}
+      \field{sortinithash}{2c7981aaabc885868aba60f0c09ee20f}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{https://www.sas.com/en_us/insights/data-management/what-is-etl.html}
+      \field{title}{What is ETL?}
       \field{year}{2019}
     \endentry
     \entry{Matteson2017}{article}{}
@@ -654,6 +758,32 @@
       \field{journaltitle}{https://www.mulesoft.com/resources/api/microservices-devops-better-together}
       \field{title}{Microservices and DevOps: better together}
       \field{year}{2019}
+    \endentry
+    \entry{Naveen2016}{article}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,uniquepart=base,hash=71c369cfe944705f9054305f5b7c28be}{%
+           family={Naveen},
+           familyi={N\bibinitperiod},
+           given={By},
+           giveni={B\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{71c369cfe944705f9054305f5b7c28be}
+      \strng{fullhash}{71c369cfe944705f9054305f5b7c28be}
+      \strng{bibnamehash}{71c369cfe944705f9054305f5b7c28be}
+      \strng{authorbibnamehash}{71c369cfe944705f9054305f5b7c28be}
+      \strng{authornamehash}{71c369cfe944705f9054305f5b7c28be}
+      \strng{authorfullhash}{71c369cfe944705f9054305f5b7c28be}
+      \field{sortinit}{N}
+      \field{sortinithash}{f7242c3ed3dc50029fca1be76c497c7c}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{https://intellipaat.com/blog/tutorial/data-warehouse-tutorial/what-is-etl/}
+      \field{title}{What is ETL? An introduction}
+      \field{year}{2016}
     \endentry
     \entry{OpenSap2018}{article}{}
       \name{author}{1}{}{%
@@ -886,6 +1016,29 @@
       \field{journaltitle}{https://medium.com/vandium-software/5-easy-steps-to-understanding-json-web-tokens-jwt-1164c0adfcec}
       \field{title}{5 Esay steps to understanding JSON Web Tokens}
       \field{year}{2016}
+    \endentry
+    \entry{Stich2019}{article}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,uniquepart=base,hash=6666a55b44a3aa59b57c53e2ae32cc80}{%
+           family={Stich},
+           familyi={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{6666a55b44a3aa59b57c53e2ae32cc80}
+      \strng{fullhash}{6666a55b44a3aa59b57c53e2ae32cc80}
+      \strng{bibnamehash}{6666a55b44a3aa59b57c53e2ae32cc80}
+      \strng{authorbibnamehash}{6666a55b44a3aa59b57c53e2ae32cc80}
+      \strng{authornamehash}{6666a55b44a3aa59b57c53e2ae32cc80}
+      \strng{authorfullhash}{6666a55b44a3aa59b57c53e2ae32cc80}
+      \field{sortinit}{S}
+      \field{sortinithash}{322b1d5276f2f6c1bccdcd15920dbee6}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{https://www.stitchdata.com/etldatabase/etl-process/}
+      \field{title}{ETL Database}
+      \field{year}{2019}
     \endentry
     \entry{Swersky2019}{article}{}
       \name{author}{1}{}{%

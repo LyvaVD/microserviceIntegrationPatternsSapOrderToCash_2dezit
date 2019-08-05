@@ -701,4 +701,60 @@
   year    = {2019},
 }
 
+@Article{Solance2018,
+  author  = {Solance},
+  title   = {Communication Between Microservices: Why You Need Messaging},
+  journal = {https://solace.com/blog/messaging-between-microservices/},
+  year    = {2018},
+}
+
+@Article{Alley2018,
+  author  = {Garrett Alley},
+  title   = {What is ETL?},
+  journal = {https://www.alooma.com/blog/what-is-etl},
+  year    = {2018},
+}
+
+@Article{Loshin2019,
+  author  = {David Loshin},
+  title   = {What is ETL?},
+  journal = {https://www.sas.com/en_us/insights/data-management/what-is-etl.html},
+  year    = {2019},
+}
+
+@Article{Guru2019,
+  author  = {Guru},
+  title   = {ETL (Extract, Transform, and Load) Process},
+  journal = {https://www.guru99.com/etl-extract-load-process.html},
+  year    = {2019},
+}
+
+@Article{Stich2019,
+  author  = {Stich},
+  title   = {ETL Database},
+  journal = {https://www.stitchdata.com/etldatabase/etl-process/},
+  year    = {2019},
+}
+
+@Article{Naveen2016,
+  author  = {By Naveen},
+  title   = {What is ETL? An introduction},
+  journal = {https://intellipaat.com/blog/tutorial/data-warehouse-tutorial/what-is-etl/},
+  year    = {2016},
+}
+
+@Article{Shapira2017,
+  author  = {Gwen Shapira},
+  title   = {The Future of ETL Isn’t What It Used To Be},
+  journal = {https://www.confluent.io/blog/the-future-of-etl-isnt-what-it-used-to-be/},
+  year    = {2017},
+}
+
+@Article{Panolapy2019,
+  author  = {Panolapy},
+  title   = {3 Ways to Build An ETL Process},
+  journal = {https://panoply.io/data-warehouse-guide/3-ways-to-build-an-etl-process/},
+  year    = {2019},
+}
+
 @Comment{jabref-meta: databaseType:biblatex;}

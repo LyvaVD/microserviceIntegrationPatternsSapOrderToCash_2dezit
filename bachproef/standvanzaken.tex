@@ -480,11 +480,58 @@ Een microservice stuurt een bericht naar de 'message broker' en moet zich verder
 Een opsomming van enkele definites omtrend 'Data integration':
 	\begin{itemize}
 		\item 'Two or more services read and write data out of one central data store', \textcite{Aradhye2018}.
+		\item 'Microservices embrace independent, autonomous, specialized service components,
+		each with the freedom to use its own data store', \textcite{Kumar2018}
 	\end{itemize}
 
-Een opvallende eigenschap van dit pattern is de centrale databank. Dit heeft als gevolg dat de architectuur schalen duurder is. Om iets aan te passen en te deployen, moet volledig de architectuur opnieuw gecompiled worden. Wat een nadeel is van monolithic. Dit pattern zorgt ervoor dat de microservices niet meer onafhankelijk zijn van elkaar. Ze zijn niet rechtstreeks afhankelijk van elkaar, maar door de gedeelde databank, moeten ze wachten tot de andere microservice gedaan heeft met zijn taak in de databank.
+Een opvallende eigenschap aan een monolithic architectuur is de centrale databank. Bij de overgang wordt de databank regelmatig uit het beeld gelaten, omdat er gedacht wordt dat er niks aan de databank moet veranderen. De data blijft hetzelfde, dat is correct. Maar de structuur waarmee er met de data wordt gewerkt, verandert in zijn geheel. De oude databank, die bij de monolithic gebruikt werd, is niet de optimale oplossing. 
+Als de monolithic databank nog gebruikt wordt bij een microservice architectuur, brengt dat veel problemen en obstakels met zich mee. Volgende zijn enkele voorbeelden:
+\begin{itemize}
+	\item De microservices zijn afhankelijk van de databank en zijn daardoor afhankelijk van elkaar. Als ze meerdere microservices de databank nodig hebben, moeten ze wachten tot de ander gedaan heeft.
+	\item Microservices onafhankelijk deployen, is onmogelijk. Een aanpassing heeft invloed op de databank en elke microservice kent de databank. 
+	\item Een microservice schalen wordt een moeilijke opgave omdat die vasthangt aan de centrale databank. 
+	\item Omdat alle data in één databank wordt bijgehouden, worden de tabellen gigantisch groot en op termijn onhoudbaar en slordig. 
+\end{itemize}
 
+Elke microservices heeft elk zijn eigen databank met data betreffende hun functionaliteit. Hieronder kunnen enkele voorbeelden teruggevonden worden over de voordelen van een microservice met een eigen databank:
+\begin{itemize}
+	\item De databank bevat enkel de relevante data.
+	\item Elke microservices kan apart gedeployed worden. Niemand anders is verbonden met zijn databank.
+	\item Een microservices kan niet rechtstreeks aan de databank van een andere microservices. Hoe een microservices onrechtstreeks de databank van een ander kan, zal later uitgelegd worden.
+\end{itemize}
+
+Sommige microservices hebben data van andere microservices nodig. Omdat hun databank de geweste gegevens niet kan leveren. De data wordt dan gevraagd aan de databank via een de microservice zelf.
+\begin{figure}[h!]
+	\includegraphics[width=10cm]{db.PNG}
+	\centering
+	\caption{Hoe een microservice de databank van een andere microservice aanspreekt.}
+\end{figure}
+ 
+ De manier waarop een microservice een andere microservice zijn databank aanspreekt, gebeurt zoals beschreven in het vorige deel over 'communicatie tussen de microservices'.
+ 
+ Eens de volledige communicatie is uitgedacht, moet er een databank gekozen worden, passend bij de micoservices. Het kan zijn dat voor de ene microservices een SQL-databank beter past en voor de ander een NOSQL-databank. SQL en NOSQL zijn soorten databanken. De manier waarop de data wordt opgeslaan, opgevraagd en teruggestuurd is anders. 
+ 
 \subsection{Extract, transform en load (ETL)}
+Volgende opsomming bevat verschillende definities omtrent ETL:
+\begin{itemize}
+	\item 'The type of data integration that refers to the three steps used to blend data from multiple sources', \textcite{Loshin2019}.
+	\item 'Data from multiple systems is combined to a single database, data store, or warehouse for legacy storage or analytics', \textcite{Alley2018}.
+	\item 'The process by which dat ais extracted from data sources that are not optimized for analytics, moved to a central host and optimized for analytics', \textcite{Stich2019}.
+	\item "A process that extracts the data from different database source systems, then transforms data and finally loads data into datawarehouse', \textcite{Guru2019}.
+	\item 'The process of transferring data from soruce database to destination datawarehouse', \textcite{Naveen2016}.
+\end{itemize}
+Uit bovenstaande definities kan er afgeleid worden dat ETL gebruikt wordt om data te verzamelen, te transformeren en dan in een andere databank te steken. De data wordt geanalyseerd om de business een beter beeld te geven van de real-time gebeurtenissen bij bijvoorbeeld marketing om te weten wat het meest verkocht wordt om 12uur 's middags. 
+Het proces dat ervoor zorgt dat de verzamelde data analyseerbaar is, bevat drie stappen.
+De eerste stap is 'extraction', de data ophalen. De verzamelde data komt niet van één databank. Ze wordt opgehaald uit verschillende bronnen. Die bronnen zijn databanken die online informatie bevatten over het gedrag van die klant/gebruiker. Het verzamelen van die data mag de werking van de originele databank niet beïnvloeden.
+Eens alle data verzameld is, wordt die getransformeerd en gefilterd om enkel de nodige data te gebruiken. Er wordt meer data verzameld dan nodig. De data wordt gefilterd aan de hand van regels opgesteld door de business. 
+Hierna blijft enkel de hoognodige data over. Die data wordt ingelanden in een datawarehouse. Een datawarehouse is een databank waar men data analyseerd en logica op los laat. De business legt op welke analyse er moet gebeuren. De uitkomst van deze analyse kan gebruikt worden binnen het bedrijf of kan gebruikt worden voor artificiële intelligentie.  
+
+\begin{figure}[h!]
+	\includegraphics[width=10cm]{etl.PNG}
+	\centering
+	\caption{Hoe het ETL proces eruit ziet. \textcite{Panolapy2019}}
+\end{figure}
+
 \subsection{REST}
 \section{Order-to-cash proces in SAP}
 \subsection{Definite}
