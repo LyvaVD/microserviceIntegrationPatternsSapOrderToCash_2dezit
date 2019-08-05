@@ -596,9 +596,15 @@
       \true{uniqueprimaryauthor}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{journaltitle}{https://www.sas.com/en_us/insights/data-management/what-is-etl.html}
+      \field{journaltitle}{SAS}
       \field{title}{What is ETL?}
       \field{year}{2019}
+      \verb{urlraw}
+      \verb https://www.sas.com/en_us/insights/data-management/what-is-etl.html
+      \endverb
+      \verb{url}
+      \verb https://www.sas.com/en_us/insights/data-management/what-is-etl.html
+      \endverb
     \endentry
     \entry{Matteson2017}{article}{}
       \name{author}{1}{}{%
@@ -807,6 +813,29 @@
       \field{journaltitle}{Order-to-cash overview}
       \field{title}{Order-to-cash overview}
       \field{year}{2018}
+    \endentry
+    \entry{Panolapy2019}{article}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,uniquepart=base,hash=82e12172c649a077d6f4f9fd8b915b55}{%
+           family={Panolapy},
+           familyi={P\bibinitperiod}}}%
+      }
+      \strng{namehash}{82e12172c649a077d6f4f9fd8b915b55}
+      \strng{fullhash}{82e12172c649a077d6f4f9fd8b915b55}
+      \strng{bibnamehash}{82e12172c649a077d6f4f9fd8b915b55}
+      \strng{authorbibnamehash}{82e12172c649a077d6f4f9fd8b915b55}
+      \strng{authornamehash}{82e12172c649a077d6f4f9fd8b915b55}
+      \strng{authorfullhash}{82e12172c649a077d6f4f9fd8b915b55}
+      \field{sortinit}{P}
+      \field{sortinithash}{8d51b3d5b78d75b54308d706b9bbe285}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{https://panoply.io/data-warehouse-guide/3-ways-to-build-an-etl-process/}
+      \field{title}{3 Ways to Build An ETL Process}
+      \field{year}{2019}
     \endentry
     \entry{PEARSON2017}{article}{}
       \name{author}{1}{}{%

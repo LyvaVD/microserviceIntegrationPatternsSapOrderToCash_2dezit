@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99999 (MiKTeX 2.9.6840 64-bit) (preloaded format=xelatex 2018.12.30)  5 AUG 2019 14:46
+This is XeTeX, Version 3.14159265-2.6-0.99999 (MiKTeX 2.9.6840 64-bit) (preloaded format=xelatex 2018.12.30)  5 AUG 2019 14:54
 entering extended mode
 **./bachproef-tin.tex
 (bachproef-tin.tex
@@ -1805,10 +1805,7 @@ oegd. Be-ne-tis (2016a)[]|
 
 [11
 
-]
-LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <12> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 44.
-)
+])
 \tf@lof=\write8
 \openout8 = `bachproef-tin.lof'.
 
@@ -1949,6 +1946,9 @@ File: img/jwt.png Graphic file (type bmp)
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [27]
+LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <12> not available
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 253.
+
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [28]
@@ -2020,13 +2020,9 @@ File: img/db.PNG Graphic file (type bmp)
 [41]
 File: img/etl.PNG Graphic file (type bmp)
 <img/etl.PNG>
-
-
-LaTeX Warning: Citation 'Panolapy2019' on page 42 undefined on input line 532.
-
 File: img/wong.png Graphic file (type bmp)
 <img/wong.png>
-[42]
+ [42]
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
@@ -2213,32 +2209,6 @@ Overfull \hbox (32.43848pt too wide) in paragraph at lines 132--132
 ra-tion - Pro-gress Up-date. \T1/ptm/m/it/12 https://kyma-
  []
 
-! Missing $ inserted.
-<inserted text> 
-                $
-l.132 \printbibliography[heading=bibintoc]
-                                          
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.132 \printbibliography[heading=bibintoc]
-                                          
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-
-Overfull \hbox (39.44063pt too wide) in paragraph at lines 132--132
-[][]\T1/ptm/m/n/12 Loshin, D. (2019). What is ETL? \T1/ptm/m/it/12 https://www.
-sas.com/en$[]\OML/ztmcm/m/it/12 s=insights=data \OMS/ztmcm/m/n/12 ^^@ \OML/ztmc
-m/m/it/12 management=what \OMS/ztmcm/m/n/12 ^^@
- []
-
 
 Overfull \hbox (86.16992pt too wide) in paragraph at lines 132--132
 [][]\T1/ptm/m/n/12 Matteson, S. (2017). 10 tips for se-cu-ring mi-cro-ser-vice 
@@ -2305,13 +2275,13 @@ Overfull \hbox (14.78221pt too wide) in paragraph at lines 132--132
 vices-the-api-gateway-authentication-
  []
 
-
+[74]
 Overfull \hbox (80.24377pt too wide) in paragraph at lines 132--132
 [][]\T1/ptm/m/n/12 Stecky-Efantis, M. (2016). 5 Esay steps to un-der-stan-ding 
 JSON Web To-kens. \T1/ptm/m/it/12 https://medium.com/vandium-
  []
 
-[74]
+
 Overfull \hbox (74.78331pt too wide) in paragraph at lines 132--132
 [][]\T1/ptm/m/n/12 Swersky, D. (2019). Best prac-ti-ces for tra-cing and de-bug
 -ging mi-cro-ser-vi-ces. \T1/ptm/m/it/12 https://raygun.com/blog/best-
@@ -2341,24 +2311,15 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 134.
  (bachproef-tin.aux)
 Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 134.
 Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 134.
-
-
-LaTeX Warning: There were undefined references.
-
-
-Package biblatex Warning: Please (re)run Biber on the file:
-(biblatex)                bachproef-tin
-(biblatex)                and rerun LaTeX afterwards.
-
 Package logreq Info: Writing requests to 'bachproef-tin.run.xml'.
 \openout1 = `bachproef-tin.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 42299 strings out of 427796
- 766243 string characters out of 3147988
- 1373194 words of memory out of 3000000
- 45712 multiletter control sequences out of 15000+200000
+ 42304 strings out of 427796
+ 766385 string characters out of 3147988
+ 1373234 words of memory out of 3000000
+ 45717 multiletter control sequences out of 15000+200000
  571444 words of font info for 67 fonts, out of 3000000 for 9000
  1328 hyphenation exceptions out of 8191
  62i,12n,59p,1355b,6265s stack positions out of 5000i,500n,10000p,200000b,50000s

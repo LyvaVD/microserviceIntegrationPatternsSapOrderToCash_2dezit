@@ -196,12 +196,12 @@
 }
 
 @Article{Wikipedia2019,
-  author       = {Wikipedia},
-  title        = {Order to cash},
-  journal      = {https://en.wikipedia.org/wiki/Order_to_cash},
-  journaltitle = {https://en.wikipedia.org/wiki/Order_to_cash},
-  year         = {2019},
-  date         = {2019},
+  author  = {Wikipedia},
+  title   = {Order to cash},
+  journal = {https://en.wikipedia.org/wiki/Order_to_cash},
+  year    = {2019},
+  date    = {2019},
+  url     = {https://en.wikipedia.org/wiki/Order_to_cash},
 }
 
 @Article{Gehrke2018,
