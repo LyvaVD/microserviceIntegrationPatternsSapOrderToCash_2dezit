@@ -53,89 +53,89 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.3.1}Definite}{43}{subsection.2.3.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.3.2}Technologie: Wat biedt SAP zelf aan voor microservices}{46}{subsection.2.3.2}
+\contentsline {subsection}{\numberline {2.3.2}Technologie: Wat biedt SAP zelf aan voor microservices}{47}{subsection.2.3.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.4}Requirements van de business}{47}{section.2.4}
+\contentsline {section}{\numberline {2.4}Requirements van de business}{48}{section.2.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {3}Methodologie}{51}{chapter.3}
+\contentsline {chapter}{\numberline {3}Methodologie}{53}{chapter.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.1}Uitleg termen}{51}{section.3.1}
+\contentsline {section}{\numberline {3.1}Uitleg termen}{53}{section.3.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.2}De microservices binnen het OTC proces}{52}{section.3.2}
+\contentsline {section}{\numberline {3.2}De microservices binnen het OTC proces}{54}{section.3.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.2.1}De microservices van het order-to-cash proces met hun onderliggende communicatie}{53}{subsection.3.2.1}
+\contentsline {subsection}{\numberline {3.2.1}De microservices van het order-to-cash proces met hun onderliggende communicatie}{55}{subsection.3.2.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Klantengegevens ophalen}{53}{section*.13}
+\contentsline {subsubsection}{Klantengegevens ophalen}{55}{section*.13}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Orders plaatsen, ophalen en verwijderen}{53}{section*.14}
+\contentsline {subsubsection}{Orders plaatsen, ophalen en verwijderen}{55}{section*.14}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Producten ophalen en het aantal in voorraad veranderen}{53}{section*.15}
+\contentsline {subsubsection}{Producten ophalen en het aantal in voorraad veranderen}{55}{section*.15}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Facturatie maken en ophalen}{54}{section*.16}
+\contentsline {subsubsection}{Facturatie maken en ophalen}{56}{section*.16}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Shipment documentatie opstellen}{54}{section*.17}
+\contentsline {subsubsection}{Shipment documentatie opstellen}{56}{section*.17}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Aanmaning opmaken en verwijderen}{54}{section*.18}
+\contentsline {subsubsection}{Aanmaning opmaken en verwijderen}{56}{section*.18}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Berichten plaatsen op de queue}{54}{section*.19}
+\contentsline {subsubsection}{Berichten plaatsen op de queue}{56}{section*.19}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Berichten ophalen van de queue}{54}{section*.20}
+\contentsline {subsubsection}{Berichten ophalen van de queue}{56}{section*.20}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.2.2}Communicatie methode tussen microservices}{54}{subsection.3.2.2}
+\contentsline {subsection}{\numberline {3.2.2}Communicatie methode tussen microservices}{56}{subsection.3.2.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.3}De databank structuur}{55}{section.3.3}
+\contentsline {section}{\numberline {3.3}De databank structuur}{57}{section.3.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.4}De complete architectuur opbouwen}{57}{section.3.4}
+\contentsline {section}{\numberline {3.4}De complete architectuur opbouwen}{59}{section.3.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.4.1}De communicatie tussen de onderdelen van het OTC proces}{57}{subsection.3.4.1}
+\contentsline {subsection}{\numberline {3.4.1}De communicatie tussen de onderdelen van het OTC proces}{59}{subsection.3.4.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.4.2}De architectuur}{58}{subsection.3.4.2}
+\contentsline {subsection}{\numberline {3.4.2}De architectuur}{60}{subsection.3.4.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Order management}{58}{section*.21}
+\contentsline {subsubsection}{Order management}{60}{section*.21}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Credit management}{59}{section*.22}
+\contentsline {subsubsection}{Credit management}{61}{section*.22}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Order fullfilment}{60}{section*.23}
+\contentsline {subsubsection}{Order fullfilment}{62}{section*.23}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Order shipment}{60}{section*.24}
+\contentsline {subsubsection}{Order shipment}{62}{section*.24}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Facturatie}{61}{section*.25}
+\contentsline {subsubsection}{Facturatie}{63}{section*.25}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Accounts receivables}{61}{section*.26}
+\contentsline {subsubsection}{Accounts receivables}{63}{section*.26}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Klant management}{62}{section*.27}
+\contentsline {subsubsection}{Klant management}{64}{section*.27}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.4.3}De volgende stappen: Het toevoegen van API, logging en authenticatie en authorisatie}{62}{subsection.3.4.3}
+\contentsline {subsection}{\numberline {3.4.3}De volgende stappen: Het toevoegen van API, logging en authenticatie en authorisatie}{64}{subsection.3.4.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Logging}{62}{section*.28}
+\contentsline {subsubsection}{Logging}{64}{section*.28}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{API gateway}{63}{section*.29}
+\contentsline {subsubsection}{API gateway}{65}{section*.29}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Authenticatie en autorisatie}{63}{section*.30}
+\contentsline {subsubsection}{Authenticatie en autorisatie}{65}{section*.30}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {4}Conclusie}{65}{chapter.4}
+\contentsline {chapter}{\numberline {4}Conclusie}{67}{chapter.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {A}Onderzoeksvoorstel}{69}{appendix.A}
+\contentsline {chapter}{\numberline {A}Onderzoeksvoorstel}{71}{appendix.A}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {A.1}Introductie}{69}{section.A.1}
+\contentsline {section}{\numberline {A.1}Introductie}{71}{section.A.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {A.2}Literatuurstudie}{69}{section.A.2}
+\contentsline {section}{\numberline {A.2}Literatuurstudie}{71}{section.A.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {A.2.1}Wat zijn microservices?}{70}{subsection.A.2.1}
+\contentsline {subsection}{\numberline {A.2.1}Wat zijn microservices?}{72}{subsection.A.2.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {A.2.2}Waarom microservices gebruiken}{70}{subsection.A.2.2}
+\contentsline {subsection}{\numberline {A.2.2}Waarom microservices gebruiken}{72}{subsection.A.2.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {A.2.3}Principes voor Microservices Integration}{70}{subsection.A.2.3}
+\contentsline {subsection}{\numberline {A.2.3}Principes voor Microservices Integration}{72}{subsection.A.2.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {A.2.4}Order-to-cash in SAP}{71}{subsection.A.2.4}
+\contentsline {subsection}{\numberline {A.2.4}Order-to-cash in SAP}{73}{subsection.A.2.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {A.2.5}Kyma}{71}{subsection.A.2.5}
+\contentsline {subsection}{\numberline {A.2.5}Kyma}{73}{subsection.A.2.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {A.3}Methodologie}{71}{section.A.3}
+\contentsline {section}{\numberline {A.3}Methodologie}{73}{section.A.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {A.4}Verwachte resultaten}{72}{section.A.4}
+\contentsline {section}{\numberline {A.4}Verwachte resultaten}{74}{section.A.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {A.5}Verwachte conclusies}{72}{section.A.5}
+\contentsline {section}{\numberline {A.5}Verwachte conclusies}{74}{section.A.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Bibliografie}{73}{appendix*.31}
+\contentsline {chapter}{Bibliografie}{75}{appendix*.31}
 \contentsfinish 

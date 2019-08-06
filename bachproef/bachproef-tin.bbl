@@ -179,6 +179,32 @@
       \field{year}{2018}
       \field{dateera}{ce}
     \endentry
+    \entry{Avraham2017}{article}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,uniquepart=base,hash=2a4065532c2f7df8083a82f5c8cde143}{%
+           family={Avraham},
+           familyi={A\bibinitperiod},
+           given={Shif\bibnamedelima Ben},
+           giveni={S\bibinitperiod\bibinitdelim B\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{2a4065532c2f7df8083a82f5c8cde143}
+      \strng{fullhash}{2a4065532c2f7df8083a82f5c8cde143}
+      \strng{bibnamehash}{2a4065532c2f7df8083a82f5c8cde143}
+      \strng{authorbibnamehash}{2a4065532c2f7df8083a82f5c8cde143}
+      \strng{authornamehash}{2a4065532c2f7df8083a82f5c8cde143}
+      \strng{authorfullhash}{2a4065532c2f7df8083a82f5c8cde143}
+      \field{sortinit}{A}
+      \field{sortinithash}{d77c7cdd82ff690d4c3ef13216f92f0b}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{https://medium.com/extend/what-is-rest-a-simple-explanation-for-beginners-part-1-introduction-b4a072f8740f}
+      \field{title}{What is REST — A Simple Explanation for Beginners, Part 1: Introduction}
+      \field{year}{2017}
+    \endentry
     \entry{Ayoub2018}{article}{}
       \name{author}{1}{}{%
         {{uniquename=0,uniquepart=base,hash=df66d4325992383cbc75f5387abd7737}{%
@@ -368,6 +394,32 @@
       \field{journaltitle}{https://medium.com/@rcandidosilva/best-practices-to-protect-your-microservices-architecture-541e7cf7637f}
       \field{title}{Best practices to protect your microservices architecture}
       \field{year}{2017}
+    \endentry
+    \entry{Deering2012}{article}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,uniquepart=base,hash=4b7e780b056cdd6cbf01cab07c30f34e}{%
+           family={Deering},
+           familyi={D\bibinitperiod},
+           given={Sam},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{4b7e780b056cdd6cbf01cab07c30f34e}
+      \strng{fullhash}{4b7e780b056cdd6cbf01cab07c30f34e}
+      \strng{bibnamehash}{4b7e780b056cdd6cbf01cab07c30f34e}
+      \strng{authorbibnamehash}{4b7e780b056cdd6cbf01cab07c30f34e}
+      \strng{authornamehash}{4b7e780b056cdd6cbf01cab07c30f34e}
+      \strng{authorfullhash}{4b7e780b056cdd6cbf01cab07c30f34e}
+      \field{sortinit}{D}
+      \field{sortinithash}{2ef1bd9a78cc71eb74d7231c635177b8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{https://www.sitepoint.com/developers-rest-api/}
+      \field{title}{Do you know what a REST API is?}
+      \field{year}{2012}
     \endentry
     \entry{devoteam2018}{article}{}
       \name{author}{1}{}{%
@@ -890,6 +942,32 @@
       \field{year}{2016}
       \field{dateera}{ce}
     \endentry
+    \entry{Rouse2019}{article}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,uniquepart=base,hash=d6ebb0634de22e70618460d3fc936297}{%
+           family={Rouse},
+           familyi={R\bibinitperiod},
+           given={Margaret},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{d6ebb0634de22e70618460d3fc936297}
+      \strng{fullhash}{d6ebb0634de22e70618460d3fc936297}
+      \strng{bibnamehash}{d6ebb0634de22e70618460d3fc936297}
+      \strng{authorbibnamehash}{d6ebb0634de22e70618460d3fc936297}
+      \strng{authornamehash}{d6ebb0634de22e70618460d3fc936297}
+      \strng{authorfullhash}{d6ebb0634de22e70618460d3fc936297}
+      \field{sortinit}{R}
+      \field{sortinithash}{da6b42bd3ab22fee61abed031ee405f7}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{https://searchmicroservices.techtarget.com/definition/REST-representational-state-transfer}
+      \field{title}{REST (REpresentational State Transfer)}
+      \field{year}{2019}
+    \endentry
     \entry{Saldanha2016}{article}{}
       \name{author}{1}{}{%
         {{uniquename=0,uniquepart=base,hash=f692603c7fccec31da4dae631ad98e1c}{%
@@ -1281,6 +1359,7 @@
       \field{dateera}{ce}
     \endentry
   \enddatalist
+  \missing{stSoftware2019tS}
 \endrefsection
 \endinput
 
