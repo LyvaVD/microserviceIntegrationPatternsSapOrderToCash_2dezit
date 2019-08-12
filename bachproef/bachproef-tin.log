@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99999 (MiKTeX 2.9.6840 64-bit) (preloaded format=xelatex 2018.12.30)  6 AUG 2019 17:53
+This is XeTeX, Version 3.14159265-2.6-0.99999 (MiKTeX 2.9.6840 64-bit) (preloaded format=xelatex 2018.12.30)  12 AUG 2019 18:50
 entering extended mode
 **./bachproef-tin.tex
 (bachproef-tin.tex
@@ -1659,15 +1659,7 @@ Package biblatex Info: Automatic encoding selection.
 
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'bachproef-tin.bbl' found.
- (bachproef-tin.bbl
-
-Package biblatex Warning: The following entry could not be found
-(biblatex)                in the database:
-(biblatex)                stSoftware2019tS
-(biblatex)                Please verify the spelling and rerun
-(biblatex)                LaTeX afterwards.
-
-)
+ (bachproef-tin.bbl)
 Package biblatex Info: Reference section=0 on input line 48.
 Package biblatex Info: Reference segment=0 on input line 48.
 *geometry* verbose mode - [ newgeometry ] result:
@@ -1771,9 +1763,11 @@ LaTeX Font Info:    Font shape `T1/pag/b/n' in size <24.88> not available
 )
 (samenvatting.tex [3] [4
 
-]) [5] [6
+]
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-] (bachproef-tin.toc
+ [5])
+[6] (bachproef-tin.toc
 LaTeX Font Info:    Font shape `T1/pag/bx/n' in size <14.4> not available
 (Font)              Font shape `T1/pag/b/n' tried instead on input line 4.
 LaTeX Font Info:    Font shape `T1/pag/b/n' in size <14.4> not available
@@ -1789,7 +1783,9 @@ LaTeX Font Info:    Font shape `T1/pag/b/n' in size <12> not available
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [7]
+ [7
+
+]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [8])
@@ -1806,21 +1802,16 @@ ice ar-chi-tec-tuur. Watts
  []
 
 
-Overfull \hbox (17.18015pt too wide) in paragraph at lines 22--22
-[]|\T1/pag/m/n/12 2.8| []Een mi-cro-ser-vice waar be-scher-ming aan is toe-ge-v
-oegd. Be-ne-tis (2016a)[]|
- []
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[11
+ [11
 
-]
-LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <12> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 46.
-)
+])
 \tf@lof=\write8
 \openout8 = `bachproef-tin.lof'.
 
- [12] (bachproef-tin.lot)
+
+[12] (bachproef-tin.lot)
 \tf@lot=\write9
 \openout9 = `bachproef-tin.lot'.
 
@@ -1837,10 +1828,7 @@ File: omsptm.fd
 LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <12> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 16.
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [15])
-(standvanzaken.tex [16]
+[15]) (standvanzaken.tex [16]
 Hoofdstuk 2.
 [17
 
@@ -1849,7 +1837,7 @@ File: img/microservices-vs-monolithic.jpg Graphic file (type bmp)
 <img/microservices-vs-monolithic.jpg>
 
 
-LaTeX Warning: `h' float specifier changed to `ht'.
+LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -1861,7 +1849,7 @@ File: img/algArch.png Graphic file (type bmp)
 <img/algArch.png>
 
 
-LaTeX Warning: `h' float specifier changed to `ht'.
+LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [19]
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -1883,19 +1871,114 @@ File: img/apiGateway_facadePattern.png Graphic file (type bmp)
 File: img/monolithic_auth.png Graphic file (type bmp)
 <img/monolithic_auth.png>
 
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
 [23]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [24]
+File: img/jwt.png Graphic file (type bmp)
+<img/jwt.png>
+
+[25]
+Underfull \vbox (badness 1571) has occurred while \output is active []
+
+ [26]
+LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <12> not available
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 222.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [27]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [28]
+Underfull \vbox (badness 3724) has occurred while \output is active []
+
+ [29]
+File: img/breakthepiggybank.png Graphic file (type bmp)
+<img/breakthepiggybank.png>
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+File: img/everythingmicro.png Graphic file (type bmp)
+<img/everythingmicro.png>
+[30]
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+File: img/frankenstein.png Graphic file (type bmp)
+<img/frankenstein.png>
+[31]
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+File: img/chaos.PNG Graphic file (type bmp)
+<img/chaos.PNG>
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+File: img/messaging.PNG Graphic file (type bmp)
+<img/messaging.PNG>
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[32] [33]
+Underfull \vbox (badness 2970) has occurred while \output is active []
+
+ [34]
+File: img/db.PNG Graphic file (type bmp)
+<img/db.PNG>
+
+[35]
+File: img/etl.PNG Graphic file (type bmp)
+<img/etl.PNG>
+ [36]
+File: img/wong.png Graphic file (type bmp)
+<img/wong.png>
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+File: img/wong2.png Graphic file (type bmp)
+<img/wong2.png>
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[37]
+File: img/1-kyma-knative.png Graphic file (type bmp)
+<img/1-kyma-knative.png>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [38]
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[39]) (methodologie.tex [40]
+Hoofdstuk 3.
+[41
+
+]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [42]
+[43]
+File: img/databank.png Graphic file (type bmp)
+<img/databank.png>
+
+Underfull \vbox (badness 1142) has occurred while \output is active []
+
+ [44]
+[45]
+File: img/schema_communicatie.png Graphic file (type bmp)
+<img/schema_communicatie.png>
+ [46]
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 160.
+               Default added (so using `tbp') on input line 140.
 
-LaTeX Font Info:    Try loading font information for OT1+ztmcm on input line 18
-2.
+LaTeX Font Info:    Try loading font information for OT1+ztmcm on input line 15
+3.
 ("C:\Users\Lyva\AppData\Local\Programs\MiKTeX 2.9\tex\latex\psnfss\ot1ztmcm.fd"
 File: ot1ztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OT1/ztmcm.
 )
@@ -1903,20 +1986,20 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `ztmcm' (encoding: OT1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-LaTeX Font Info:    Try loading font information for OML+ztmcm on input line 18
-2.
+LaTeX Font Info:    Try loading font information for OML+ztmcm on input line 15
+3.
  ("C:\Users\Lyva\AppData\Local\Programs\MiKTeX 2.9\tex\latex\psnfss\omlztmcm.fd
 "
 File: omlztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OML/ztmcm.
 )
-LaTeX Font Info:    Try loading font information for OMS+ztmcm on input line 18
-2.
+LaTeX Font Info:    Try loading font information for OMS+ztmcm on input line 15
+3.
 
 ("C:\Users\Lyva\AppData\Local\Programs\MiKTeX 2.9\tex\latex\psnfss\omsztmcm.fd"
 File: omsztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMS/ztmcm.
 )
-LaTeX Font Info:    Try loading font information for OMX+ztmcm on input line 18
-2.
+LaTeX Font Info:    Try loading font information for OMX+ztmcm on input line 15
+3.
  ("C:\Users\Lyva\AppData\Local\Programs\MiKTeX 2.9\tex\latex\psnfss\omxztmcm.fd
 "
 File: omxztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMX/ztmcm.
@@ -1929,239 +2012,64 @@ File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 g"
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 )
-LaTeX Font Info:    Try loading font information for OT1+ptm on input line 182.
+LaTeX Font Info:    Try loading font information for OT1+ptm on input line 153.
 
  ("C:\Users\Lyva\AppData\Local\Programs\MiKTeX 2.9\tex\latex\psnfss\ot1ptm.fd"
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 )
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 182.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 153.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 182.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 153.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 182.
-Missing character: There is no ’ in font ptmr8t!
-
-Underfull \hbox (badness 1910) in paragraph at lines 182--182
-\T1/ptm/m/n/12 to an au-then-ti-ca-tion ser-ver,
- []
-
-
-Underfull \vbox (badness 1448) has occurred while \output is active []
-
- [25]
-File: img/jwt.png Graphic file (type bmp)
-<img/jwt.png>
-
-[26]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [27]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [28]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [29]
-File: img/1.png Graphic file (type bmp)
-<img/1.png>
-File: img/2.png Graphic file (type bmp)
-<img/2.png>
-File: img/3.png Graphic file (type bmp)
-<img/3.png>
-
-[30]
-File: img/4.png Graphic file (type bmp)
-<img/4.png>
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-File: img/5.png Graphic file (type bmp)
-<img/5.png>
-[31] [32]
-File: img/6.png Graphic file (type bmp)
-<img/6.png>
- [33]
-Underfull \vbox (badness 6284) has occurred while \output is active []
-
- [34]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [35]
-File: img/breakthepiggybank.png Graphic file (type bmp)
-<img/breakthepiggybank.png>
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-File: img/everythingmicro.png Graphic file (type bmp)
-<img/everythingmicro.png>
-[36]
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-File: img/frankenstein.png Graphic file (type bmp)
-<img/frankenstein.png>
-[37]
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-File: img/chaos.PNG Graphic file (type bmp)
-<img/chaos.PNG>
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-File: img/messaging.PNG Graphic file (type bmp)
-<img/messaging.PNG>
-[38]
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[39]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [40]
-File: img/db.PNG Graphic file (type bmp)
-<img/db.PNG>
-
-[41]
-File: img/etl.PNG Graphic file (type bmp)
-<img/etl.PNG>
- [42]
-File: img/rest.jpg Graphic file (type bmp)
-<img/rest.jpg>
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-File: img/wong.png Graphic file (type bmp)
-<img/wong.png>
-[43]
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-Underfull \vbox (badness 2343) has occurred while \output is active []
-
- [44]
-File: img/wong2.png Graphic file (type bmp)
-<img/wong2.png>
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 153.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [45]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [46]
-File: img/1-kyma-knative.png Graphic file (type bmp)
-<img/1-kyma-knative.png>
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-Underfull \vbox (badness 3449) has occurred while \output is active []
-
- [47])
-(methodologie.tex [48] [49] [50] [51] [52
-
-]
-Hoofdstuk 3.
-
-LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 22.
-
-[53]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [54]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [55]
-[56]
-File: img/databank.png Graphic file (type bmp)
-<img/databank.png>
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[57]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [58]
-File: img/schema_communicatie.png Graphic file (type bmp)
-<img/schema_communicatie.png>
-
-[59]
-
-LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 176.
-
+ [47]
 File: img/schema_microservices.png Graphic file (type bmp)
 <img/schema_microservices.png>
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
 File: img/ordermanagement.png Graphic file (type bmp)
 <img/ordermanagement.png>
 
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[60]
+[48]
 File: img/creditmanagement.png Graphic file (type bmp)
 <img/creditmanagement.png>
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[61]
 File: img/orderfullfilment.png Graphic file (type bmp)
 <img/orderfullfilment.png>
+ [49]
 File: img/ordershipment.png Graphic file (type bmp)
 <img/ordershipment.png>
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[62]
 File: img/facturatie.png Graphic file (type bmp)
 <img/facturatie.png>
+ [50]
 File: img/accountreceivables.png Graphic file (type bmp)
 <img/accountreceivables.png>
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[63]
 File: img/klantmanagement.png Graphic file (type bmp)
 <img/klantmanagement.png>
+ [51]
 File: img/apiSchema.png Graphic file (type bmp)
 <img/apiSchema.png>
 
-Underfull \vbox (badness 5288) has occurred while \output is active []
 
- [64])
-(conclusie.tex [65] [66
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+) (conclusie.tex [52] [53] [54
 
 ]
 Hoofdstuk 4.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [67]
+ [55]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [68])
-[69] [70
+ [56])
+[57] [58
 
 ]
 B"ylage A.
-(../voorstel/voorstel-inhoud.tex [71] [72] [73]) [74]
+(../voorstel/voorstel-inhoud.tex [59] [60] [61]) [62]
 Overfull \hbox (114.30978pt too wide) in paragraph at lines 132--132
 [][]\T1/ptm/m/n/12 Ananthasubramanian, H. (2018). Chal-len-ges in im-ple-me-tin
 g mi-cro-ser-vi-ces. \T1/ptm/m/it/12 https://dzone.com/articles/challenges-
@@ -2171,13 +2079,6 @@ g mi-cro-ser-vi-ces. \T1/ptm/m/it/12 https://dzone.com/articles/challenges-
 Overfull \hbox (59.27806pt too wide) in paragraph at lines 132--132
 \T1/ptm/m/n/12 chi-tec-ture. \T1/ptm/m/it/12 https://headspring.com/2018/11/14/
 integration-patterns-microservices-architecture/\T1/ptm/m/n/12 . 
- []
-
-Missing character: There is no — in font ptmr8t!
-
-Overfull \hbox (9.73085pt too wide) in paragraph at lines 132--132
-\T1/ptm/m/n/12 duc-tion. \T1/ptm/m/it/12 https://medium.com/extend/what-is-rest
--a-simple-explanation-for-beginners-
  []
 
 
@@ -2224,21 +2125,15 @@ Overfull \hbox (150.80272pt too wide) in paragraph at lines 132--132
 lva/best-
  []
 
-[75
-
-]
-Overfull \hbox (15.7934pt too wide) in paragraph at lines 132--132
-[][]\T1/ptm/m/n/12 Deering, S. (2012). Do you know what a REST API is? \T1/ptm/
-m/it/12 https://www.sitepoint.com/developers-
- []
-
 
 Overfull \hbox (43.72607pt too wide) in paragraph at lines 132--132
 \T1/ptm/m/n/12 tec-ture. \T1/ptm/m/it/12 https://hackernoon.com/monitoring-cont
 ainerized-microservices-with-a-centralized-
  []
 
+[63
 
+]
 Overfull \hbox (32.43848pt too wide) in paragraph at lines 132--132
 [][]\T1/ptm/m/n/12 Hofmann, R. (2018, au-gus-tus 10). Kyma and Kna-tive In-te-g
 ra-tion - Pro-gress Up-date. \T1/ptm/m/it/12 https://kyma-
@@ -2287,13 +2182,6 @@ m/it/12 https://intellipaat.com/blog/tutorial/data-
  []
 
 
-Overfull \hbox (143.90163pt too wide) in paragraph at lines 132--132
-[][]\T1/ptm/m/n/12 Rouse, M. (2019). REST (RE-pre-sen-ta-ti-o-nal State Trans-f
-er). \T1/ptm/m/it/12 https://searchmicroservices.techtarget.com/definition/REST
--
- []
-
-
 Overfull \hbox (25.61908pt too wide) in paragraph at lines 132--132
 [][]\T1/ptm/m/n/12 Saldanha, L. (2016). Tips on log-ging mi-cro-ser-vi-ces. \T1
 /ptm/m/it/12 https://logz.io/blog/logging-microservices/\T1/ptm/m/n/12 . 
@@ -2305,7 +2193,7 @@ Overfull \hbox (47.89192pt too wide) in paragraph at lines 132--132
 -tion ex-plai-ned. \T1/ptm/m/it/12 https://nordicapis.com/3-
  []
 
-[76]
+
 Overfull \hbox (107.40123pt too wide) in paragraph at lines 132--132
 [][]\T1/ptm/m/n/12 Semerdzhiev, K. (2018, juni 24). In-tro-du-cing pro-ject Kym
 a. \T1/ptm/m/it/12 https://kyma-project.io/blog/2018/7/24/introduction-
@@ -2317,7 +2205,7 @@ Overfull \hbox (14.78221pt too wide) in paragraph at lines 132--132
 vices-the-api-gateway-authentication-
  []
 
-
+[64]
 Overfull \hbox (80.24377pt too wide) in paragraph at lines 132--132
 [][]\T1/ptm/m/n/12 Stecky-Efantis, M. (2016). 5 Esay steps to un-der-stan-ding 
 JSON Web To-kens. \T1/ptm/m/it/12 https://medium.com/vandium-
@@ -2347,7 +2235,7 @@ Overfull \hbox (20.27425pt too wide) in paragraph at lines 132--132
 about-order-to-cash-
  []
 
-[77]
+[65]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 134.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 134.
  (bachproef-tin.aux)
@@ -2358,12 +2246,12 @@ Package logreq Info: Writing requests to 'bachproef-tin.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 42325 strings out of 427796
- 766857 string characters out of 3147988
- 1372489 words of memory out of 3000000
- 45737 multiletter control sequences out of 15000+200000
+ 42266 strings out of 427796
+ 765920 string characters out of 3147988
+ 1370920 words of memory out of 3000000
+ 45685 multiletter control sequences out of 15000+200000
  571444 words of font info for 67 fonts, out of 3000000 for 9000
  1328 hyphenation exceptions out of 8191
- 62i,12n,59p,1355b,6265s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 62i,12n,59p,1354b,6265s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on bachproef-tin.pdf (79 pages).
+Output written on bachproef-tin.pdf (67 pages).

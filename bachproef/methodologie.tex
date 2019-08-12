@@ -5,54 +5,20 @@
 \chapter{\IfLanguageName{dutch}{Methodologie}{Methodology}}
 \label{ch:methodologie}
 
-In dit hoofdstuk zal er een schets gemaakt worden van het OTC proces met een microservice architectuur. 
+In dit hoofdstuk zal er een schets gemaakt worden van het OTC proces met een microservice architectuur. De architectuur zal aangepast worden aan de hand van integratie patterns aangehaald in 'Stand van zaken'. 
 
-In de sectie 'Stand van zaken' zijn er acht stappen terug te vinden. In deze studie worden er zeven aangehaald. De laatste stap: 'reporting and data management' wordt niet behandeld.
+Als eerste werd de volledige architectuur uit elkaar gehaald. Zoals het eerste anti-pattern: break the piggy break. Maar één van de veel voorkomende fouten bij het anti-pattern is de databank. Om ervoor te zorgen dat de databank niet dezelfde blijft als die uit de monolithic architectuur, wordt er data integratie toegepast. Eens de microservices en de databank uitgedacht zijn, moet de communicatie uitgedacht worden. De theoretische uitleg van de communicatiemethode is terug te vinden. De communicatiemethode zal toegepast worden op de architectuur die verworven wordt uit de bovenstaand vernoemde integratie patterns.
+Eens elk onderdeel aangebracht is, wordt alles samengebracht tot de complete architectuur.
 
-Eerst worden er enkele termen uitgelegd. Dan worden alle microservices binnen het OTC proces uitgelgd. Wat ze precies doen en tot welk onderdeel, van het OTC proces, ze behoren. Hierna wordt de communicatiemethode tussen de verschillende microservices uitgelegd. Als voorlaatste wordt de databank structuur uitgetekend. Als laatste wordt de complete architectuur uitgelegd. Onder de complete architectuur worden volgende punten aangehaald:
-\begin{itemize}
-	\item De communicatie tussen de onderdelen van het OTC proces. Hier wordt aan de hand van een schema uitgelegd hoe de communicatie gebeurt tussen de onderdelen.
-	\item De architectuur. Dit deel bevat een schema, waar duidelijk op wordt welk onderdeel welke microservices aanspreekt. Per onderdeel wordt ook uitgelegd waarom deze microservices worden aangesproken.
-	\item Als laatste worden de API gateway, logging, authenticatie en authorisatie toegevoegd.
-\end{itemize}
+\section{Anti-pattern: Break the piggy bank}
+Zoals beschreven in het onderdeel 'Stand van zaken' wordt de gehele applicatie in stukjes opgedeeld. Er wordt gekeken naar de business functionaliteiten. 
+In de volgende sectie worden de verschillende microservices besproken. Elke stap van het order-to-cash proces is een microservices. Maar de stappen bevatten meerdere business functionaliteiten. Het zou tegen de principes van microservices zijn. Per stap van het proces werd gekeken naar de functionaliteiten. Eens die gedefineerd waren, werd er gekeken naar de gelijke funcitonaliteiten over de verschillende stappen heen. Die functionaliteiten werden in microservices gegoten. Elke stap van het order-to-cash proces spreekt de microservices aan die van belang zijn. Een belangrijk punt: de databank bij deze manier van werken blijft dezelfde als monolithic. De databank wordt verder behandelt in het gedeelte 'data integratie'.
 
-\section{Uitleg termen}
-In tabel 3.1 zijn termen terug te vinden die in dit hoofdstuk regelmatig zullen voorkomen.
+Er werd gekozen om de microservice niet nog kleiner te maken. Dit werd niet gedaan wegens overzichtelijkheid. Het opsplitsen in nog kleinere microservices zorgt ervoor dat men kan verloren lopen tussen de microservices. Nu wis er geweten welke microservice men moet gebruiken wanneer er iets met orders moet gebeuren.   
 
-\begin{table}[]
-	\resizebox{\textwidth}{!}{%
-		\begin{tabular}{|l|p{15cm}|}
-			\hline 
-			Queue & Een wachtrij waar berichten op geplaatst worden. Het bericht op de queue kan maar één keer gelezen worden. \\ \hline
-			Consumption & De term om een bericht van de queue te lezen. \\ \hline
-			Acknowledgement & Het verwijderen van een bericht op de queue. \\ \hline
-			Overhead &  Als er teveel data aanwezig is op de queue dan spreekt men van overhead. Dit kan er voor zorgen dat de queue geen berichten meer ontvangt. \\ \hline
-			Datastore &  Een datastore is een kleinere versie van een databank. Er kunnen files in opgeslaan worden. \\ \hline
-		\end{tabular}%
-	}
-	\caption{Termen die vaker voorkomen in dit hoofdstuk.}
-\end{table}
-
-\section{De microservices binnen het OTC proces}
-De microservices die logging, authenticatie, authorisatie en bescherming omvatten, zullen niet uitgelegd worden.
-De microservices die hier uitgelegd worden, liggen achter het OTC proces. Deze microservices worden aangesproken door de onderdelen van het OTC proces. 
-De onderdelen van het OTC proces zijn ook microservices. Deze zijn microservices spreken de hieronder opgelijste microserivces aan.
-In dit deel wordt naar een databank verwijst. Deze gaat later aangehaald worden.
-Voor elk van volgende microservices gaan we volgende vragen beantwoorden:
-\begin{itemize}
-	\item Waarom werd hiervan een microservice gemaakt?
-	\item Wat kunnen ze?
-	\item Door welk onderdeel van het OTC proces wordt deze gebruikt?
-\end{itemize}
+Een microservice is schaalbaar. Omdat de volgende requirement meermaals voorkomen in het proces, is het voordeliger om te dupliceren en te hergebruiken van deze microservices.
 
 
-Deze microservices lopen gelijk met business requirements die terug te vinden zijn in de literatuurstudie. 
-Eerst werd elk onderdeel van het OTC proces apart bekeken. Er werd gekeken naar de requirements van elk onderdeel. Na het bekijken van elk onderdeel, werd de conclusie getrokken dat bepaalde requirements meermaals terugkwamen. Die requirements zijn omgegoten in onderstaande onderdeel van de methodologie. Later in deze bachelorproef zal duidelijk worden welke microservices bij welk onderdeel van het OTC proces horen. 
-
-Er werd gekozen om de microservice niet nog kleiner te maken. De microservices zouden nog kleiner gemaakt kunnen worden. Maar hiervoor werd niet gekozen wegens overzichtelijkheid. Het opsplitsen in nog kleinere microservices zorgt ervoor dat men kan verloren lopen tussen de microservices. Nu weet men welke microservice men moet gebruiken als men iets met orders wil doen.   
-
-Een microservice is schaalbaar. Omdat de volgende requirement meermaals voorkomen in het proces, is het voordeliger om te dupliceren en te hergebruiken van deze microservices. 
-\subsection{De microservices van het order-to-cash proces met hun onderliggende communicatie}
 \subsubsection{Klantengegevens ophalen}
 Veel onderdelen van het OTC proces moeten aan de klantgegevens kunnen. Om te zorgen dat alles op een gelijke manier gebeurt, is hier een microservice van gemaakt.
 Deze microservice gaat ervoor zorgen dat de klantengegevens uit de databank worden gehaald. Het zal de databank aanspreken en vragen om de data van een specifieke klant. 
@@ -105,9 +71,31 @@ Deze microservice komt voor in elk onderdeel van het proces.
 Elk onderdeel moet berichten van zijn queue kunnen halen. Door het meermaals voorkomen van deze taak, wordt er een microservice van gemaakt. Het ophalen van berichten gebeurt dan op een uniforme manier. 
 Deze microservice komt voor in elk onderdeel van het proces.
 
-\subsection{Communicatie methode tussen microservices}
+\section{Data integration}
+Bij 'break the piggy bank' wordt de databank behouden van de vorige architectuur. Dat leidt meestal tot de doodsteek van de microservices architectuur. De databank niet aanpassen, kan leiden tot falen op langere termijn. Daarom is data integratie een correcte manier om de databank aan te passen naar één die de microservices architectuur wel aan kan.
 
-Microservices moeten met elkaar kunnen communiceren. De manier wordt voorgesteld in figuur 3.1. 
+Elke microservice heeft zijn databank. De microservices betreffende de stappen van het order-to-cash proces hebben geen databank. Zij geven enkel commando's door aan de microservices die een business requirement als functionaliteit hebben. De microservices met de business requirement hebben elk hun eigen databank. Elke microservices omvat een eigen domein. Hierdoor zal er nergens gedupliceerde data terug te vinden zijn. Op figuur 3.1 is te zien hoe de databank structuur eruit ziet. De lijnen tussen de databank geeft weer welke verbindingen er liggen. 
+\begin{figure}[h!]
+	\includegraphics[width=15cm]{databank.png}
+	\caption{De databank structuur.}
+	\centering
+\end{figure}
+
+Een order weet wie zijn klant is. Credit management kan de eigenschap bij het order veranderen van 'goedgekeurd' naar 'niet goedgekeurd'. Van elk order wordt een orderlijn bijgehouden. Zodat er geweten is wat er op de order staat. Op elk orderlijn staat er een product of service. Van het product moet er een beschrijving en verkoopprijs zijn. Het aantal in voorraad is gekend omdat bij het order fullfilment moet de voorraad aangepast worden van het specifieke product. Een order en de klant zijn gekend op de facturatie. Zo kan er nagegaan worden of de factuur overeenkomt met wat er op het order staat. De klant zijn gegevens moeten gekend zijn om naar het juiste adres te factureren.
+
+Elke databank heeft een queue. Wanneer een microserivce B iets nodig heeft van microserivce A, kan die vraag naar de queue gepost worden.
+
+De databank van microservice 'klant gegevens ophalen' zal alle data van de klanten bevatten.
+De databank van microservice 'order plaatsen, ophalen en verwijderen' zal alle data van de orders bevatten.
+De databank van microservice 'producten ophalen en aantal in de voorraad veranderen' zal alle data van de producten bevatten.
+De databank van microservice 'facturatie maken en ophalen' alle data van de facturatie bevatten.
+De databank van microservice 'Shipment documentatie opstellen' bevat de data van de orders om aan de hand van die data, de documenten op te stellen en dan toe te voegen aan de data met alle shipment documenten.
+De databank van microservice 'Aanmaning opmaken en verwijderen' bevat alle data van de aanmaningen. 
+De microservices 'bericht op queue plaatsen' en 'bericht van de queue halen', hebben geen datastore. Het zijn twee microservices die geen data moeten gaan ophalen of wegschrijven. Ze staan in voor het ophalen en plaatsen van berichten. 
+
+\section{Communicatie tussen de microservices}
+De communicatie gebeurt aan de hand van messaging. Maar omdat het order-to-cash een proces is waarin alleen voorwaarts kan worden gegaan. Daardoor is hier geen nood aan een message broker. Maar er wordt wel gewerkt met een queue. Omdat deze als voordeel heeft dat de microservices niet overbelast geraakt. De microservices handelt alles op zijn tempo.
+Een schets van de communicatie manier is terug te vinden in  figuur 3.3. 
 Klant 66 plaats een order met vier verschillende producten. Het ordernummer is 23. De volledige bestelling komt binnen in het systeem en wordt op de queue van ordermanagement geplaatst. Het order wordt van de queue gehaald aan de hand van consumption en acknowledgement. Ordermanagement verwerkt de binnengekomen order. Dan wordt het klantnummer en ordernummer op de queue van creditmanagement geplaatst. Creditmanagement haalt het bericht van de queue. Dan wordt er gekeken naar het betaalgedrag van de klant. Is het een wanbetaler of betaalt de klant altijd correct. Staat de klant gekend voor wanbetalen, dan wordt er geen goedkeuring gegeven om het order te plaatsen. Bij een corect betaalgedrag, krijgt het order goedkeuring om geplaatst te worden. Dan wordt het ordernummer doorgestuurd naar het volgende deel van het proces. 
 Dus volgende queue's zouden moeten bestaan:
 \begin{itemize}
@@ -121,33 +109,9 @@ Dus volgende queue's zouden moeten bestaan:
 
 Niet alle data wordt volledig naar de queue gestuurd enkel de belangrijke data. Zoals bijvoorbeeld het nummer van de klant die een order plaatste. Het ordernummer en klantnummer worden naar creditmanagement doorgestuurd. Bij creditmanangement wordt er dan aan de hand van het klantnummer de gegevens opgehaald en dan zo nagegaan of die klant wel een order mag plaatsen. Het ordernummer werd meegestuurd om zeker te zijn dat de correcte order goed- of afgekeurd wordt. Zo blijft de overhead op de queue minimaal. Om meer gegevens op te halen, moet de databank aangesproken worden. De gehele structuur van de databank wordt beschreven in het volgende gedeelte.
 
-\section{De databank structuur}
-Onderliggend is één grote databank waar alle masterdata in terug te vinden is. Hier is de enige plaats waar een single point-of-failure terug te vinden is. Naast de grote databank, heeft elke microservice zijn datastore. Bij een verandering in een datastore, wordt deze aangebracht in de algemene databank. Eens de databank het record heeft toegevoegd of aangepast, stuurt hij een bericht naar elke datastore zijn queue om te melden dat er een verandering gebeurt is. Leest een microservice het bericht van verandering, dan wordt er een nieuwe kopie van de masterdata gemaakt. 
-De master data zit in een grote databank zodat er maar één plaats is waar de correcte data zit. De verschillende datastores nemen een kopie van de data die zij nodig hebben. 
-\begin{figure}[h]
-	\includegraphics[width=15cm]{databank.png}
-	\caption{De databank structuur.}
-	\centering
-\end{figure}
-
-Een order weet wie zijn klant is. Credit management kan de eigenschap bij het order veranderen van 'goedgekeurd' naar 'niet goedgekeurd'. Van elk order wordt een orderlijn bijgehouden. Zodat er geweten is wat er op de order staat. Op elk orderlijn staat er een product of service. Van het product moet er een beschrijving en verkoopprijs zijn. Het aantal in voorraad is gekend omdat bij het order fullfilment moet de voorraad aangepast worden van het specifieke product. Een order en de klant zijn gekend op de facturatie. Zo kan er nagegaan worden of de factuur overeenkomt met wat er op het order staat. De klant zijn gegevens moeten gekend zijn om naar het juiste adres te factureren.
-
-Elke datastore heeft een queue. Wanneer een microserivce B iets nodig heeft van microserivce A, kan die vraag naar de queue gepost worden.
-
-De datastore van microservice 'klant gegevens ophalen' zal alle data van de klanten bevatten.
-De datastore van microservice 'order plaatsen, ophalen en verwijderen' zal alle data van de orders bevatten.
-De datastore van microservice 'producten ophalen en aantal in de voorraad veranderen' zal alle data van de producten bevatten.
-De datastore van microservice 'facturatie maken en ophalen' alle data van de facturatie bevatten.
-De datastore van microservice 'Shipment documentatie opstellen' bevat de data van de orders om aan de hand van die data, de documenten op te stellen en dan toe te voegen aan de data met alle shipment documenten.
-De datastore van microservice 'Aanmaning opmaken en verwijderen' bevat alle data van de aanmaningen. 
-De microservices 'bericht op queue plaatsen' en 'bericht van de queue halen', hebben geen datastore. Het zijn twee microservices die geen data moeten gaan ophalen of wegschrijven. Ze staan in voor het ophalen en plaatsen van berichten. 
-
-\section{De complete architectuur opbouwen}
-Op figuur 3.3 is te zien hoe het proces in elkaar ziet. Door de microservice architectuur toe te passen op het order-to-cash proces verandert er niks aan de volgorde van het proces of het doel van het proces. De manier waarop gegevens worden opgehaald, verandert wel. 
-
 \subsection{De communicatie tussen de onderdelen van het OTC proces}
 
-\begin{figure}[h]
+\begin{figure}[h!]
 	\includegraphics[width=15cm]{schema_communicatie.png}
 	\caption{De communicatie tussen de verschillende onderdelen van het order-to-cash proces.}
 	\centering
@@ -190,16 +154,16 @@ In volgende tabel, zijn er letters en bijhorende microservices terug te vinden. 
 	\caption{Legende die gebruikt wordt in de afbeeldingen.}
 \end{table}
 
-In tabel 3.2 is de legende terug te vinden die gebruikt wordt bij het uitleggen van elk onderdeel apart.
+In tabel 3.1 is de legende terug te vinden die gebruikt wordt bij het uitleggen van elk onderdeel apart.
 In figuur 3.3 is te zien hoe het volledige proces communiceert met de verschillende microservices. Elk onderdeel van het proces is een microservice op zich. Een microservice die meerdere microservices aanspreekt om goed te functioneren.
-\begin{figure}[h]
+\begin{figure}[h!]
 	\includegraphics[width=15cm]{schema_microservices.png}
 	\caption{Welk onderdeel, welke microservices aanspreekt.}
 	\centering
 \end{figure}
 
 \subsubsection{Order management}
-\begin{figure}[h]
+\begin{figure}[h!]
 	\includegraphics[width=5cm]{ordermanagement.png}
 	\caption{Order management communiceert met volgende microservices.}
 	\centering
@@ -215,7 +179,7 @@ Order management communiceert met volgende microservices:
 Een klant plaatst een order op het platform van het bedrijf. De gegevens van de klant worden opgehaald en gelinkt aan het nieuw gecreëerde order. Eens die twee taken zijn afgerond, wordt het bericht op de queue geplaatst van credit management.
 
 \subsubsection{Credit management}
-\begin{figure}[h]
+\begin{figure}[h!]
 	\includegraphics[width=5cm]{creditmanagement.png}
 	\caption{Credit management communiceert met volgende microservices.}
 	\centering
@@ -231,7 +195,7 @@ Credit management communiceert met volgende microservices:
 Eerst wordt het bericht dat door order management op de queue geplaatst werd, opgehaald. Dan is er een klantnummer en een ordernummer. Bij credit management kijkt of de klant een goed betaalgedrag heeft. Staat de klant gekend als wanbetaler dan naar het order gegaan om de plaatsing van het order af te keuren. In andere gevallen krijgt de order een goedkeuring en wordt het ordernummer geplaatst op de queue van order fullfilment. Dan zit de taak van credit management erop.
 
 \subsubsection{Order fullfilment}
-\begin{figure}[h]
+\begin{figure}[h!]
 	\includegraphics[width=5cm]{orderfullfilment.png}
 	\caption{Order fullfilment communiceert met volgende microservices.}
 	\centering
@@ -246,7 +210,7 @@ Order fullfilment communiceert met volgende microservices:
 Bij order fullfilment staat er een ordernummer op de queue. Die wordt opgehaald en aan de hand van het ordernummer, weet men welke goederen er uit het magazijn moeten gehaald worden. Voor alle goederen moet het aantal in de voorraad aangepast worden. Eens het order compleet is, wordt het ordernummer op de queue van order shipment geplaatst.
 
 \subsubsection{Order shipment}
-\begin{figure}[h]
+\begin{figure}[h!]
 	\includegraphics[width=5cm]{ordershipment.png}
 	\caption{Order shipment communiceert met volgende microservices.}
 	\centering
@@ -262,7 +226,7 @@ Order shipment communiceert met volgende microservices:
 Order shipment krijgt het ordernummer binnen via zijn queue. Het order wordt bekeken en de klant gegevens worden opgehaald aan de hand van het gekoppelde klantnummer aan het order. Eens het order shipment document is opgesteld en alle goederen klaar zijn voor vertrek, wordt het ordernummer geplaatst op de queue van facturatie.
 
 \subsubsection{Facturatie}
-\begin{figure}[h]
+\begin{figure}[h!]
 	\includegraphics[width=5cm]{facturatie.png}
 	\caption{Facturatie communiceert met volgende microservices.}
 	\centering
@@ -278,7 +242,7 @@ Facturatie communiceert met volgende microservices:
 Eens het ordernummer opgehaald is van de queue, wordt alle nodig info opgehaald om de factuur op te maken. De nodige gegevens zijn klantgegevens en het order. Eens de factuur opgemaakt is, wordt het factuur nummer geplaatst op de queue van account receivables.
 
 \subsubsection{Accounts receivables}
-\begin{figure}[h]
+\begin{figure}[h!]
 	\includegraphics[width=5cm]{accountreceivables.png}
 	\caption{Accounts receivables communiceert met volgende microservices.}
 	\centering
@@ -292,7 +256,7 @@ Accounts receivable gaat na of de betaling wel goed wordt afgerond. Om dit te ku
 \end{itemize}
 
 \subsubsection{Klant management}
-\begin{figure}[h]
+\begin{figure}[h!]
 	\includegraphics[width=5cm]{klantmanagement.png}
 	\caption{Klant management communiceert met volgende microservices.}
 	\centering
@@ -306,6 +270,11 @@ Klant management staat in voor het contact met de klant. Dit deel gebruikt volge
 \end{itemize}
 Als een van de vorige onderdelen een bericht plaatst op de queue, zal die verwerkt worden en de nodige info wordt opgehaald.
 
+
+\section{De complete architectuur opbouwen}
+Op figuur 3.11 is te zien hoe het proces in elkaar ziet. Door de microservice architectuur toe te passen op het order-to-cash proces verandert er niks aan de volgorde van het proces of het doel van het proces. De manier waarop gegevens worden opgehaald, verandert wel. 
+
+
 \subsection{De volgende stappen: Het toevoegen van API, logging en authenticatie en authorisatie}
 \subsubsection{Logging}
 Logging kan toegepast worden door nog een extra microservice te ontwikkelen. Hiernaar kunnen de andere microservices hun logs posten. Hier zal niet verder op worden ingegaan. 
@@ -313,7 +282,7 @@ Logging kan toegepast worden door nog een extra microservice te ontwikkelen. Hie
 \subsubsection{API gateway}
 Een API gateway wordt toegevoegd om ervoor te zorgen dat de architctuur niet openbaar is voor iedereen. Er is één aanspreekpunt en die regelt de rest van de communicatie.
 De API communiceert in dit geval enkel met order management. De API geeft alle nodige informatie door en order management schrijft deze weg naar de datastore en naar de databank.
-\begin{figure}[h]
+\begin{figure}[h!]
 	\includegraphics[width=10cm]{apiSchema.png}
 	\caption{Vereenvoudigd schema.}
 	\centering
@@ -323,6 +292,6 @@ De API communiceert in dit geval enkel met order management. De API geeft alle n
 Onder het hoofdstuk 'stand van zaken', is een vergelijking te vinden over authenticatie. Uit die vergelijking, is de keuzen API gekozen als authenticatie. Binnen API zijn er verschillende opties, die worden ook overlopen in het vorige hoofdstuk. Er is gekozen voor OAuth omdat dit de meest bekende en gebruikte versie is.
 
 De gebruiker moet gekend zijn voordat die een order kan plaatsen. De authenticatie van de gebruiker gebeurt vooraf. Er is een aparte micrservice voor authenticatie. Hier wordt niet dieper op in gegaan.
-Op afbeelding 3.12 is wel een mogelijke plaatsing zichtbaar.
+
 
 

@@ -807,4 +807,11 @@
   year    = {2016},
 }
 
+@Article{stSoftware2019,
+  author  = {stSoftware},
+  title   = {How to define a RESTful Web Services?},
+  journal = {https://www.stsoftware.com.au/site/ST/blog/article/rest-define/},
+  year    = {2019},
+}
+
 @Comment{jabref-meta: databaseType:biblatex;}
