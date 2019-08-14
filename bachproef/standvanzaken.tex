@@ -22,15 +22,11 @@ De overschakeling naar microservice omvat onder andere:
 	\item de impact van een verandering kan verkeerd ingeschat worden
 	\item bij een fout in een proces, kan de volledige architectuur falen
 \end{itemize}
-Er zijn meerdere definities terug te vinden over microservices. In volgende opsomming kunnen enkele definities gevonden worden:
-\begin{itemize}
-	\item 'A method of developing software applications as a suite of independently deployable, small, services in which each service runs a unique process and communicates through a  well-defined, light weight mechanism to serve a business goals.', \textcite{Mauersberger2017}
-	\item 'A software architecting pattern that allows software to be developed into relatively small, distinct components. Each of the components is abstracted by an API(s) and provides a distinct subset of the functionality of the entire application.', \textcite{Watts2018}
-	\item 'microservices stems from the same ideology as Agile and DevOps by seeking to break down slow moving, monolithic systems into multiple small, independent services that are highly decoupled and self-contained to focus on a specific function or capability.', \textcite{Benetis2016a}
-\end{itemize}
- Wanneer men de definities herleest, zijn er enkele terugkerende onderdelen aanwezig. Een eerste onderdeel spitst zich toe op de  werking van een microservice. Het is een onafhankelijke, kleine, modulaire service. Modulaire services zijn services waarbij veel delen uitwisselbaar zijn met diverse services. Wordt er info gestuurd of gevraagd van service A, dan zal dit geen invloed hebben op de andere services. Een tweede eigenschap is de eenvoudig communicatie. Daar is nood aan omdat sommige services data moeten uitwisselen om hun 'job' te kunnen doen. De communicatie kan gebeuren op verschillende manieren. De manier die bekendst is, is 'Messaging via a Message Broker'. Dit wil zeggen dat microservice A een bericht plaatst op de wachtrij bij microservice B wanneer A data wil doorsturen. Dan kan microservice B aan die data wanneer hij die nodig heeft. Ze zullen soms moeten wachten maar ze zijn zo goed als onafhankelijk van elkaar. De derde eigenschap omvat dat een microservice wordt gemaakt in functie van een requirement uit de business. Elk product in de business heeft een doel dat moet voldoen aan eisen. Het unieke aan microservices is dat  men  ze gaat bekijken vanuit de eisen binnen de business. Het doel van microservices is, de problemen die te vinden zijn bij een monolithic, verhelpen. 
+Er zijn meerdere definities terug te vinden over microservices die hieronder uitgelegd staan. De uitleg is gebaseerd op definities van \textcite{Mauersberger2017}, \textcite{Watts2018} en \textcite{Benetis2016a}.
+
+Er zijn verschillende onderdelen omtrent de uitleg over microservices. Een eerste onderdeel spitst zich toe op de  werking van een microservice. Het is een onafhankelijke, kleine, modulaire service. Modulaire services zijn services waarbij veel delen uitwisselbaar zijn met diverse services. Wordt er info gestuurd of gevraagd van service A, dan zal dit geen invloed hebben op de andere services. Een tweede eigenschap is de eenvoudig communicatie. Daar is nood aan omdat sommige services data moeten uitwisselen om hun 'job' te kunnen doen. De communicatie kan gebeuren op verschillende manieren. De manier die bekendst is, is 'Messaging via a Message Broker'. Dit wil zeggen dat microservice A een bericht plaatst op de wachtrij bij microservice B wanneer A data wil doorsturen. Dan kan microservice B aan die data wanneer hij die nodig heeft. Ze zullen soms moeten wachten maar ze zijn zo goed als onafhankelijk van elkaar. De derde eigenschap omvat dat een microservice wordt gemaakt in functie van een requirement uit de business. Elk product in de business heeft een doel dat moet voldoen aan eisen. Het unieke aan microservices is dat  men  ze gaat bekijken vanuit de eisen binnen de business. Het doel van microservices is, de problemen die te vinden zijn bij een monolithic, verhelpen. 
  
- De verschillen tussen een monolithic en microservices kunnen het best afgebeeld worden in een afbeelding 2.1.
+De verschillen tussen een monolithic en microservices kunnen het best afgebeeld worden in een afbeelding 2.1.
 
 \begin{figure}[h!]
 	\includegraphics[width=10cm]{microservices-vs-monolithic.jpg}
@@ -264,31 +260,11 @@ Het scalen van een microservice is veel eenvoudiger. Omdat dat microservices min
 
 Binnen een monolithic zijn deeltjes afhankelijk van elkaar om goed te kunnen functioneren. Een ander voordeel: bij het falen van een microservices zal de ander geen last ondervinden. 
 
-\textcite{Benetis2016} geeft aan dat volgnede voordelen zijn van microservices:
-\begin{itemize}
-	\item Sneller en gemakkelijker developen
-	\item Het refactoren van deeltjes is eenvoudiger door de onafhankelijkheid van de services
-	\item De schaalbaarheid is eenvoudiger dan bij een monolithic. Men kan microservices gewoon klonen of kopieëren
-	\item Het deployen van een onderdeel gaat sneller omdat het team gespecialiseerd is in die bepaalde service
-\end{itemize}
+\textcite{Benetis2016} geeft aan dat microservices sneller en gemakkelijker te deployen zijn. Dit is een gevolg van een ander voordeel: microservices zijn onafhankelijk. Ze kunnen elk op hun eigen tempo gedeployed worden.
 
-Een eerste nadeel is ...
-Maar om ervoor te zorgen dat dit allemaal vlot verloopt moeten er aanpassingen binnen het bedrijf gebeuren. 
-\begin{itemize}
-	\item Een project zal moeten ingedeeld worden in kleine requirements. De scope zal gedetailleerder moeten zijn.
-	\item Een team van ontwikkelaars zal kleiner zijn. Zodat er meer op de Agile methode kan gewerkt worden.
-	\item De band met DevOps versterkt. Dit komt omdat veel services volledige automatische deployment vragen.
-	\item De communicatie tussen de services zal beter moeten worden uitgedacht.
-	\item Documenteren is belangrijk. Bij het introduceren van een nieuw teamlid, kan die zich inwerken aan de hand van de genoteerde informatie over de microservices.
-\end{itemize}
+Een eerste nadeel is dat de scope gedetailleerder moet zijn omdat het project ingedeeld is in kleinere requirements. Als gevolg daarop zijn de teams kleiner en een teamlid kan niet zomaar vervangen worden omdat elk team een bepaalde specialisatie heeft.
 
-Enkele nadelen en moeilijkheden, \textcite{Koukia2018}:
-\begin{itemize}
-	\item Distributed systems zijn ingewikkeld. Microservices vragen in het begin meer  werk. Dit komt omdat het een nieuwere technologie is en het concept is niet altijd meteen duidelijk. 
-	\item Een monolithic bevat complexiteit, maar  wel een bekende complexiteit. Als er al een tijdje gewerkt wordt met monolithic, dan is die complexiteit een bekende eigenschap van de architectuur. Omdat microservices iets nieuws is, komt er complexiteit die minder bekend is onder de developers.
-	\item Het wordt moeilijker om fouten te vinden. Bij een monolithic is het eenvoudig: een aanpassing vraagt een nieuwe run van de gehele applicatie. De gehele architectuur bij een microservices moet getest worden.
-	\item Bij aanpassingen binnen een monolithic was één request voldoende om code samen te voegen. Bij microservices gebeurt dit als volgt: er moet een nieuwe feature komen in vier nieuwe microservices en dus ook vier requests verstuurd om die code samen te voegen. De services binnen de microservice architectuur zijn immers onafhankelijk van elkaar.
-\end{itemize}
+\textcite{Koukia2018} drukt ons op het feit dat het onderhouden van microservices vraagt veel werk. Het is een nieuwe technologie en het team moet up to date blijven over die technologie. Dit is een van de redenen waarom sommigen bij een monolithic blijven. De complexiteit binnen monolithic is gekend. De developers zijn gewoon om met die complexiteit te werken en er fouten uit te halen. Daarom lijkt de chaos bij microservices soms groter dan bij een monolithic.
 
 \section{Microservices integration patterns}
 Hierboven werd uitgelegd wat microservices zijn. Het zijn kleine, onafhankelijke services die aan business requirements voldoen. Maar die moeten met elkaar kunnen communiceren, taken uitvoeren, data updaten en elkaar kunnen raadplegen. Om ze met elkaar te laten communiceren, moeten ze op een gestructureerde manier geintegreerd worden in de applicatie. Gestructureerd integreren kan a.d.h.v. onderstaande patterns:
@@ -302,7 +278,7 @@ Hierboven werd uitgelegd wat microservices zijn. Het zijn kleine, onafhankelijke
 In het derde hoofdstuk zal één of meerdere van de bovenstaande patterns theoretisch toegepast worden op het order-to-cash proces. Het order-to-cash proces zal verder uitgelegd worden in deel 2.3.
 \subsection{Anti-patterns}
 Een anti-patterns is het implementeren van microservices op een ongestructureerde manier zonder grondig onderzoek te doen. 
-Anti-patterns ontstaan bij een ongeplande overschakeling naar microservices.  Anti-patterns komen vaker voor dan een gestructureerde microservice architectuur omdat ongepland en gewoon ergens aan beginnen eenvoudiger is dan alles plannen en voorbereiden. Er moet grondig onderzoek gedaan worden naar de verschillende 'microservice integration patterns'. Op welke manier kan de applicatie gestructureerd naar een microservice architectuur gewerkt worden?
+Anti-patterns ontstaan bij een ongeplande overschakeling naar microservices.  Anti-patterns komen vaker voor dan een gestructureerde microservice architectuur omdat ongepland en gewoon ergens aan beginnen eenvoudiger is dan alles plannen en voorbereiden. Er moet grondig onderzoek gedaan worden naar de verschillende 'microservice integration patterns'. Op welke manier kan de applicatie gestructureerd naar een microservice architectuur verandert worden?
 De meeste mensen hebben niet door dat ze een anti-pattern aan het maken zijn. . 
 
 Er zullen drie anti-patterns besproken worden die kunnen helpen bij het achterhalen ervan. Volgende zullen besproken worden, \textcite{Monson2019}:
@@ -315,7 +291,7 @@ Er zullen drie anti-patterns besproken worden die kunnen helpen bij het achterha
 Op een break the piggy bank structuur lijkt de applicatie wat op een spaarvarken. Om van een monlithic applicatie naar een microservice applicatie te gaan, moet de applicatie uit elkaar gehaald worden en opgedeeld worden in kleine delen.  De kleine delen worden omgezet naar microservices. 
 In het begin van de verandering naar microservices zal de complexiteit verminderen. Maar  verder in het proces wordt het enkel complexer door de ongestructureerde overgang.
 De applicatie is opgedeeld in onderdelen en die onderdelen zijn omgezet in microservices. Bij het samenvoegen van de microservices tot een architectuur, is het mogelijk dat de applicatie een mini-monolithic wordt. Dit komt voor wanneer de services niet opgedeeld worden op basis van functionaliteit en willekeurig worden samengevoegd zonder op voorhand na te denken.
-Dit anti-pattern is het populairst wanneer een monolithic applictie niet meer houdbaar is.
+Dit anti-pattern is het populairst wanneer een monolithic applictie niet meer houdbaar is. Dit pattern kan goed gebruikt worden als het in combinatie met een ander integration pattern wordt gebruikt.
 De figuur 2.7, die dit anti-pattern illustreerd, is terug te vinden op pagina 31.
 \begin{figure}[h!]
 	\includegraphics[width=10cm]{breakthepiggybank.png}
@@ -328,7 +304,7 @@ Alles in de applicatie wordt omgezet naar microservices, behalve de databank. De
 Om de data van de databank op te halen moet er aan 'access control' uitgevoerd worden. Niet alle microservices kunnen tegelijkertijd hun data opvragen en ontvangen.
 Dit moet op een gecontroleerde manier anders is er kans op 'deadlock'. Deadlock komt voor wanneer twee of meerdere services data van de databank willen halen. 
 De datastructuur blijft in feite monolithic.
-Eerst lijkt dit niet zo een groot probleem. Naast Naast een verhoogd risicoop vertragingen, komt dit anti-pattern ook met een extra uitdaging: de verandering van de databankschemas bijhouden. Omdat er maar één databank gebruikt wordt, moet elke verandering van elke microservices genoteerd worden. Naast die uitdaging, moet bij een verandering in de productie databank, de volledige applicatie opnieuw gedeployed worden. Een productie databank is de databank die live gebruikt wordt door klanten. Een voorbeel van een productie databank: de databank waarmee je communiceert als je op Zalando iets besteld. 
+Eerst lijkt dit niet zo een groot probleem. Naast Naast een verhoogd risicoop vertragingen, komt dit anti-pattern ook met een extra uitdaging: de verandering van de databankschemas bijhouden. Omdat er maar één databank gebruikt wordt, moet elke verandering van elke microservices genoteerd worden. Naast die uitdaging, moet bij een verandering in de productie databank, de volledige applicatie opnieuw gedeployed worden. Een productie databank is de databank die live gebruikt wordt door klanten. Een voorbeel van een productie databank: de databank waarmee je communiceert als je op Zalando iets besteld. Een alternatief voor dit is terug te vinden in 'Data integration'.
 Figuur 2.8 illustreert hoe 'everything micro' er kan uitzien. Dit is terug te vindne op pagina 32.
 \begin{figure}[h!]
 	\includegraphics[width=10cm]{everythingmicro.png}
@@ -360,7 +336,7 @@ De microservices kunnen elke microservice kennen die het nodig heeft. Maar dit m
 	\caption{Een architectuur waarbij de microservices elkaar direct kennen om informatie met elkaar te delen.}
 \end{figure}
 
-Afbeelding X Illustreert dat de microservices niet meer onafhankelijk zijn en vormen een mini-monolithic. Om ervoor te zorgen dat de microservices onafhankelijk blijven, kan er messaging toegepast worden, \textcite{Solance2018}. Messaging is een manier van communiceren, om business entiteiten up te daten, waarbij een 'message broker' gebruikt wordt. Een 'message broker' is de logica die de berichten van een microservice naar een andere stuurt zonder dat ze elkaar moeten kennen. Het meest gekende patroon hiervoor is publish-subscribe pattern. Deze wordt weergegeven in afbeelding 2.11.
+Afbeelding 2.10 illustreert dat de microservices niet meer onafhankelijk zijn en vormen een mini-monolithic. Om ervoor te zorgen dat de microservices onafhankelijk blijven, kan er messaging toegepast worden, \textcite{Solance2018}. Messaging is een manier van communiceren, om business entiteiten up te daten, waarbij een 'message broker' gebruikt wordt. Een 'message broker' is de logica die de berichten van een microservice naar een andere stuurt zonder dat ze elkaar moeten kennen. Het meest gekende patroon hiervoor is publish-subscribe pattern. Deze wordt weergegeven in afbeelding 2.11.
 \begin{figure}[h!]
 	\includegraphics[width=10cm]{messaging.PNG}
 	\centering
@@ -394,9 +370,9 @@ Sommige microservices hebben data van andere microservices nodig omdat hun datab
 	\caption{Hoe een microservice de databank van een andere microservice aanspreekt.}
 \end{figure}
  
- De manier waarop licroservices gegeven uitwisselen uit elkaars databank werd beschreven in het vorige deel over 'communicatie tussen de microservices'.
+De manier waarop licroservices gegeven uitwisselen uit elkaars databank werd beschreven in het vorige deel over 'communicatie tussen de microservices'.
  
- Eens de volledige communicatie is uitgedacht, moet er een databank gekozen worden, die past bij de micoservices. Het kan zijn dat voor de ene microservice een SQL-databank beter past en voor de ander een NOSQL-databank. SQL en NOSQL zijn soorten databanken. Het verschil tussen de twee is de manier van data opslaan en de manier hoe data wordt opgehaald.
+Eens de volledige communicatie is uitgedacht, moet er een databank gekozen worden, die past bij de micoservices. Het kan zijn dat voor de ene microservice een SQL-databank beter past en voor de ander een NOSQL-databank. SQL en NOSQL zijn soorten databanken. Het verschil tussen de twee is de manier van data opslaan en de manier hoe data wordt opgehaald. Maar dit aantonen is niet het doel van deze scriptie.
  
 \subsection{Extract, transform en load (ETL)}
 De uitleg over ETL is gebaseerd op artikels van \textcite{Loshin2019}, \textcite{Alley2018}, \textcite{Stich2019}, \textcite{Guru2019} en \textcite{Naveen2016}.

@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99999 (MiKTeX 2.9.6840 64-bit) (preloaded format=xelatex 2018.12.30)  12 AUG 2019 18:50
+This is XeTeX, Version 3.14159265-2.6-0.99999 (MiKTeX 2.9.6840 64-bit) (preloaded format=xelatex 2018.12.30)  13 AUG 2019 17:16
 entering extended mode
 **./bachproef-tin.tex
 (bachproef-tin.tex
@@ -1835,65 +1835,46 @@ Hoofdstuk 2.
 ]
 File: img/microservices-vs-monolithic.jpg Graphic file (type bmp)
 <img/microservices-vs-monolithic.jpg>
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
  [18]
 File: img/Mono_Micro.png Graphic file (type bmp)
 <img/Mono_Micro.png>
 File: img/algArch.png Graphic file (type bmp)
 <img/algArch.png>
+ [19]
+LaTeX Font Info:    Font shape `T1/pag/bx/n' in size <10.95> not available
+(Font)              Font shape `T1/pag/b/n' tried instead on input line 77.
+LaTeX Font Info:    Font shape `T1/pag/b/n' in size <10.95> not available
+(Font)              Font shape `T1/pag/db/n' tried instead on input line 77.
+ [20] [21]
+File: img/apiGateway_facadePattern.png Graphic file (type bmp)
+<img/apiGateway_facadePattern.png>
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[19]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [20]
-LaTeX Font Info:    Font shape `T1/pag/bx/n' in size <10.95> not available
-(Font)              Font shape `T1/pag/b/n' tried instead on input line 81.
-LaTeX Font Info:    Font shape `T1/pag/b/n' in size <10.95> not available
-(Font)              Font shape `T1/pag/db/n' tried instead on input line 81.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [21]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [22]
-File: img/apiGateway_facadePattern.png Graphic file (type bmp)
-<img/apiGateway_facadePattern.png>
 File: img/monolithic_auth.png Graphic file (type bmp)
 <img/monolithic_auth.png>
 
-[23]
-Underfull \vbox (badness 10000) has occurred while \output is active []
+LaTeX Warning: `!h' float specifier changed to `!ht'.
 
- [24]
+[22] [23]
 File: img/jwt.png Graphic file (type bmp)
 <img/jwt.png>
 
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [24]
 [25]
-Underfull \vbox (badness 1571) has occurred while \output is active []
+LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <12> not available
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 218.
+
+Underfull \vbox (badness 4531) has occurred while \output is active []
 
  [26]
-LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <12> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 222.
-
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [27]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [28]
-Underfull \vbox (badness 3724) has occurred while \output is active []
-
- [29]
+[28]
 File: img/breakthepiggybank.png Graphic file (type bmp)
 <img/breakthepiggybank.png>
 
@@ -1902,37 +1883,36 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 File: img/everythingmicro.png Graphic file (type bmp)
 <img/everythingmicro.png>
-[30]
+[29]
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 File: img/frankenstein.png Graphic file (type bmp)
 <img/frankenstein.png>
-[31]
+[30]
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 File: img/chaos.PNG Graphic file (type bmp)
 <img/chaos.PNG>
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
+Underfull \vbox (badness 2644) has occurred while \output is active []
 
+ [31]
 File: img/messaging.PNG Graphic file (type bmp)
 <img/messaging.PNG>
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
 [32] [33]
-Underfull \vbox (badness 2970) has occurred while \output is active []
-
- [34]
 File: img/db.PNG Graphic file (type bmp)
 <img/db.PNG>
 
-[35]
+Underfull \vbox (badness 7777) has occurred while \output is active []
+
+ [34]
 File: img/etl.PNG Graphic file (type bmp)
 <img/etl.PNG>
- [36]
+
+[35]
 File: img/wong.png Graphic file (type bmp)
 <img/wong.png>
 
@@ -1944,17 +1924,17 @@ File: img/wong2.png Graphic file (type bmp)
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[37]
-File: img/1-kyma-knative.png Graphic file (type bmp)
-<img/1-kyma-knative.png>
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [38]
+ [36]
+Underfull \vbox (badness 2818) has occurred while \output is active []
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[39]) (methodologie.tex [40]
+ [37]
+[38]
+File: img/1-kyma-knative.png Graphic file (type bmp)
+<img/1-kyma-knative.png>
+ [39]) (methodologie.tex [40]
 Hoofdstuk 3.
 [41
 
@@ -2252,6 +2232,6 @@ Here is how much of TeX's memory you used:
  45685 multiletter control sequences out of 15000+200000
  571444 words of font info for 67 fonts, out of 3000000 for 9000
  1328 hyphenation exceptions out of 8191
- 62i,12n,59p,1354b,6265s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 62i,12n,59p,1339b,6265s stack positions out of 5000i,500n,10000p,200000b,50000s
 
 Output written on bachproef-tin.pdf (67 pages).

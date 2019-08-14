@@ -19,35 +19,35 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.1.2}Het belang van microservices}{19}{subsection.2.1.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{De verschillende manieren van bescherming}{21}{section*.6}
+\contentsline {subsubsection}{De verschillende manieren van bescherming}{20}{section*.6}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Authenticatie en authorisatie}{23}{section*.7}
+\contentsline {subsubsection}{Authenticatie en authorisatie}{22}{section*.7}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Verband met Agile en DevOps}{26}{section*.8}
+\contentsline {subsubsection}{Verband met Agile en DevOps}{25}{section*.8}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{Het monitoren van microservices}{26}{section*.9}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.1.3}De voordelen en nadelen van microserivces}{28}{subsection.2.1.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.2}Microservices integration patterns}{29}{section.2.2}
+\contentsline {section}{\numberline {2.2}Microservices integration patterns}{28}{section.2.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.2.1}Anti-patterns}{30}{subsection.2.2.1}
+\contentsline {subsection}{\numberline {2.2.1}Anti-patterns}{29}{subsection.2.2.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Break the piggy bank}{30}{section*.10}
+\contentsline {subsubsection}{Break the piggy bank}{29}{section*.10}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Everyting micro}{30}{section*.11}
+\contentsline {subsubsection}{Everyting micro}{29}{section*.11}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{We are Agile: The Frankenstein}{31}{section*.12}
+\contentsline {subsubsection}{We are Agile: The Frankenstein}{30}{section*.12}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.2.2}Communicatie tussen de microservices}{32}{subsection.2.2.2}
+\contentsline {subsection}{\numberline {2.2.2}Communicatie tussen de microservices}{31}{subsection.2.2.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.2.3}Data integration}{34}{subsection.2.2.3}
+\contentsline {subsection}{\numberline {2.2.3}Data integration}{33}{subsection.2.2.3}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.2.4}Extract, transform en load (ETL)}{35}{subsection.2.2.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.3}Order-to-cash proces in SAP}{36}{section.2.3}
+\contentsline {section}{\numberline {2.3}Order-to-cash proces in SAP}{35}{section.2.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.3.1}Definitie}{36}{subsection.2.3.1}
+\contentsline {subsection}{\numberline {2.3.1}Definitie}{35}{subsection.2.3.1}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.3.2}Technologie: Wat biedt SAP zelf aan voor microservices}{37}{subsection.2.3.2}
 \defcounter {refsection}{0}\relax 
