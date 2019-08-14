@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99999 (MiKTeX 2.9.6840 64-bit) (preloaded format=xelatex 2018.12.30)  13 AUG 2019 17:16
+This is XeTeX, Version 3.14159265-2.6-0.99999 (MiKTeX 2.9.6840 64-bit) (preloaded format=xelatex 2018.12.30)  14 AUG 2019 16:19
 entering extended mode
 **./bachproef-tin.tex
 (bachproef-tin.tex
@@ -1905,14 +1905,10 @@ File: img/messaging.PNG Graphic file (type bmp)
 [32] [33]
 File: img/db.PNG Graphic file (type bmp)
 <img/db.PNG>
-
-Underfull \vbox (badness 7777) has occurred while \output is active []
-
  [34]
 File: img/etl.PNG Graphic file (type bmp)
 <img/etl.PNG>
-
-[35]
+ [35]
 File: img/wong.png Graphic file (type bmp)
 <img/wong.png>
 
@@ -1922,16 +1918,13 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 File: img/wong2.png Graphic file (type bmp)
 <img/wong2.png>
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [36]
-Underfull \vbox (badness 2818) has occurred while \output is active []
 
- [37]
-[38]
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[37] [38]
 File: img/1-kyma-knative.png Graphic file (type bmp)
 <img/1-kyma-knative.png>
  [39]) (methodologie.tex [40]
@@ -2114,6 +2107,14 @@ ainerized-microservices-with-a-centralized-
 [63
 
 ]
+Missing character: There is no — in font ptmr8t!
+
+Overfull \hbox (32.2953pt too wide) in paragraph at lines 132--132
+[][]\T1/ptm/m/n/12 Gupta, P. (2018). Pat-terns for Mi-cro-ser-vi-ces  Sync vs. 
+Async. \T1/ptm/m/it/12 https://dzone.com/articles/patterns-
+ []
+
+
 Overfull \hbox (32.43848pt too wide) in paragraph at lines 132--132
 [][]\T1/ptm/m/n/12 Hofmann, R. (2018, au-gus-tus 10). Kyma and Kna-tive In-te-g
 ra-tion - Pro-gress Up-date. \T1/ptm/m/it/12 https://kyma-
@@ -2162,21 +2163,16 @@ m/it/12 https://intellipaat.com/blog/tutorial/data-
  []
 
 
-Overfull \hbox (25.61908pt too wide) in paragraph at lines 132--132
-[][]\T1/ptm/m/n/12 Saldanha, L. (2016). Tips on log-ging mi-cro-ser-vi-ces. \T1
-/ptm/m/it/12 https://logz.io/blog/logging-microservices/\T1/ptm/m/n/12 . 
- []
-
-
-Overfull \hbox (47.89192pt too wide) in paragraph at lines 132--132
-[][]\T1/ptm/m/n/12 Sandoval, K. (2018). 3 com-mon me-thods of API Au-then-ti-ca
--tion ex-plai-ned. \T1/ptm/m/it/12 https://nordicapis.com/3-
- []
-
-
 Overfull \hbox (107.40123pt too wide) in paragraph at lines 132--132
 [][]\T1/ptm/m/n/12 Semerdzhiev, K. (2018, juni 24). In-tro-du-cing pro-ject Kym
 a. \T1/ptm/m/it/12 https://kyma-project.io/blog/2018/7/24/introduction-
+ []
+
+
+Overfull \hbox (250.39735pt too wide) in paragraph at lines 132--132
+[][]\T1/ptm/m/n/12 Shore, J. (2016). Syn-chro-nous vs. asyn-chro-nous com-mu-ni
+-ca-tion: The dif-fe-ren-ces. \T1/ptm/m/it/12 https://searchmicroservices.techt
+arget.com/tip/Synchronous-
  []
 
 
@@ -2226,10 +2222,10 @@ Package logreq Info: Writing requests to 'bachproef-tin.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 42266 strings out of 427796
- 765920 string characters out of 3147988
- 1370920 words of memory out of 3000000
- 45685 multiletter control sequences out of 15000+200000
+ 42272 strings out of 427796
+ 766006 string characters out of 3147988
+ 1371023 words of memory out of 3000000
+ 45691 multiletter control sequences out of 15000+200000
  571444 words of font info for 67 fonts, out of 3000000 for 9000
  1328 hyphenation exceptions out of 8191
  62i,12n,59p,1339b,6265s stack positions out of 5000i,500n,10000p,200000b,50000s

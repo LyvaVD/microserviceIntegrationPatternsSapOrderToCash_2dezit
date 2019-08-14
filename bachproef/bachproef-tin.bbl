@@ -444,6 +444,32 @@
       \field{title}{Wiring Microservices, Integration Microservices \& APIs.}
       \field{year}{2018}
     \endentry
+    \entry{Gupta2018}{article}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,uniquepart=base,hash=834c8ad2b49cea72ab017eb3480b4bbc}{%
+           family={Gupta},
+           familyi={G\bibinitperiod},
+           given={Priyank},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{834c8ad2b49cea72ab017eb3480b4bbc}
+      \strng{fullhash}{834c8ad2b49cea72ab017eb3480b4bbc}
+      \strng{bibnamehash}{834c8ad2b49cea72ab017eb3480b4bbc}
+      \strng{authorbibnamehash}{834c8ad2b49cea72ab017eb3480b4bbc}
+      \strng{authornamehash}{834c8ad2b49cea72ab017eb3480b4bbc}
+      \strng{authorfullhash}{834c8ad2b49cea72ab017eb3480b4bbc}
+      \field{sortinit}{G}
+      \field{sortinithash}{5e8d2bf9d38de41b1528bd307546008f}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{https://dzone.com/articles/patterns-for-microservices-sync-vs-async}
+      \field{title}{Patterns for Microservices — Sync vs. Async}
+      \field{year}{2018}
+    \endentry
     \entry{Guru2019}{article}{}
       \name{author}{1}{}{%
         {{uniquename=0,uniquepart=base,hash=45d909a817398ff956eb79ff1146c5e4}{%
@@ -495,6 +521,32 @@
       \field{title}{Kyma and Knative Integration - Progress Update}
       \field{year}{2018}
       \field{dateera}{ce}
+    \endentry
+    \entry{Jackson2016}{article}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,uniquepart=base,hash=ee753f87778e05ad003ddb4b612d0218}{%
+           family={Jackson},
+           familyi={J\bibinitperiod},
+           given={Joab},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{ee753f87778e05ad003ddb4b612d0218}
+      \strng{fullhash}{ee753f87778e05ad003ddb4b612d0218}
+      \strng{bibnamehash}{ee753f87778e05ad003ddb4b612d0218}
+      \strng{authorbibnamehash}{ee753f87778e05ad003ddb4b612d0218}
+      \strng{authornamehash}{ee753f87778e05ad003ddb4b612d0218}
+      \strng{authorfullhash}{ee753f87778e05ad003ddb4b612d0218}
+      \field{sortinit}{J}
+      \field{sortinithash}{fce5f8d0bd05e8d93f3dbe21c78897ca}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{https://thenewstack.io/synchronous-rest-turns-microservices-back-monoliths/}
+      \field{title}{How Synchronous REST Turns Microservices Back into Monoliths}
+      \field{year}{2016}
     \endentry
     \entry{Koukia2018}{article}{}
       \name{author}{1}{}{%
@@ -837,33 +889,6 @@
       \field{title}{3 Ways to Build An ETL Process}
       \field{year}{2019}
     \endentry
-    \entry{PEARSON2017}{article}{}
-      \name{author}{1}{}{%
-        {{uniquename=0,uniquepart=base,hash=69d197069c29f1aa3a7e70cf73dc7011}{%
-           family={Pearson},
-           familyi={P\bibinitperiod},
-           given={Sonia},
-           giveni={S\bibinitperiod},
-           givenun=0}}%
-      }
-      \strng{namehash}{69d197069c29f1aa3a7e70cf73dc7011}
-      \strng{fullhash}{69d197069c29f1aa3a7e70cf73dc7011}
-      \strng{bibnamehash}{69d197069c29f1aa3a7e70cf73dc7011}
-      \strng{authorbibnamehash}{69d197069c29f1aa3a7e70cf73dc7011}
-      \strng{authornamehash}{69d197069c29f1aa3a7e70cf73dc7011}
-      \strng{authorfullhash}{69d197069c29f1aa3a7e70cf73dc7011}
-      \field{sortinit}{P}
-      \field{sortinithash}{8d51b3d5b78d75b54308d706b9bbe285}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \true{uniqueprimaryauthor}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{https://tallyfy.com/order-to-cash/}
-      \field{title}{The Order to Cash (O2C) Process: Definition and Best-Practices}
-      \field{year}{2017}
-      \field{dateera}{ce}
-    \endentry
     \entry{RDX2016}{article}{}
       \name{author}{1}{}{%
         {{uniquename=0,uniquepart=base,hash=43851ae6bcf8f6822ed0efc897f72f8f}{%
@@ -889,58 +914,6 @@
       \field{title}{REST in Peace: Microservices vs monoliths in real-life examples}
       \field{year}{2016}
       \field{dateera}{ce}
-    \endentry
-    \entry{Saldanha2016}{article}{}
-      \name{author}{1}{}{%
-        {{uniquename=0,uniquepart=base,hash=f692603c7fccec31da4dae631ad98e1c}{%
-           family={Saldanha},
-           familyi={S\bibinitperiod},
-           given={Lucas},
-           giveni={L\bibinitperiod},
-           givenun=0}}%
-      }
-      \strng{namehash}{f692603c7fccec31da4dae631ad98e1c}
-      \strng{fullhash}{f692603c7fccec31da4dae631ad98e1c}
-      \strng{bibnamehash}{f692603c7fccec31da4dae631ad98e1c}
-      \strng{authorbibnamehash}{f692603c7fccec31da4dae631ad98e1c}
-      \strng{authornamehash}{f692603c7fccec31da4dae631ad98e1c}
-      \strng{authorfullhash}{f692603c7fccec31da4dae631ad98e1c}
-      \field{sortinit}{S}
-      \field{sortinithash}{322b1d5276f2f6c1bccdcd15920dbee6}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{year}
-      \true{uniqueprimaryauthor}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{https://logz.io/blog/logging-microservices/}
-      \field{title}{Tips on logging microservices}
-      \field{year}{2016}
-    \endentry
-    \entry{Sandoval2018}{article}{}
-      \name{author}{1}{}{%
-        {{uniquename=0,uniquepart=base,hash=fd6fd385de67e5136f4348a13cf000dd}{%
-           family={Sandoval},
-           familyi={S\bibinitperiod},
-           given={Kristopher},
-           giveni={K\bibinitperiod},
-           givenun=0}}%
-      }
-      \strng{namehash}{fd6fd385de67e5136f4348a13cf000dd}
-      \strng{fullhash}{fd6fd385de67e5136f4348a13cf000dd}
-      \strng{bibnamehash}{fd6fd385de67e5136f4348a13cf000dd}
-      \strng{authorbibnamehash}{fd6fd385de67e5136f4348a13cf000dd}
-      \strng{authornamehash}{fd6fd385de67e5136f4348a13cf000dd}
-      \strng{authorfullhash}{fd6fd385de67e5136f4348a13cf000dd}
-      \field{sortinit}{S}
-      \field{sortinithash}{322b1d5276f2f6c1bccdcd15920dbee6}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{year}
-      \true{uniqueprimaryauthor}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{https://nordicapis.com/3-common-methods-api-authentication-explained/}
-      \field{title}{3 common methods of API Authentication explained}
-      \field{year}{2018}
     \endentry
     \entry{Semerdzhiev2018}{article}{}
       \name{author}{1}{}{%
@@ -970,6 +943,32 @@
       \field{title}{Introducing project Kyma}
       \field{year}{2018}
       \field{dateera}{ce}
+    \endentry
+    \entry{Shore2016}{article}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,uniquepart=base,hash=df3bb96aeddbb5d8cff8fb6789eecca4}{%
+           family={Shore},
+           familyi={S\bibinitperiod},
+           given={Joel},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{df3bb96aeddbb5d8cff8fb6789eecca4}
+      \strng{fullhash}{df3bb96aeddbb5d8cff8fb6789eecca4}
+      \strng{bibnamehash}{df3bb96aeddbb5d8cff8fb6789eecca4}
+      \strng{authorbibnamehash}{df3bb96aeddbb5d8cff8fb6789eecca4}
+      \strng{authornamehash}{df3bb96aeddbb5d8cff8fb6789eecca4}
+      \strng{authorfullhash}{df3bb96aeddbb5d8cff8fb6789eecca4}
+      \field{sortinit}{S}
+      \field{sortinithash}{322b1d5276f2f6c1bccdcd15920dbee6}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{https://searchmicroservices.techtarget.com/tip/Synchronous-vs-asynchronous-communication-The-differences}
+      \field{title}{Synchronous vs. asynchronous communication: The differences}
+      \field{year}{2016}
     \endentry
     \entry{Siraj2017}{article}{}
       \name{author}{1}{}{%

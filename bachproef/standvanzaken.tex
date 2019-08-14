@@ -344,6 +344,10 @@ Afbeelding 2.10 illustreert dat de microservices niet meer onafhankelijk zijn en
 \end{figure}
 In de 'message broker' heeft elke microservices zijn queue. De queue is een wachtrij waar berichten worden opgeslaan. De berichten worden verwijderd van de queue eens ze gelezen en opgehaald worden. 
 Een microservice stuurt een bericht naar de 'message broker' en moet zich verder niks van het bericht aantrekken. De 'message broker' zorgt ervoor dat het bericht bij de juiste microservice(s) wordt afgeleverd. De uiteinden kennen elkaar niet en volledig onafhankelijk van elkaar communiceren.
+Dit is asynchroon communiceren.
+
+De tegenhanger van asynchroon is synchroon communiceren, \textcite{Gupta2018}, \textcite{Jackson2016} en \textcite{Shore2016}.
+Synchroon communiceren omvat dat de verzender wacht op het antwoord van de ontvanger. De verzender vraagt iets, data of informatie, aan de ontvanger dan zal de verzender wachten tot de ontvanger antwoord. Verwoord met microservices: microservice A vraagt aan microservice B informatie of data maar A zal wachten op een antwoord van B wat als gevolg heeft dat ze niet meer onafhankelijk zijn van elkaar. Omdat synchroon communiceren een mini-monolithic, wordt er niet verder op ingegaan.
 
 \subsection{Data integration}
 Data integration wordt door \textcite{Aradhye2018} en \textcite{Kumar2018} uitgelegd. Data integration is een manier om de data van microservices weg te schrijven, op te halen, op te slaan in een databank.

@@ -278,7 +278,7 @@
 }
 
 @Article{PEARSON2017,
-  author  = {SONIA PEARSON},
+  author  = {Sonia Pearson},
   title   = {The Order to Cash (O2C) Process: Definition and Best-Practices},
   journal = {https://tallyfy.com/order-to-cash/},
   year    = {2017},
@@ -812,6 +812,27 @@
   title   = {How to define a RESTful Web Services?},
   journal = {https://www.stsoftware.com.au/site/ST/blog/article/rest-define/},
   year    = {2019},
+}
+
+@Article{Shore2016,
+  author  = {Joel Shore},
+  title   = {Synchronous vs. asynchronous communication: The differences},
+  journal = {https://searchmicroservices.techtarget.com/tip/Synchronous-vs-asynchronous-communication-The-differences},
+  year    = {2016},
+}
+
+@Article{Jackson2016,
+  author  = {Joab Jackson},
+  title   = {How Synchronous REST Turns Microservices Back into Monoliths},
+  journal = {https://thenewstack.io/synchronous-rest-turns-microservices-back-monoliths/},
+  year    = {2016},
+}
+
+@Article{Gupta2018,
+  author  = {Priyank Gupta},
+  title   = {Patterns for Microservices — Sync vs. Async},
+  journal = {https://dzone.com/articles/patterns-for-microservices-sync-vs-async},
+  year    = {2018},
 }
 
 @Comment{jabref-meta: databaseType:biblatex;}
