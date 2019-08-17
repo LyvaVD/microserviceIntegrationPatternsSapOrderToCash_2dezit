@@ -31,23 +31,23 @@ Daarna kwam 'Welke aanpassingen kunnen of moeten er gebeuren aan de architectuur
 \end{itemize}
 
 Een andere vraag die in het begin gesteld werd: Hoe zal de communicatie tussen de verschillende microservices werken?
-Voor de communicatie zijn er veel verschillende opties. Er moet gekeken worden naar welke manier het beste bij het bedrijf past. Is er een manier die al gekend is in het bedrijf? Heeft een andere manier enkele voordelen ten opzichte van de huidige techniek. In deze studie is er gekozen voor volgend communicatie methode: Via message queues. De data die microservice B nodig heeft, zal door microservice A naar microservice B zijn queue worden gestuurd. Bij deze manier heeft elke microservice een queue. Heeft microservice A data doorgekregen en haar taak ermee gedaan, dan plaatst ze een link naar de data op de queue van de microservice die de data nodig heeft. Dit zorgt ervoor dat als microservice B uitvalt, de nodige data niet verloren gaat. De queue slaat de gegevens op en verwijdert ze pas als ze zijn opgehaald. Als deze methode niet past binnen de verwachtingen van de architectuur dan kan men onderzoeken welke methode beter is. 
+Voor de communicatie zijn er veel verschillende opties. Er moet gekeken worden naar welke manier het beste bij het bedrijf past. Is er een manier die al gekend is in het bedrijf? Heeft een andere manier enkele voordelen ten opzichte van de huidige techniek? In deze studie is er gekozen voor de volgende communicatie methode: via message queues. De data die microservice B nodig heeft, zal door microservice A naar microservice B zijn queue worden gestuurd. Op deze manier heeft elke microservice een queue. Heeft microservice A data doorgekregen en haar taak ermee gedaan, dan plaatst ze een link naar de data op de queue van de microservice die de data nodig heeft. Dit zorgt ervoor dat als microservice B uitvalt, de nodige data niet verloren gaat. De queue slaat de gegevens op en verwijdert ze pas als ze zijn opgehaald. Als deze methode niet past binnen de verwachtingen van de architectuur, dan kan men onderzoeken welke methode beter is. 
 
 Eens die vraag beantwoord werd, kon men de volgende vraag beantwoorden: Welke integration patterns zijn er?
-In deze paper zijn er vier integration patterns aan bod gekomen. Er zijn meerdere patterns maar het zou een overwelming zijn, mochtten alle mogelijke integration patterns aangehaald worden. De vier beschreven patterns zijn volgende:
+In deze paper zijn er vier integration patterns aan bod gekomen. Er bestaan nog meer patterns maar het zou een overweldigend zijn, mochten alle mogelijke integration patterns aangehaald worden. De vier beschreven patterns zijn volgende:
 \begin{itemize}
 	\item Anti-patterns
 	\item Communication
 	\item Data integration
 	\item Extract, load and transform (ETL)
 \end{itemize}
-Bij anti-patterns beschrijven hoe men op een ongestructureerde manier microservices kan implementeren. Er zijn verschillende anti-patterns, hier werden er drie beschreven. Bij anti-patterns is de kans op falen heel groot. Er wordt niet gestructureerd nagedacht over de omschakeling.
+Anti-patterns beschrijven hoe men op een ongestructureerde manier microservices kan implementeren. Er zijn verschillende anti-patterns, hier werden er drie aangehaald. Bij anti-patterns is de kans op falen heel groot. Er wordt niet gestructureerd nagedacht over de omschakeling.
 Na de anti-patterns werd de communicatie aangehaald. Er is maar één soort communicatie beschreven. Dit gebeurde omdat één methode al zware materie is om te begrijpen en te verwerken. De communicatie kan gebeuren via een publish/subscribe pattern.
-Eens de communicatie afgewerkt was, werd er geschreven over de data integration. Op welke manier kan de structuur van de data aangepast worden om de microservices architectuur te bevorderen. Hier zijn ook verschillende methodes voor maar ook hier werd er beperkt tot één: Elke microservice heeft zijn eigen databank. Dit zorgt voor complete onafhankelijkheid.
-Als laatste werd ETL aangehaald. ETL is een manier om data in te verzamelen van externe bronnen, in te laden in een andere databank waar er logica op los gelaten wordt. Eens dat gebeurt is, wordt de data getransformeerd en gebruikt om te gebruiken bij toekomstige beslissingen. De data heeft dan analytische doeleinden.
+Eens de communicatie afgewerkt was, kwam data integration aan bod. Op welke manier kan de structuur van de data aangepast worden om de microservices architectuur te bevorderen? Hier zijn verschillende methodes voor maar ook hier werd er beperkt tot één: Elke microservice heeft zijn eigen databank. Dit zorgt voor complete onafhankelijkheid.
+Als laatste werd ETL aangehaald. ETL is een manier om data in te zamelen van externe bronnen, in te laden in een andere databank waar er logica op los gelaten wordt. Eens dat gebeurd is, wordt de data getransformeerd en gebruikt bij toekomstige beslissingen. De data heeft dan analytische doeleinden.
 
 Als volgt werd deze vraag gesteld: Hoe ziet een order-to-cash proces eruit? 
-Het order-to-cash proces is een proces dat voorkomt bij het plaatsen van een order tot het betalen van de factuur. In volgende opsomming zijn de stappen terug te vinden:
+Het order-to-cash proces is een proces dat begint bij het plaatsen van een order tot het betalen van de factuur. In de volgende opsomming zijn de stappen terug te vinden:
 \begin{enumerate}
 	\item Order management
 	\item Credit management
@@ -57,8 +57,8 @@ Het order-to-cash proces is een proces dat voorkomt bij het plaatsen van een ord
 	\item Accounts receivables
 \end{enumerate}
 
-De voorlaatste vraag, klinkt als volgt: Welke business requirements heeft een order-to-cash proces?
-De belangrijkste requirement is dat de klant zijn bestelling krijgt. Een andere requirement is de wanbetalers minimaal te houden door ze vroeg in het proces er uit te halen. De requirements liggen in lijn met de noden van de klant. De business requirements werden opgesteld door het order-to-cash proces grondig te bestuderen. In de literatuurstudie is meer uitleg te vinden over het OTC proces.
+De voorlaatste vraag klinkt als volgt: Welke business requirements heeft een order-to-cash proces?
+De belangrijkste requirement is dat de klant zijn bestelling krijgt. Een andere requirement is de wanbetalers minimaal te houden door ze vroeg in het proces eruit te halen. De requirements liggen in lijn met de noden van de klant. De business requirements werden opgesteld door het order-to-cash proces grondig te bestuderen. In de literatuurstudie is meer uitleg te vinden over het OTC proces.
 
 'Welke invloed heeft een microservice integration pattern op het order-to-cash proces?' is de laatste vraag. Eén integration pattern zou een falende invloed hebben. Dit komt omdat één pattern maar een klein deeltje van de voordelen van microservices bedekt. Door meerdere en verschillende integration patterns toe te passen, kan er op een correcte en gestructureerde manier een microservice architectuur opgebouwd worden. Die drie gebruikte patterns zijn volgende:
 \begin{itemize}
@@ -68,18 +68,18 @@ De belangrijkste requirement is dat de klant zijn bestelling krijgt. Een andere 
 \end{itemize}
 
 
-Microservice is een architectuur en ideologie waarin logica en de requirements, die te vinden zijn bij een monolithic, terugkomen. Dit heeft invloed op de overschakeling naar microservices. Deze manier van implementatie moet aangepast worden bij het gebruik van microservices. Dat kan een obstakel zijn. Er wordt een andere manier van denken en organiseren gevraagd binnen een de IT-afdeling. De teams worden hervormd. Een team bevat niet meer de kennis van de volledige architectuur., enkel over de microservice waaraan zij werken. 
+Microservice is een architectuur en ideologie waarin logica en de requirements, die te vinden zijn bij een monolithic, terugkomen. Dit heeft invloed op de overschakeling naar microservices. Deze manier van implementatie moet aangepast worden bij het gebruik van microservices. Dat kan een obstakel zijn. Er wordt een andere manier van denken en organiseren gevraagd binnen de IT-afdeling. De teams worden hervormd. Een team bevat niet meer de kennis van de volledige architectuur maar enkel die over de microservice waaraan zij werken. 
 
 
 Ten slotte kan er geconcludeerd worden dat:
 \begin{itemize}
 	\item Microservices een brede term is en kan voorkomen in verschillende contexten.
 	\item Een microservice architectuur niet altijd nodig is.
-	\item Microservices kunnen een OTC proces automatiseren.
+	\item Microservices een OTC proces kunnen automatiseren.
 	\item Microservices zorgen ervoor dat elk onderdeel van het proces apart kan functioneren.
 \end{itemize}
 
-Zelf heb ik ondervonden dat het aanpassen van een monolithic niet eenvoudig is. De monolithic architectuur zit ingebakken in het informatica landschap. De manier van omgang met microservices, kan vergeleken worden met die van Agile. De Agile methode moest in eerste instatie zijn toegevoegde waarde op een project bewijzen. Dan pas zijn projectmanagers deze ook gaan gebruiken. Microservices zal eerst zijn voordeel moeten bewijzen ten opzichte van monolithic om een statement te kunnen maken.
+Zelf heb ik ondervonden dat het aanpassen van een monolithic niet eenvoudig is. De monolithic architectuur zit ingebakken in het informatica landschap. De manier van omgang met microservices kan vergeleken worden met die van Agile. De Agile methode moest in de eerste instantie zijn toegevoegde waarde op een project bewijzen. Daarna zijn projectmanagers deze ook gaan gebruiken. Microservices zal eerst zijn voordeel moeten bewijzen ten opzichte van de monolithic om een statement te kunnen maken.
 
 
 
