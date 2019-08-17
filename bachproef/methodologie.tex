@@ -12,18 +12,17 @@ Eens elk onderdeel aangebracht is, wordt alles samengebracht tot de complete arc
 
 \section{Anti-pattern: Break the piggy bank}
 Zoals beschreven in het onderdeel 'Stand van zaken' wordt de gehele applicatie in stukjes opgedeeld. Er wordt gekeken naar de business functionaliteiten. 
-In de volgende sectie worden de verschillende microservices besproken. Elke stap van het order-to-cash proces is een microservices. Maar de stappen bevatten meerdere business functionaliteiten. Het zou tegen de principes van microservices zijn. Per stap van het proces werd gekeken naar de functionaliteiten. Eens die gedefineerd waren, werd er gekeken naar de gelijke funcitonaliteiten over de verschillende stappen heen. Die functionaliteiten werden in microservices gegoten. Elke stap van het order-to-cash proces spreekt de microservices aan die van belang zijn. Een belangrijk punt: de databank bij deze manier van werken blijft dezelfde als monolithic. De databank wordt verder behandelt in het gedeelte 'data integratie'.
+In de volgende sectie worden de verschillende microservices besproken. Elke stap van het order-to-cash proces is een microservices. Maar de stappen bevatten meerdere business functionaliteiten. Het zou tegen de principes van microservices zijn. Per stap van het proces werd gekeken naar de functionaliteiten. Eens die gedefineerd waren, werd er gekeken naar de gelijke funcitonaliteiten over de verschillende stappen heen. Die functionaliteiten werden in microservices opgedeeld. Elke stap van het order-to-cash proces spreekt de microservices aan die van belang zijn. Een belangrijk punt: de databank bij deze manier van werken blijft dezelfde als monolithic. De databank wordt verder behandelt in het gedeelte 'Data Integratie'.
 
-Er werd gekozen om de microservice niet nog kleiner te maken. Dit werd niet gedaan wegens overzichtelijkheid. Het opsplitsen in nog kleinere microservices zorgt ervoor dat men kan verloren lopen tussen de microservices. Nu wis er geweten welke microservice men moet gebruiken wanneer er iets met orders moet gebeuren.   
+Er werd gekozen om de microservice niet nog kleiner te maken om het overzichtelijk te houden. Nu weet men welke microservice men moet gebruiken wanneer er iets met orders moet gebeuren.   
 
 Een microservice is schaalbaar. Omdat de volgende requirement meermaals voorkomen in het proces, is het voordeliger om te dupliceren en te hergebruiken van deze microservices.
 
 
 \subsubsection{Klantengegevens ophalen}
-Veel onderdelen van het OTC proces moeten aan de klantgegevens kunnen. Om te zorgen dat alles op een gelijke manier gebeurt, is hier een microservice van gemaakt.
-Deze microservice gaat ervoor zorgen dat de klantengegevens uit de databank worden gehaald. Het zal de databank aanspreken en vragen om de data van een specifieke klant. 
-Deze wordt gebruikt in meerdere delen van het order-to-cash proces. 
-Deze microservice komt voor in volgende onderdelen:
+Veel onderdelen van het OTC proces moeten de klantgegevens kunnen raadplegen. Om te zorgen dat alles op een gelijke manier gebeurt, is hier een microservice van gemaakt.
+Deze microservice gaat ervoor zorgen dat de klantengegevens uit de databank worden gehaald.
+Deze microservice komt voor in volgende onderdelen van het OTC proces:
 \begin{itemize}
 	\item Order management
 	\item Credit management
@@ -34,8 +33,8 @@ Deze microservice komt voor in volgende onderdelen:
 \end{itemize}
 
 \subsubsection{Orders plaatsen, ophalen en verwijderen}
-Een belangrijk onderdeel is het plaatsen, ophalen en verwijderen van orders. Er zijn een aantal onderdelen van het OTC proces dat de specificaties van een order moeten weten. Een aantal documenten zijn gebaseerd op het order, zoals een factuur en leveringspapieren. 
-Deze microservice zal gebruikt worden in volgende onderdelen:
+Een belangrijk onderdeel is het plaatsen, ophalen en verwijderen van orders. Er zijn een aantal onderdelen van het OTC proces die de specificaties van een order moeten weten. Zo is het voor de facturatie en het opstellen van de levernota's belangrijk.
+Dit microservice wordt gebruikt in volgende onderdelen:
 \begin{itemize}
 	\item Order management
 	\item Credit management
@@ -46,29 +45,29 @@ Deze microservice zal gebruikt worden in volgende onderdelen:
 \end{itemize}
 
 \subsubsection{Producten ophalen en het aantal in voorraad veranderen}
-In het order-to-cash proces worden er geen producten toegevoegd aan de lijst dus moet dit niet in een microservice gestoken worden. Het aantal van de voorraad moet worden aangepast wanneer er een product uit de rekken wordt gehaald en bij een bestelling wordt geplaatst. Het ophalen van producten is vooral voor het werk achter de schermen. Het ophalen van een product omvat vooral de verkoopprijs ophalen om die dan te gebruiken in de orderlijn. 
-Deze microservice zal gebruikt worden in volgende onderdelen:
+In het order-to-cash proces worden er geen producten toegevoegd aan de lijst, dus moet dit niet in een microservice gestoken worden. De stuks op voorraad moet aangepast wanneer er een product uit de rekken wordt gehaald en bij een bestelling wordt geplaatst. Bij het ophalen van een product wordt de verkoopprijs opgehaald en toegevoegd aan de orderlijn.
+De microservice zal gebruikt worden in volgende onderdelen:
 \begin{itemize}
 	\item Order management
 	\item order fullfilment
 \end{itemize}
 
 \subsubsection{Facturatie maken en ophalen}
-Het begin van het einde in een order-to-cash proces. Facturen maken en ophalen zijn van groot belang bij een order-to-cash proces. Het zorgt er voor dat mensen geld gaan betalen voor hun order. Een factuur moet overeenstemmen met wat geleverd is. Het is van groot belang dat achter kan gekeken worden of de factuur klopt met de order. Het maken van de factuur gebeurt aan de hand van het order. 
+Eén van de laatste stappen in het order-to-cash proces. Facturen maken en ophalen zijn van groot belang bij een order-to-cash proces.De producten op de factuur moeten overeenstemmen met wat geleverd werd. Het is van groot belang dat achteraf kan gekeken worden of de factuur klopt met de order. De factuur wordt opgesteld aan de hand van het order. 
 Deze microservice komt voor in het onderdeel facturatie.
 
 \subsubsection{Shipment documentatie opstellen}
-Het shipment document wordt gegenereerd afhankelijk van het order. Er wordt gekeken naar het ordernummer en dan wordt er gekeken naar het klantnummer. Hierna wordt dan de microservice om klantgegevens op te halen aangesproken om de gegevens van de specifieke klant op te halen. Dit wordt enkel gebruikt binnen het onderdeel verzending.
+Het shipment document wordt gegenereerd op basis van het order. Er wordt gekeken naar het ordernummer en dan wordt er gekeken naar het klantnummer. Hierna wordt dan de microservice om klantgegevens op te halen aangesproken om de gegevens van de specifieke klant op te halen. Dit microservice wordt enkel gebruikt binnen het onderdeel verzending.
 
 \subsubsection{Aanmaning opmaken en verwijderen}
-Het opmaken en verwijderen van aanmaningen gebeurt enkel wanneer een wanbetaler is. Het proces zou niet vaak mogen voorkomen. 
+Het opmaken en verwijderen van aanmaningen gebeurt enkel als er sprake is van achterstallige betaling. Dit zou niet vaak mogen voorkomen. 
 
 \subsubsection{Berichten plaatsen op de queue}
-Berichten plaatsen op de queue met de correcte gegevens. Deze microservice zorgt daarvoor. Hiervan wordt een microservice gemaakt omdat dit in elke stap voorkomt. Het is dan eenvoudiger om er een microservice van te maken, zodat elk onderdeel op een uniforme manier het bericht plaatst. 
+Berichten plaatsen op de queue omvat dat de gegevens die de volgende stap in het OTC proces nodig heeft, correct op de wachtrij van de volgende stap geplaatst wordt.  Het is dan eenvoudiger om er een microservice van te maken, zodat elk onderdeel op een uniforme manier het bericht plaatst. 
 Deze microservice komt voor in elk onderdeel van het proces.
 
 \subsubsection{Berichten ophalen van de queue} 
-Elk onderdeel moet berichten van zijn queue kunnen halen. Door het meermaals voorkomen van deze taak, wordt er een microservice van gemaakt. Het ophalen van berichten gebeurt dan op een uniforme manier. 
+Elk onderdeel moet berichten van zijn queue kunnen halen. Aangezien dit vaak voorkomt wordt er een microservice van gemaakt om te zorgen dat dit opeen vlotte en uniforme manier gebeurt. 
 Deze microservice komt voor in elk onderdeel van het proces.
 
 \section{Data integration}
@@ -81,7 +80,7 @@ Elke microservice heeft zijn databank. De microservices betreffende de stappen v
 	\centering
 \end{figure}
 
-Een order weet wie zijn klant is. Credit management kan de eigenschap bij het order veranderen van 'goedgekeurd' naar 'niet goedgekeurd'. Van elk order wordt een orderlijn bijgehouden. Zodat er geweten is wat er op de order staat. Op elk orderlijn staat er een product of service. Van het product moet er een beschrijving en verkoopprijs zijn. Het aantal in voorraad is gekend omdat bij het order fullfilment moet de voorraad aangepast worden van het specifieke product. Een order en de klant zijn gekend op de facturatie. Zo kan er nagegaan worden of de factuur overeenkomt met wat er op het order staat. De klant zijn gegevens moeten gekend zijn om naar het juiste adres te factureren.
+Een order heeft een klantnummer om te weten welke klant het order plaatste. Credit management kan de eigenschap bij het order veranderen van 'goedgekeurd' naar 'niet goedgekeurd'. Van ieder order wordt een orderlijn bijgehouden waraan een product of services is verbonden. Naast het product is ook een beschrijven en verkoopprijs te vinden. Het aantal in voorraad is gekend omdat bij het order fullfilment moet de voorraad aangepast worden van het specifieke product. Omdat een factuur gebaseerd is op een order, is het zo de klant gekend en zo klopt de factuur met de order. De klantengegevens moeten gekend zijn om naar het juiste adres te factureren.
 
 Elke databank heeft een queue. Wanneer een microserivce B iets nodig heeft van microserivce A, kan die vraag naar de queue gepost worden.
 
@@ -94,20 +93,19 @@ De databank van microservice 'Aanmaning opmaken en verwijderen' bevat alle data 
 De microservices 'bericht op queue plaatsen' en 'bericht van de queue halen', hebben geen datastore. Het zijn twee microservices die geen data moeten gaan ophalen of wegschrijven. Ze staan in voor het ophalen en plaatsen van berichten. 
 
 \section{Communicatie tussen de microservices}
-De communicatie gebeurt aan de hand van messaging. Maar omdat het order-to-cash een proces is waarin alleen voorwaarts kan worden gegaan. Daardoor is hier geen nood aan een message broker. Maar er wordt wel gewerkt met een queue. Omdat deze als voordeel heeft dat de microservices niet overbelast geraakt. De microservices handelt alles op zijn tempo.
-Een schets van de communicatie manier is terug te vinden in  figuur 3.3. 
-Klant 66 plaats een order met vier verschillende producten. Het ordernummer is 23. De volledige bestelling komt binnen in het systeem en wordt op de queue van ordermanagement geplaatst. Het order wordt van de queue gehaald aan de hand van consumption en acknowledgement. Ordermanagement verwerkt de binnengekomen order. Dan wordt het klantnummer en ordernummer op de queue van creditmanagement geplaatst. Creditmanagement haalt het bericht van de queue. Dan wordt er gekeken naar het betaalgedrag van de klant. Is het een wanbetaler of betaalt de klant altijd correct. Staat de klant gekend voor wanbetalen, dan wordt er geen goedkeuring gegeven om het order te plaatsen. Bij een corect betaalgedrag, krijgt het order goedkeuring om geplaatst te worden. Dan wordt het ordernummer doorgestuurd naar het volgende deel van het proces. 
+De communicatie gebeurt aan de hand van messaging. Maar omdat het order-to-cash een proces is waarin alleen voorwaarts kan worden gegaan. Daardoor is hier geen nood aan een message broker. Maar er wordt wel gewerkt met een queue. Omdat deze als voordeel heeft dat de microservices niet overbelast geraakt. De microservices handelt alles op zijn tempo. 
+Klant 66 plaatst een order met vier verschillende producten. Het ordernummer is 23. De volledige bestelling komt binnen in het systeem en wordt op de queue van ordermanagement geplaatst. Het order wordt van de queue gehaald aan de hand van consumption en acknowledgement. Ordermanagement verwerkt de binnengekomen order. Dan wordt het klantnummer en ordernummer op de queue van creditmanagement geplaatst. Creditmanagement haalt het bericht van de queue en kijkt naar het betaalgedrag van de klant. Staat de klant gekend voor wanbetalen, dan wordt er geen goedkeuring gegeven om het order te plaatsen. Bij een corect betaalgedrag, krijgt het order goedkeuring om geplaatst te worden. Dan wordt het ordernummer doorgestuurd naar het volgende deel van het proces. 
 Dus volgende queue's zouden moeten bestaan:
 \begin{itemize}
-	\item QorderMan is een queue voor order management: Het plaatsen van een order.
-	\item QcreditMan is een queue voor credit management: Om te controleren of een klant wel een order mag plaatsen.
-	\item QorderFul is een queue voor order fulfilment: Het ophalen van de order in het magazijn.
-	\item QorderShip is een queue voor order shipment: Het plannen van de route en welke goederen op welke vrachtwagen moeten geladen worden.
+	\item QorderMan is een queue voor order management.
+	\item QcreditMan is een queue voor credit management.
+	\item QorderFul is een queue voor order fulfilment.
+	\item QorderShip is een queue voor order shipment.
 	\item Qfact is een queue voor de facturatie.
-	\item QaccountsRec is een queue voor accounts receivable: De betaling van de factuur nagaan en tijdig aanmaningen sturen. 
+	\item QaccountsRec is een queue voor accounts receivable. 
 \end{itemize}
 
-Niet alle data wordt volledig naar de queue gestuurd enkel de belangrijke data. Zoals bijvoorbeeld het nummer van de klant die een order plaatste. Het ordernummer en klantnummer worden naar creditmanagement doorgestuurd. Bij creditmanangement wordt er dan aan de hand van het klantnummer de gegevens opgehaald en dan zo nagegaan of die klant wel een order mag plaatsen. Het ordernummer werd meegestuurd om zeker te zijn dat de correcte order goed- of afgekeurd wordt. Zo blijft de overhead op de queue minimaal. Om meer gegevens op te halen, moet de databank aangesproken worden. De gehele structuur van de databank wordt beschreven in het volgende gedeelte.
+Niet alle data wordt volledig naar de queue gestuurd. Enkel belangrijke data zoals het klantennummer wordt verstuurd naar creditmanagement. Daar wordt dan aan de hand van het klantnummer de bestelgegevens opgehaald en nagegaan of die klant wel een order mag plaatsen. Het ordernummer wordt meegestuurd om zeker te zijn dat het correcte order goed- of afgekeurd wordt. Zo blijft de overhead op de queue minimaal. Om meer gegevens op te halen, moet de databank aangesproken worden. De gehele structuur van de databank wordt beschreven in het volgende gedeelte.
 
 \subsection{De communicatie tussen de onderdelen van het OTC proces}
 
@@ -116,46 +114,46 @@ Niet alle data wordt volledig naar de queue gestuurd enkel de belangrijke data. 
 	\caption{De communicatie tussen de verschillende onderdelen van het order-to-cash proces.}
 	\centering
 \end{figure}
-Zoals al eerder vermeld, elk onderdeel van het OTC proces is een microservice. Elk onderdeel laat andere microservices het werk doen.
+Zoals eerder vermeld, is elk onderdeel van het OTC proces een microservice. Elk onderdeel spreekt kleinere microservices aan die de verschillende requirements van elke stap uitvoeren.
 Op figuur 3.2 is het communicatie patroon zichtbaar.
-Voordat het proces van start kan gaan, moet een klant een order plaatsen. Een order bevat een aantal producten. Eens de klant een order geplaatst heeft dan is er een ordernummer gekend. De klant staat bekend in het systeem met een klantnummer. Dat zijn twee belangrijke gegevens die veel gebruikt zullen worden.
+Voordat het proces van start kan gaan, moet een klant een order plaatsen. Een order bevat een aantal producten. Eens de klant een order geplaatst heeft dan is er een ordernummer aangemaakt. Belangrijk hierbij is ook dat er telkens een ordernummer verzonden wordt aan een onderdeel.
 Meer uitleg over wat elk onderdeel doet, bevindt zich in het volgende hoofdstuk.
 De nummers van de opsomming komen overeen met die op afbeelding 3.2.
 \begin{enumerate}
-	\item De communicatie tussen ordermanagement en creditmanagement. Er is een order geplaatst door klant 66. Ordermanagement zorgt ervoor dat het order in de databank geraakt. Eens de taak van ordermanagement gedaan is, plaatst die het klantnummmer en het ordernummer op de queue van creditmanagement. Dan is zijn taak gedaan. Ordermanagement houdt zich niet bezig met wat er gebeurt nadat hij het bericht geplaatst heeft.
-	\item De communicatie tussen creditmanagement en order fullfilment. Creditmanagement heeft het ordernummer en klantnummer van ordermanagement gekregen. Het bericht wordt van de queue gehaald. Creditmanagement gaat dan aan de hand van de klantgegevens beslissen of de klant het order mag plaatsen of niet. Is het order goedgekeurd dan wordt het ordernummer op de queue van order fullfilment gezet. Er moet niet worden teruggekeerd naar order management. Credit management heeft de rechten om het veld goedgekeurd aan te passen. De taak van creditmanagement is nu afgerond.
-	\item De communicatie tussen order fullfilment en order shipment. Order fullfilment heeft het ordernummer doorgekregen van credit management. Order fullfilment geeft het ordernummer door aan order shipment eens zijn taak gedaan is. 
-	\item De communicatie tussen order shipment en de facturatie. Het ordernummer werd op de queue van order shipment geplaatst. Eens alles opgemaakt is bij order shipment, wordt het ordernummer doorgestuurd naar de facturatie. De taak van order shipment is afgerond.
-	\item De communicatie tussen facturatie en accounts receivables. De facturatie kreeg een bericht van order shipment om de factuur op te maken voor het order met des betreffende ordernummer. Is de taak van facturatie afgerond dan wordt de factuurnummer doorgestuurd naa accounts receivables. Zodat de betaling verder kan worden opgevolgd.
-	\item Ordermanagement plaatst het ordernummer op de queue van klant management. Klant management stuurt een bevestiging naar de klant van het goed ontvangen van zijn/haar order. En laat weten dat er eerst een controle komt op het betaalbedrag van de klant.
-	\item Creditmanagement plaatst het ordernummer en de status van goedgekeurd of afgekeurd op de queue. Dan wordt er een bericht verzonden naar de klant. Het bericht bevat de info of de klant zijn order is goedgekeurd of afgekeurd.
-	\item Order fullfilment plaatst een bericht op de queue om te laten weten dat het order gemaakt is. Dat de goederen uit het magazijn zijn opgehaald en klaar gemaakt worden voor verzending.
+	\item De communicatie tussen ordermanagement en creditmanagement. Er is een order geplaatst door klant 66. Ordermanagement zorgt ervoor dat het order in de databank geraakt. Eens de taak van ordermanagement is gedaan, plaatst die het klantnummmer en het ordernummer op de queue van creditmanagement. 
+	\item De communicatie tussen creditmanagement en order fullfilment. Creditmanagement heeft het ordernummer en klantnummer van ordermanagement gekregen. Het bericht wordt van de queue gehaald. Creditmanagement gaat dan aan de hand van de klantgegevens beslissen of de klant het order mag plaatsen of niet. Is het order goedgekeurd, dan wordt het ordernummer op de queue van order fullfilment gezet.
+	\item De communicatie tussen order fullfilment en order shipment. Order fullfilment heeft het ordernummer doorgekregen van credit management. Dit geeft het ordernummer door aan order shipment eens zijn taak gedaan is. 
+	\item De communicatie tussen order shipment en de facturatie. Het ordernummer werd op de queue van order shipment geplaatst. Eens alles opgemaakt is bij order shipment, wordt het ordernummer doorgestuurd naar de facturatie.
+	\item De communicatie tussen facturatie en accounts receivables. De facturatie kreeg een bericht van order shipment om de factuur op te maken voor het order met des betreffende ordernummer. Is de taak van facturatie afgerond, dan wordt het factuurnummer doorgestuurd naar accounts receivables. Op die manier de betaling verder opgevolgd worden.
+	\item Ordermanagement plaatst het ordernummer op de queue van klant management. Klant management stuurt een bevestiging naar de klant van het order en laat weten dat er eerst een controle komt op het betaalbedrag van de klant.
+	\item Creditmanagement plaatst het ordernummer en de status van goedgekeurd of afgekeurd op de queue. Deze status wordt in een bericht naar de klant verzonden. 
+	\item Order fullfilment plaatst een bericht op de queue om te laten weten de goederen uit het magazijn werden opgehaald en klaar staan voor verzending.
 	\item Order shipment plaatst een bericht op de queue wanneer de goederen klaar zijn voor vertrek. Klant management zorgt er dan voor dat het bericht tot bij de klant geraakt.
 	\item Facturatie plaatst een bericht op de queue van klant management om ervoor te zorgen dat de factuur tot bij de klant geraakt.
 	\item Accounts receivables plaatst een bericht op de queue van klant management als er aanmaningen moeten worden gestuurd.
 \end{enumerate}
 
 \subsection{De architectuur}
-In volgende tabel, zijn er letters en bijhorende microservices terug te vinden. Deze worden gebruikt bij het uitleggen van de architectuur.
+In volgende tabel zijn letters en bijhorende microservices terug te vinden. Deze worden gebruikt bij het uitleggen van de architectuur.
 \begin{table}[]
 	\resizebox{\textwidth}{!}{%
 		\begin{tabular}{|l|p{15cm}|}
 			\hline 
 			A & Klantgegevens ophalen \\ \hline
 			B & Orders plaatsen, ophalen en verwijderen \\ \hline
-			C & Producten ophalen en het aantal van voorraad aanpassen \\ \hline
+			C & Producten ophalen en het aantal op voorraad aanpassen \\ \hline
 			D & Shipment documenten opstellen \\ \hline
 			E & Facturatie maken en ophalen \\ \hline
 			F & Aanmaning opmaken en verwijderen \\ \hline
 			G & Bericht plaatsen op de queue \\ \hline
-			H & Bericht ophalen van de queue \\ \hline
+			H & Bericht ophalen uit de queue \\ \hline
 		\end{tabular}%
 	}
 	\caption{Legende die gebruikt wordt in de afbeeldingen.}
 \end{table}
 
 In tabel 3.1 is de legende terug te vinden die gebruikt wordt bij het uitleggen van elk onderdeel apart.
-In figuur 3.3 is te zien hoe het volledige proces communiceert met de verschillende microservices. Elk onderdeel van het proces is een microservice op zich. Een microservice die meerdere microservices aanspreekt om goed te functioneren.
+In figuur 3.3 is te zien hoe het volledige proces communiceert met de verschillende microservices. Elk onderdeel van het proces is een microservice op zich.
 \begin{figure}[h!]
 	\includegraphics[width=15cm]{schema_microservices.png}
 	\caption{Welk onderdeel, welke microservices aanspreekt.}
@@ -170,7 +168,7 @@ In figuur 3.3 is te zien hoe het volledige proces communiceert met de verschille
 \end{figure}
 Order management communiceert met volgende microservices:
 \begin{itemize}
-	\item Klantgegevens ophalen.
+	\item Klantengegevens ophalen.
 	\item Orders plaatsen, ophalen en verwijderen.
 	\item Producten ophalen en het aantal van de voorraad aanpassen.
 	\item Bericht plaatsen op queue.
@@ -186,13 +184,13 @@ Een klant plaatst een order op het platform van het bedrijf. De gegevens van de 
 \end{figure}
 Credit management communiceert met volgende microservices:
 \begin{itemize}
-	\item Klantgegevens ophalen.
+	\item Klantengegevens ophalen.
 	\item Orders ophalen, plaatsen en verwijderen.
 	\item Facturatie maken en ophalen.
 	\item Bericht plaatsen op queue.
 	\item Bericht van queue halen.
 \end{itemize}
-Eerst wordt het bericht dat door order management op de queue geplaatst werd, opgehaald. Dan is er een klantnummer en een ordernummer. Bij credit management kijkt of de klant een goed betaalgedrag heeft. Staat de klant gekend als wanbetaler dan naar het order gegaan om de plaatsing van het order af te keuren. In andere gevallen krijgt de order een goedkeuring en wordt het ordernummer geplaatst op de queue van order fullfilment. Dan zit de taak van credit management erop.
+Eerst wordt het bericht opgehaald dat order management op de queue plaatste, opgehaald. Daarna wordt er een klantennummer en ordernummer verzonden. Credit management kijkt of de klant een goed betaalgedrag heeft. Is de klant bekend als wanbetaler dan wordt het order afgekeurd. In andere gevallen krijgt het order een goedkeuring en wordt het ordernummer geplaatst op de queue van order fullfilment. Dan zit de taak van credit management erop.
 
 \subsubsection{Order fullfilment}
 \begin{figure}[h!]
@@ -207,7 +205,7 @@ Order fullfilment communiceert met volgende microservices:
 	\item Bericht plaatsen op queue.
 	\item Bericht van queue halen.
 \end{itemize}
-Bij order fullfilment staat er een ordernummer op de queue. Die wordt opgehaald en aan de hand van het ordernummer, weet men welke goederen er uit het magazijn moeten gehaald worden. Voor alle goederen moet het aantal in de voorraad aangepast worden. Eens het order compleet is, wordt het ordernummer op de queue van order shipment geplaatst.
+Bij order fullfilment staat een ordernummer op de queue. Dit wordt opgehaald en geef aan welke goederen er uit het magazijn moeten gehaald worden. Voor alle goederen moet het aantal in de voorraad aangepast worden. Eens het order compleet is, wordt het ordernummer op de queue van order shipment geplaatst.
 
 \subsubsection{Order shipment}
 \begin{figure}[h!]
@@ -218,12 +216,12 @@ Bij order fullfilment staat er een ordernummer op de queue. Die wordt opgehaald 
 Order shipment communiceert met volgende microservices:
 \begin{itemize}
 	\item Orders ophalen, plaatsen en verwijderen.
-	\item Klantgegevens ophalen.
+	\item Klantengegevens ophalen.
 	\item Shipment document opstellen.
 	\item Bericht plaatsen op queue.
 	\item Bericht van queue halen.
 \end{itemize}
-Order shipment krijgt het ordernummer binnen via zijn queue. Het order wordt bekeken en de klant gegevens worden opgehaald aan de hand van het gekoppelde klantnummer aan het order. Eens het order shipment document is opgesteld en alle goederen klaar zijn voor vertrek, wordt het ordernummer geplaatst op de queue van facturatie.
+Order shipment krijgt het ordernummer binnen via zijn queue. Het order wordt bekeken en de klantengegevens worden opgehaald aan de hand van het klantnummer dat gekoppeld werd aan het order. Eens het order shipment document is opgesteld en alle goederen klaar zijn voor vertrek, wordt het ordernummer geplaatst op de queue van facturatie.
 
 \subsubsection{Facturatie}
 \begin{figure}[h!]
@@ -233,9 +231,9 @@ Order shipment krijgt het ordernummer binnen via zijn queue. Het order wordt bek
 \end{figure}
 Facturatie communiceert met volgende microservices:
 \begin{itemize}
-	\item Klantgegevens ophalen.
+	\item Klantengegevens ophalen.
 	\item Orders ophalen, plaatsen en verwijderen.
-	\item Facturatie maken en ophalen.
+	\item Facturen maken en ophalen.
 	\item Bericht plaatsen op queue.
 	\item Bericht van queue halen.
 \end{itemize}
@@ -247,10 +245,10 @@ Eens het ordernummer opgehaald is van de queue, wordt alle nodig info opgehaald 
 	\caption{Accounts receivables communiceert met volgende microservices.}
 	\centering
 \end{figure}
-Accounts receivable gaat na of de betaling wel goed wordt afgerond. Om dit te kunnen, worden volgende microservices aangesproken:
+Accounts receivable gaat na of de betaling wel goed wordt afgerond. Hiervoor worden volgende microservices aangesproken:
 \begin{itemize}
-	\item Klantgegevens ophalen.
-	\item Facturatie maken en ophalen.
+	\item Klantengegevens ophalen.
+	\item Facturen maken en ophalen.
 	\item Bericht plaatsen op queue.
 	\item Bericht van queue halen.
 \end{itemize}
@@ -261,14 +259,14 @@ Accounts receivable gaat na of de betaling wel goed wordt afgerond. Om dit te ku
 	\caption{Klant management communiceert met volgende microservices.}
 	\centering
 \end{figure}
-Klant management staat in voor het contact met de klant. Dit deel gebruikt volgende microservices:
+Klant management staat in voor het contact met de klant. Dit onderdeel gebruikt volgende microservices:
 \begin{itemize}
-	\item Klantgegevens ophalen.
+	\item Klanentgegevens ophalen.
 	\item Orders ophalen, plaatsen en verwijderen.
-	\item Facturatie maken en ophalen.
+	\item Facturen maken en ophalen.
 	\item Bericht van queue halen.
 \end{itemize}
-Als een van de vorige onderdelen een bericht plaatst op de queue, zal die verwerkt worden en de nodige info wordt opgehaald.
+Als een van de vorige onderdelen een bericht plaatst op deze queue, zal het bericht verwerkt worden. Daarna wordt de klant verwittigd met de inhoud van het bericht. Bijvoorbeeld als de klant geen order mag bestellen omdat Credit management nog onbetaalde facturen gevonden heeft, wordt de klant hiervan op de hoogte gebracht via klant management.
 
 
 \section{De complete architectuur opbouwen}
@@ -277,11 +275,11 @@ Op figuur 3.11 is te zien hoe het proces in elkaar ziet. Door de microservice ar
 
 \subsection{De volgende stappen: Het toevoegen van API, logging en authenticatie en authorisatie}
 \subsubsection{Logging}
-Logging kan toegepast worden door nog een extra microservice te ontwikkelen. Hiernaar kunnen de andere microservices hun logs posten. Hier zal niet verder op worden ingegaan. 
+Logging kan toegepast worden door nog een extra microservice te ontwikkelen. Hiernaar kunnen de andere microservices dan hun logs naar posten. Dit wordt gebruikt om fouten in de architectuur te ontdekken. Hier zal echter niet verder op worden ingegaan. 
 
 \subsubsection{API gateway}
-Een API gateway wordt toegevoegd om ervoor te zorgen dat de architctuur niet openbaar is voor iedereen. Er is één aanspreekpunt en die regelt de rest van de communicatie.
-De API communiceert in dit geval enkel met order management. De API geeft alle nodige informatie door en order management schrijft deze weg naar de datastore en naar de databank.
+Een API gateway wordt toegevoegd om ervoor te zorgen dat de architctuur niet openbaar is voor iedereen. Op die manier is er één aanspreekpunt en die regelt de rest van de communicatie.
+De API communiceert in dit geval enkel met order management. Het geeft alle nodige informatie door en order management schrijft deze weg naar de databank.
 \begin{figure}[h!]
 	\includegraphics[width=10cm]{apiSchema.png}
 	\caption{Vereenvoudigd schema.}
@@ -289,9 +287,9 @@ De API communiceert in dit geval enkel met order management. De API geeft alle n
 \end{figure}
 
 \subsubsection{Authenticatie en autorisatie}
-Onder het hoofdstuk 'stand van zaken', is een vergelijking te vinden over authenticatie. Uit die vergelijking, is de keuzen API gekozen als authenticatie. Binnen API zijn er verschillende opties, die worden ook overlopen in het vorige hoofdstuk. Er is gekozen voor OAuth omdat dit de meest bekende en gebruikte versie is.
+Onder het hoofdstuk 'Stand Van Zaken', is er meer info te vinden over authenticatie. Uit die vergelijking, is API gekozen als authenticatie. Zoals we ook gezien hebben in het vorige hoofdstuk is API uit de verschillende opties gekozen, specifiek is er gekozen voor OAuth omdat dit de meest bekende en gebruikte versie is.
 
-De gebruiker moet gekend zijn voordat die een order kan plaatsen. De authenticatie van de gebruiker gebeurt vooraf. Er is een aparte micrservice voor authenticatie. Hier wordt niet dieper op in gegaan.
+De gebruiker moet gekend zijn om een order te kunnen plaatsen. Er is een aparte micrservice voor authenticatie. Hier wordt niet dieper op in gegaan omdat het niet de essentie is van deze bachelorproef.
 
 
 
