@@ -73,7 +73,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{Berichten ophalen van de queue}{45}{section*.20}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.2}Data integration}{45}{section.3.2}
+\contentsline {section}{\numberline {3.2}Data integration}{46}{section.3.2}
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {3.3}Communicatie tussen de microservices}{47}{section.3.3}
 \defcounter {refsection}{0}\relax 
@@ -97,11 +97,11 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {3.4}De complete architectuur opbouwen}{53}{section.3.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.4.1}De volgende stappen: Het toevoegen van API, logging en authenticatie en authorisatie}{53}{subsection.3.4.1}
+\contentsline {subsection}{\numberline {3.4.1}De volgende stappen: Het toevoegen van API, logging en authenticatie en authorisatie}{54}{subsection.3.4.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Logging}{53}{section*.28}
+\contentsline {subsubsection}{Logging}{54}{section*.28}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{API gateway}{53}{section*.29}
+\contentsline {subsubsection}{API gateway}{54}{section*.29}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{Authenticatie en autorisatie}{54}{section*.30}
 \defcounter {refsection}{0}\relax 
